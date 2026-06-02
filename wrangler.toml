@@ -1,0 +1,8 @@
+name = "study-in-germany"
+compatibility_date = "2025-06-01"
+
+# Serve the static export (next.config.mjs sets output: "export" → /out)
+[assets]
+directory = "./out"
+html_handling = "auto-trailing-slash"
+not_found_handling = "404-page"
