@@ -11,6 +11,18 @@ const stats = [
   { value: "18 mo", label: "Post-study stay" },
 ];
 
+// Iconic Germany landmarks for the "Discover Germany" gallery
+const landmarks = [
+  { slug: "berlin", name: "Brandenburg Gate", city: "Berlin", emoji: "🏛️" },
+  { slug: "munich", name: "Marienplatz", city: "Munich", emoji: "🍺" },
+  { slug: "cologne", name: "Cologne Cathedral", city: "Cologne", emoji: "⛪" },
+  { slug: "hamburg", name: "Elbphilharmonie", city: "Hamburg", emoji: "🎵" },
+  { slug: "heidelberg", name: "Heidelberg Castle", city: "Heidelberg", emoji: "🏰" },
+  { slug: "dresden", name: "Frauenkirche", city: "Dresden", emoji: "⛪" },
+  { slug: "frankfurt", name: "Römer", city: "Frankfurt", emoji: "🏦" },
+  { slug: "aachen", name: "Aachen Cathedral", city: "Aachen", emoji: "👑" },
+];
+
 const features = [
   {
     href: "/universities",
@@ -25,22 +37,22 @@ const features = [
     text: "Search English-taught Bachelor's and Master's programmes by field.",
   },
   {
+    href: "/scholarships",
+    emoji: "💰",
+    title: "Scholarships",
+    text: "DAAD, Deutschlandstipendium, Erasmus+ and 11 more — find funding.",
+  },
+  {
     href: "/cities",
     emoji: "🏙️",
     title: "Cities",
     text: "Compare student cities by cost of living, lifestyle and job opportunities.",
   },
   {
-    href: "/industries",
-    emoji: "🏭",
-    title: "Industries",
-    text: "Discover the key industries and top employers in each German state.",
-  },
-  {
-    href: "/jobs",
-    emoji: "💼",
-    title: "Jobs",
-    text: "Learn about working as a student, part-time rules and post-study careers.",
+    href: "/calculator",
+    emoji: "🧮",
+    title: "Cost Calculator",
+    text: "Estimate monthly + yearly costs in EUR, PKR, INR, BDT or USD.",
   },
   {
     href: "/visa",
@@ -52,7 +64,13 @@ const features = [
     href: "/blog",
     emoji: "📚",
     title: "Blog & Guides",
-    text: "In-depth articles: TUM application, DAAD scholarship, SOP writing, visa timeline.",
+    text: "In-depth articles: TUM application, DAAD scholarship, SOP writing.",
+  },
+  {
+    href: "/guides/pakistan",
+    emoji: "🇵🇰",
+    title: "Country guides",
+    text: "Pakistan, India, Bangladesh — APS, embassy, country-specific tips.",
   },
 ];
 
@@ -62,36 +80,49 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-german text-white">
-        <div className="mx-auto max-w-6xl px-4 py-20 text-center">
-          <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-medium ring-1 ring-white/20">
+      {/* Hero — with real Germany photo background */}
+      <section className="relative overflow-hidden text-white">
+        {/* Background photo (Brandenburg Gate) */}
+        <div className="absolute inset-0">
+          <img
+            src="/cities/berlin.jpg"
+            alt="Berlin Brandenburg Gate"
+            className="h-full w-full object-cover"
+          />
+          {/* Dark gradient overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/70 to-black/60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-ink-900/95 via-transparent to-transparent" />
+        </div>
+
+        {/* Content */}
+        <div className="relative mx-auto max-w-6xl px-4 py-24 text-center sm:py-28">
+          <span className="mb-5 inline-block rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium ring-1 ring-white/30 backdrop-blur">
             🇩🇪 Your complete guide to studying in Germany
           </span>
-          <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl">
+          <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight drop-shadow-lg sm:text-6xl">
             World-class education,{" "}
             <span className="text-brand-400">tuition-free</span>.
           </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-200">
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90 drop-shadow sm:text-xl">
             Everything you need to know about studying in Germany — universities,
-            cities, part-time jobs, careers and the complete visa process, all in
-            one place.
+            cities, jobs, scholarships and the complete visa process, all in one
+            place.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="mt-9 flex flex-wrap justify-center gap-3">
             <Link
               href="/start"
-              className="rounded-lg bg-brand-500 px-7 py-3.5 text-lg font-bold text-ink-900 shadow-lg transition hover:bg-brand-400"
+              className="rounded-lg bg-brand-500 px-7 py-3.5 text-lg font-bold text-ink-900 shadow-xl transition hover:scale-105 hover:bg-brand-400"
             >
               🚀 Start Here — Your Journey
             </Link>
             <Link
               href="/universities"
-              className="rounded-lg bg-white/10 px-6 py-3 font-semibold text-white ring-1 ring-white/30 transition hover:bg-white/20"
+              className="rounded-lg bg-white/15 px-6 py-3 font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/25"
             >
               Or browse universities →
             </Link>
           </div>
-          <p className="mt-3 text-sm text-slate-300">
+          <p className="mt-4 text-sm text-white/80 drop-shadow">
             New here? The 9-step guided journey is the fastest way to know what to do next.
           </p>
         </div>
@@ -99,25 +130,86 @@ export default function Home() {
 
       {/* Stats */}
       <section className="border-b border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 md:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-12 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-3xl font-extrabold text-brand-600">{s.value}</div>
-              <div className="mt-1 text-sm text-slate-500">{s.label}</div>
+              <div className="text-4xl font-extrabold text-brand-600">{s.value}</div>
+              <div className="mt-1 text-sm font-medium text-slate-500">{s.label}</div>
             </div>
           ))}
         </div>
       </section>
 
+      {/* Discover Germany — Photo gallery */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="mb-10 text-center">
+            <span className="mb-2 inline-block rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-700">
+              🇩🇪 Discover Germany
+            </span>
+            <h2 className="text-3xl font-bold text-ink-900 sm:text-4xl">
+              Study where history meets innovation
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-slate-600">
+              From medieval castles to modern tech hubs — Germany's 37 student
+              cities offer some of Europe's most iconic places to live and study.
+            </p>
+          </div>
+
+          {/* Photo grid — bento style */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+            {landmarks.map((l, i) => (
+              <Link
+                key={l.slug}
+                href={`/cities/${l.slug}`}
+                className={`group relative overflow-hidden rounded-xl shadow-md transition-all hover:-translate-y-1 hover:shadow-xl ${
+                  i === 0 ? "col-span-2 row-span-2 md:col-span-2 md:row-span-2" : ""
+                }`}
+              >
+                <img
+                  src={`/cities/${l.slug}.jpg`}
+                  alt={`${l.name}, ${l.city}`}
+                  className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                    i === 0 ? "h-full min-h-[320px]" : "h-44 sm:h-52"
+                  }`}
+                  loading="lazy"
+                />
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                {/* Caption */}
+                <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
+                  <p className="text-xs font-medium text-white/80 sm:text-sm">
+                    {l.emoji} {l.city}
+                  </p>
+                  <p className={`font-bold text-white drop-shadow ${i === 0 ? "text-xl sm:text-2xl" : "text-sm sm:text-base"}`}>
+                    {l.name}
+                  </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              href="/cities"
+              className="inline-block rounded-lg bg-ink-900 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-ink-700"
+            >
+              Explore all 37 cities →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Feature cards */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-center text-3xl font-bold text-ink-900">
+        <h2 className="text-center text-3xl font-bold text-ink-900 sm:text-4xl">
           Everything in one place
         </h2>
-        <p className="mx-auto mt-2 max-w-2xl text-center text-slate-500">
-          Browse curated, up-to-date information across four key areas.
+        <p className="mx-auto mt-3 max-w-2xl text-center text-slate-500">
+          Browse curated, up-to-date information across all the topics that matter
+          for your application.
         </p>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
             <Link
               key={f.href}
@@ -180,20 +272,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="bg-german">
-        <div className="mx-auto max-w-4xl px-4 py-16 text-center text-white">
-          <h2 className="text-3xl font-bold">Ready to start your journey?</h2>
-          <p className="mx-auto mt-3 max-w-xl text-slate-200">
+      {/* CTA — with photo background */}
+      <section className="relative overflow-hidden text-white">
+        <div className="absolute inset-0">
+          <img
+            src="/cities/heidelberg.jpg"
+            alt="Heidelberg Castle"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink-900/95 via-ink-900/80 to-ink-900/60" />
+        </div>
+        <div className="relative mx-auto max-w-4xl px-4 py-20 text-center">
+          <h2 className="text-3xl font-bold drop-shadow-lg sm:text-4xl">
+            Ready to start your journey?
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-lg text-white/90 drop-shadow">
             Understand each step — from choosing a course to getting your residence
             permit — with our complete visa and application guide.
           </p>
-          <Link
-            href="/visa"
-            className="mt-6 inline-block rounded-lg bg-brand-500 px-6 py-3 font-semibold text-ink-900 shadow transition hover:bg-brand-400"
-          >
-            See the step-by-step process
-          </Link>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/start"
+              className="rounded-lg bg-brand-500 px-7 py-3.5 text-lg font-bold text-ink-900 shadow-xl transition hover:scale-105 hover:bg-brand-400"
+            >
+              🚀 Start Your Journey
+            </Link>
+            <Link
+              href="/visa"
+              className="rounded-lg bg-white/15 px-6 py-3 font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/25"
+            >
+              See visa process →
+            </Link>
+          </div>
         </div>
       </section>
     </>
