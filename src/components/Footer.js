@@ -26,6 +26,7 @@ export default function Footer() {
             <li><Link href="/universities" className="hover:text-brand-400">Universities</Link></li>
             <li><Link href="/programs" className="hover:text-brand-400">Programs</Link></li>
             <li><Link href="/scholarships" className="hover:text-brand-400">Scholarships</Link></li>
+            <li><Link href="/blog" className="hover:text-brand-400">Blog &amp; Guides</Link></li>
             <li><Link href="/cities" className="hover:text-brand-400">Cities</Link></li>
             <li><Link href="/industries" className="hover:text-brand-400">Industries</Link></li>
             <li><Link href="/jobs" className="hover:text-brand-400">Jobs</Link></li>

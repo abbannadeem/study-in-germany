@@ -15,9 +15,9 @@ export const SUGGESTIONS = [
   "Where do I start?",
   "Is it really free?",
   "Cost in PKR",
-  "Scholarships",
+  "How to write SOP?",
   "From Pakistan / India?",
-  "Visa process",
+  "DAAD scholarship?",
 ];
 
 function has(q, ...words) {
@@ -305,6 +305,36 @@ export function getAnswer(raw) {
         { label: "Programs Finder", href: "/programs" },
         { label: "Visa & Process", href: "/visa" },
       ],
+    };
+  }
+
+  // SOP / motivation letter
+  if (has(q, " sop ", "motivation letter", "statement of purpose", "how to write")) {
+    return {
+      text:
+        "A great SOP is the difference between rejection and acceptance. Our detailed guide covers the exact 5-paragraph structure German universities prefer, common mistakes, and real examples.",
+      links: [{ label: "📖 SOP writing guide", href: "/blog/winning-sop-german-universities" }],
+    };
+  }
+
+  // TUM specific
+  if (has(q, "tum ", " tum", "technical university of munich", "munich tech")) {
+    return {
+      text:
+        "TUM is Germany's #1 ranked university. We have a complete application guide for Pakistani students covering admission requirements, documents, timeline, and tips from successful applicants.",
+      links: [
+        { label: "📖 TUM application guide", href: "/blog/complete-tum-application-guide-pakistani-students" },
+        { label: "TUM details", href: "/universities/tum" },
+      ],
+    };
+  }
+
+  // Blog / articles / guides
+  if (has(q, "blog", "article", "guide", "tutorial", "how do i", "read more")) {
+    return {
+      text:
+        "We have detailed guides on TUM applications, DAAD scholarships, the visa timeline, free universities list, and how to write a winning SOP.",
+      links: [{ label: "📚 All articles", href: "/blog" }],
     };
   }
 

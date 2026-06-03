@@ -9,6 +9,7 @@ const links = [
   { href: "/universities", label: "Universities" },
   { href: "/programs", label: "Programs" },
   { href: "/scholarships", label: "Scholarships" },
+  { href: "/blog", label: "Blog" },
   { href: "/cities", label: "Cities" },
   { href: "/industries", label: "Industries" },
   { href: "/jobs", label: "Jobs" },

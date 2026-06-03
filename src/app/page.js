@@ -48,6 +48,12 @@ const features = [
     title: "Visa & Process",
     text: "Follow the full step-by-step student visa and application process.",
   },
+  {
+    href: "/blog",
+    emoji: "📚",
+    title: "Blog & Guides",
+    text: "In-depth articles: TUM application, DAAD scholarship, SOP writing, visa timeline.",
+  },
 ];
 
 export default function Home() {
