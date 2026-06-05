@@ -54,14 +54,17 @@ export default function CountryPicker() {
   return (
     <div className="fixed inset-0 z-[70] flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm">
       <div className="relative w-full max-w-3xl overflow-hidden rounded-2xl bg-white shadow-2xl">
-        {/* Close button (top-right) */}
+        {/* Close button (top-right, always visible above scroll) */}
         <button
           onClick={() => setOpen(false)}
           aria-label="Close"
-          className="absolute right-3 top-3 z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-xl text-white transition hover:bg-white/30"
+          className="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-xl font-bold text-white backdrop-blur transition hover:bg-black/70"
         >
           ✕
         </button>
+
+        {/* Scrollable inner container — allows full content access on mobile */}
+        <div className="max-h-[90vh] overflow-y-auto">
 
         {/* Hero */}
         <div className="bg-gradient-to-br from-ink-900 via-ink-800 to-brand-700 px-6 py-8 text-center text-white">
@@ -112,6 +115,8 @@ export default function CountryPicker() {
             Other country / Skip →
           </button>
         </div>
+
+        </div>{/* end scrollable container */}
       </div>
     </div>
   );
