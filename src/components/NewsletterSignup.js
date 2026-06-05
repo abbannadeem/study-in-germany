@@ -10,7 +10,7 @@ import { useState } from "react";
 // To connect to a real list:
 // 1. Create a free Formspree form at formspree.io → copy form ID
 // 2. Or replace FORM_URL with Mailchimp / ConvertKit / Buttondown action URL
-const FORM_URL = "https://formspree.io/f/YOUR_FORM_ID";
+const FORM_URL = "https://formspree.io/f/xaqzqway";
 
 export default function NewsletterSignup({
   variant = "default", // "default" | "compact" | "inline"

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // Compact newsletter signup strip for the footer.
 // Configure FORM_URL to your real Formspree / Mailchimp / ConvertKit endpoint.
-const FORM_URL = "https://formspree.io/f/YOUR_FORM_ID";
+const FORM_URL = "https://formspree.io/f/xaqzqway";
 
 export default function FooterNewsletter() {
   const [email, setEmail] = useState("");
