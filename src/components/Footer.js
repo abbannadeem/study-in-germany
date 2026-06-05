@@ -1,8 +1,12 @@
 import Link from "next/link";
+import FooterNewsletter from "./FooterNewsletter";
 
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-slate-200 bg-ink-900 text-slate-300">
+      {/* Top strip: newsletter signup */}
+      <FooterNewsletter />
+
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:grid-cols-2 md:grid-cols-4">
         <div className="sm:col-span-2 md:col-span-1">
           <div className="mb-3 flex items-center gap-2 font-bold text-white">
@@ -62,10 +66,15 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-white/10 px-4 py-5">
-        <p className="mx-auto max-w-6xl text-center text-xs text-slate-500">
-          © {new Date().getFullYear()} Study in Germany. Educational guide only —
-          figures and rules change, so always verify with official sources before
-          making decisions.
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-slate-500">
+          <p>© {new Date().getFullYear()} Study in Germany. Educational guide only.</p>
+          <Link href="/privacy" className="hover:text-brand-400">Privacy Policy</Link>
+          <Link href="/terms" className="hover:text-brand-400">Terms of Service</Link>
+          <Link href="/about" className="hover:text-brand-400">About</Link>
+          <Link href="/contact" className="hover:text-brand-400">Contact</Link>
+        </div>
+        <p className="mx-auto mt-2 max-w-6xl text-center text-xs text-slate-600">
+          Figures and rules change — always verify with official sources before making decisions.
         </p>
       </div>
     </footer>

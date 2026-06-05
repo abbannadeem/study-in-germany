@@ -33,6 +33,15 @@ export const CURRENCIES = [
   { code: "INR", label: "₹ INR (India)", rate: 95, symbol: "₹" },
   { code: "BDT", label: "৳ BDT (Bangladesh)", rate: 125, symbol: "৳" },
   { code: "NPR", label: "Rs NPR (Nepal)", rate: 150, symbol: "Rs " },
+  { code: "LKR", label: "Rs LKR (Sri Lanka)", rate: 340, symbol: "Rs " },
+  { code: "VND", label: "₫ VND (Vietnam)", rate: 27000, symbol: "₫" },
+  { code: "IDR", label: "Rp IDR (Indonesia)", rate: 17500, symbol: "Rp " },
+  { code: "TRY", label: "₺ TRY (Turkey)", rate: 38, symbol: "₺" },
+  { code: "CNY", label: "¥ CNY (China)", rate: 7.7, symbol: "¥" },
+  { code: "AED", label: "د.إ AED (UAE)", rate: 3.85, symbol: "د.إ " },
+  { code: "SAR", label: "﷼ SAR (Saudi Arabia)", rate: 3.95, symbol: "﷼ " },
+  { code: "IRR", label: "﷼ IRR (Iran)", rate: 60000, symbol: "﷼ " },
+  { code: "EGP", label: "£ EGP (Egypt)", rate: 52, symbol: "£" },
   { code: "USD", label: "$ USD", rate: 1.05, symbol: "$" },
 ];
 

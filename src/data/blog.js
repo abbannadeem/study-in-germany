@@ -590,7 +590,525 @@ export const blogPosts = [
       { type: "h2", text: "Final tip: Start early" },
       { type: "p", text: "Write your first draft 2-3 months before the deadline. Sit with it. Rewrite it 3-4 times. Get feedback. Refine. Most failed applications are last-minute SOPs that read like first drafts." }
     ]
-  }
+  },
+  {
+    slug: "blocked-account-pakistan-step-by-step",
+    title: "How to Open a Blocked Account from Pakistan in 24 Hours (2026)",
+    excerpt:
+      "Opening a German blocked account (Sperrkonto) from Pakistan used to take weeks. Here's how to do it in 24 hours, with real fees, comparisons, and the fastest providers.",
+    category: "Visa & Immigration",
+    readTime: "9 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "💳",
+    coverGradient: "from-green-500 to-emerald-600",
+    tags: ["Blocked Account", "Pakistan", "Sperrkonto", "Expatrio"],
+    body: [
+      { type: "p", text: "Every Pakistani student applying for a German visa needs to deposit ~€11,904 in a blocked account (Sperrkonto). It's one of the biggest stress points in the visa process — but it doesn't have to be. Here's the exact step-by-step process to open one from Pakistan in 24 hours." },
+
+      { type: "h2", text: "What is a Blocked Account?" },
+      { type: "p", text: "A blocked account is a special German bank account that holds your living expenses (€11,904 for one year) as proof to the German embassy that you can support yourself. You can only withdraw a fixed monthly amount (~€992/month) after arriving in Germany." },
+      { type: "p", text: "Without this, your visa application is automatically rejected. It's mandatory." },
+
+      { type: "h2", text: "Top 3 providers Pakistani students use" },
+      { type: "table", headers: ["Provider", "Setup Fee", "Monthly", "Opening Time"], rows: [
+        ["Expatrio", "€49 (refundable)", "Free", "24 hours"],
+        ["Fintiba", "€89 (one-off)", "€4.90", "1-2 days"],
+        ["Coracle", "€99 (one-off)", "€5.90", "2-5 days"]
+      ]},
+
+      { type: "callout", emoji: "⭐", text: "Recommendation: Expatrio is the most popular among Pakistani students because of fast setup, English support, and bundled health insurance options. They've processed thousands of Pakistani student applications." },
+
+      { type: "h2", text: "Step-by-step: Open in 24 hours" },
+      { type: "h3", text: "Step 1: Sign up online (15 minutes)" },
+      { type: "p", text: "Go to expatrio.com/blocked-account and click 'Get started'. You'll need:" },
+      { type: "ul", items: [
+        "Your passport (scan ready)",
+        "Your German university admission letter (Zulassungsbescheid)",
+        "An email + phone number",
+        "A debit/credit card for the setup fee"
+      ]},
+
+      { type: "h3", text: "Step 2: Identity verification (30 minutes)" },
+      { type: "p", text: "Complete the online ID verification via video call or document upload. Expatrio uses Sumsub for verification — very fast for Pakistani passports." },
+
+      { type: "h3", text: "Step 3: Transfer €11,904 from Pakistan (varies)" },
+      { type: "p", text: "This is where most delays happen. Three options for Pakistani students:" },
+      { type: "ul", items: [
+        "Wise (TransferWise) — fastest (1-2 days), best exchange rate. Recommended.",
+        "Bank wire transfer (HBL, MCB, Standard Chartered) — 2-5 days, higher fees",
+        "ICICI Bank Pakistan branch — convenient but slower (3-7 days)"
+      ]},
+      { type: "callout", emoji: "💡", text: "Pro tip: Use Wise for the €11,904 transfer. You'll save Rs 30,000-50,000 in exchange rate fees compared to a regular bank wire. Set up Wise account ahead of time." },
+
+      { type: "h3", text: "Step 4: Get confirmation email" },
+      { type: "p", text: "Once your funds arrive, Expatrio sends you the blocked account confirmation (Sperrkontonachweis) as a PDF — this is what you submit to the embassy." },
+
+      { type: "h2", text: "Total cost breakdown for Pakistani students" },
+      { type: "table", headers: ["Item", "Amount in EUR", "Amount in PKR (approx)"], rows: [
+        ["Blocked amount", "€11,904", "Rs 36,90,000"],
+        ["Expatrio setup fee", "€49", "Rs 15,200"],
+        ["Wise transfer fee", "~€60", "Rs 18,600"],
+        ["Total upfront", "€12,013", "Rs 37,24,000"]
+      ]},
+
+      { type: "h2", text: "What happens after you arrive in Germany?" },
+      { type: "ul", items: [
+        "Within first week: Open a German current account (Girokonto)",
+        "Provide Expatrio your new German IBAN",
+        "Expatrio releases €992/month to your German account",
+        "After 12 months, any remaining balance is transferred to you"
+      ]},
+
+      { type: "h2", text: "Common mistakes to avoid" },
+      { type: "ul", items: [
+        "Choosing the wrong provider — make sure they're accepted by your specific German embassy (Islamabad/Karachi)",
+        "Bank wire transfer when Wise would be cheaper and faster",
+        "Transferring funds before completing ID verification (delays processing)",
+        "Not keeping a copy of the bank confirmation email",
+        "Booking visa appointment before blocked account is ready"
+      ]},
+
+      { type: "callout", emoji: "✅", text: "Bottom line: Opening a blocked account is the easiest visa step IF you choose the right provider and use Wise for the transfer. Most Pakistani students complete this in 3-5 days total (including the international transfer)." }
+    ]
+  },
+  {
+    slug: "ielts-requirements-german-universities",
+    title: "IELTS Score for German Universities: Real Requirements (2026 Update)",
+    excerpt:
+      "Most German universities ask for IELTS 6.5, but the reality is more nuanced. Here are the actual minimum scores for top universities, with specific program data.",
+    category: "Application Tips",
+    readTime: "8 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "📝",
+    coverGradient: "from-cyan-500 to-blue-600",
+    tags: ["IELTS", "Language", "TOEFL", "Application"],
+    body: [
+      { type: "p", text: "If you want to study in Germany without learning German first, you'll need to prove your English ability. Most students take IELTS. But how high do you really need to score? Here's the real data for top German universities in 2026." },
+
+      { type: "h2", text: "The standard requirement: IELTS 6.5" },
+      { type: "p", text: "Most German universities ask for IELTS 6.5 (overall) with no band lower than 5.5. This is the baseline that 80% of English-taught Master's programs require." },
+      { type: "p", text: "However, some top programs ask for higher (6.5 with no band below 6.0, or even 7.0 overall). And a small number accept lower (6.0 overall)." },
+
+      { type: "h2", text: "Top German universities — actual requirements" },
+      { type: "table", headers: ["University", "IELTS Minimum", "TOEFL iBT Minimum", "Notes"], rows: [
+        ["TU Munich (TUM)", "6.5", "88", "Some programs require 7.0"],
+        ["LMU Munich", "6.5", "88", "Standard"],
+        ["Heidelberg", "6.5", "92", "Higher for sciences"],
+        ["RWTH Aachen", "6.5", "87", "Engineering programs strict on bands"],
+        ["KIT Karlsruhe", "6.5", "90", "Standard"],
+        ["TU Berlin", "6.5", "88", "Standard"],
+        ["Humboldt Berlin", "6.5", "92", "Strict"],
+        ["Stuttgart", "6.5", "88", "Engineering 6.5"],
+        ["Mannheim", "7.0", "100", "Business programs higher"],
+        ["Frankfurt (Goethe)", "6.5", "90", "Standard"]
+      ]},
+
+      { type: "callout", emoji: "💡", text: "Tip: Always check the specific program page — same university can have different IELTS requirements for different programs. Engineering at TUM might be 6.5; Management at TUM might be 7.0." },
+
+      { type: "h2", text: "Programs that need HIGHER scores (7.0+)" },
+      { type: "ul", items: [
+        "TUM-BWL (Management & Technology) — 7.0",
+        "Mannheim MBA — 7.0",
+        "Frankfurt School of Finance (private) — 7.0",
+        "TUM Architecture — 7.0",
+        "Some humanities programs at Humboldt/LMU — 7.0"
+      ]},
+
+      { type: "h2", text: "Programs that accept LOWER scores (5.5-6.0)" },
+      { type: "ul", items: [
+        "Some applied sciences universities (Hochschulen)",
+        "Few engineering programs at smaller universities",
+        "Some Bachelor's programs (vs Master's, which are stricter)",
+        "Programs taught partly in English + German"
+      ]},
+
+      { type: "h2", text: "TOEFL vs IELTS: which is better for Germany?" },
+      { type: "p", text: "Both are accepted equally. Pakistani students typically prefer IELTS because:" },
+      { type: "ul", items: [
+        "More IELTS test centres in Pakistan (every major city)",
+        "Familiar British English style (similar to Pakistani English)",
+        "Test fees slightly lower (~PKR 65,000 vs TOEFL ~PKR 78,000)",
+        "Most German universities prefer IELTS Academic"
+      ]},
+
+      { type: "h2", text: "How to score IELTS 6.5+ (Pakistani student tips)" },
+      { type: "ul", items: [
+        "Listening: practice with native speakers (BBC, podcasts) for 1 month",
+        "Reading: skim newspaper articles daily (Dawn, BBC, Guardian)",
+        "Writing: focus on Task 2 — structured essays with clear examples",
+        "Speaking: practice with friends in English for 30 min daily",
+        "Take 1 official mock test before booking the real test"
+      ]},
+
+      { type: "h2", text: "Books and resources Pakistani students recommend" },
+      { type: "ul", items: [
+        "Cambridge IELTS 17 + 18 (official practice tests)",
+        "Magoosh IELTS app (vocabulary builder)",
+        "BBC 6 Minute English (listening)",
+        "British Council IELTS Prep (free resources)",
+        "Local IELTS academies (Karachi: AEO, Lahore: SOL)"
+      ]},
+
+      { type: "h2", text: "When to take IELTS" },
+      { type: "p", text: "Take IELTS at least 2-3 months before the German university application deadline. This gives you time to:" },
+      { type: "ul", items: [
+        "Take it again if you don't get 6.5 (retest within 1 month possible)",
+        "Have official results ready when applying",
+        "Avoid last-minute stress"
+      ]},
+
+      { type: "callout", emoji: "🎯", text: "Bottom line: 6.5 with no band below 5.5 is your safe target. If you're aiming for Mannheim Business or TUM-BWL, target 7.0. Take 1 mock test first to calibrate — then study what's weak." }
+    ]
+  },
+  {
+    slug: "cost-of-living-germany-indian-students",
+    title: "Cost of Living in Germany for Indian Students: Detailed Breakdown",
+    excerpt:
+      "From a shared room in Munich to groceries in Berlin — here's exactly what Indian students spend per month in Germany, with INR conversions and real budgets.",
+    category: "Living in Germany",
+    readTime: "10 min read",
+    date: "2026-06-03",
+    author: "Study in Germany Team",
+    coverEmoji: "💰",
+    coverGradient: "from-orange-500 to-red-600",
+    tags: ["Cost of Living", "India", "Budget", "INR"],
+    body: [
+      { type: "p", text: "Germany is famous for tuition-free university — but what does daily life actually cost? Here's a detailed breakdown for Indian students, with real prices in INR (₹) and tips to live well on a budget." },
+
+      { type: "h2", text: "Quick summary: monthly costs in EUR + INR" },
+      { type: "table", headers: ["Item", "Lean (€)", "Average (€)", "Comfortable (€)", "INR Approx"], rows: [
+        ["Rent (WG/Shared)", "€350-450", "€500-650", "€700-900", "₹35K-90K"],
+        ["Groceries", "€150-200", "€220-280", "€300-400", "₹15K-40K"],
+        ["Eating out", "€20-50", "€60-120", "€150-250", "₹2K-25K"],
+        ["Transport", "€30-50", "€50-90", "€90-120", "₹3K-12K"],
+        ["Phone + Internet", "€20-30", "€30-50", "€50-70", "₹2K-7K"],
+        ["Health insurance", "€110-120", "€110-120", "€110-120", "₹11K"],
+        ["Misc/Fun", "€50-100", "€100-200", "€200-400", "₹5K-40K"],
+        ["TOTAL", "€730-970", "€1070-1410", "€1500-2160", "₹73K-216K"]
+      ]},
+
+      { type: "callout", emoji: "💡", text: "Most Indian students at public universities spend ~€1,000-1,200/month (~₹1 lakh) for an average lifestyle. Munich is expensive (€1,400+), smaller cities like Leipzig/Dresden cheaper (€800-900)." },
+
+      { type: "h2", text: "Rent: the biggest expense" },
+      { type: "h3", text: "Cheapest cities for rent" },
+      { type: "ul", items: [
+        "Leipzig: €300-450/month for shared room (₹30K-45K)",
+        "Magdeburg: €250-400/month",
+        "Cottbus: €280-400/month",
+        "Halle: €280-400/month",
+        "Dresden: €350-500/month"
+      ]},
+
+      { type: "h3", text: "Most expensive cities for rent" },
+      { type: "ul", items: [
+        "Munich: €550-900/month for shared room (₹55K-90K)",
+        "Frankfurt: €500-750/month",
+        "Hamburg: €450-700/month",
+        "Stuttgart: €450-700/month",
+        "Cologne: €420-650/month"
+      ]},
+
+      { type: "h2", text: "Smart ways to find cheap housing" },
+      { type: "ul", items: [
+        "WG-Gesucht.de — Germany's biggest shared housing portal",
+        "Studentenwerk — official student dorms (cheapest, but waitlisted)",
+        "Facebook groups for Indian students in your target city",
+        "Apply to dorms BEFORE you arrive — even before getting visa",
+        "Consider short-term sublet (Zwischenmiete) for first 2-3 months"
+      ]},
+
+      { type: "h2", text: "Groceries: real prices" },
+      { type: "p", text: "Indian students cook at home to save money. Real prices at Aldi/Lidl (cheapest supermarkets):" },
+      { type: "table", headers: ["Item", "Price in EUR", "Price in INR"], rows: [
+        ["1L milk", "€0.99", "₹95"],
+        ["Bread (1 loaf)", "€1.50-2.50", "₹150-240"],
+        ["1 kg chicken", "€5-7", "₹500-700"],
+        ["1 kg rice", "€1.50-2", "₹150-200"],
+        ["12 eggs", "€2.50-3", "₹240-290"],
+        ["1 kg potatoes", "€1-1.50", "₹95-145"],
+        ["Pack of lentils (500g)", "€2-3", "₹190-290"],
+        ["Pack of frozen veggies", "€1.50-2.50", "₹145-240"]
+      ]},
+      { type: "p", text: "Average grocery bill: €60-80/week (₹6K-8K) for one person cooking Indian meals." },
+
+      { type: "h2", text: "Indian groceries: where to buy" },
+      { type: "ul", items: [
+        "Asian/Indian supermarkets in every major city",
+        "Online: dukaaan.com, indianfood24.de (delivery to all Germany)",
+        "Find Bangladeshi/Pakistani shops for cheaper rice + spices",
+        "Carry essentials in your first luggage: spices, masala mixes, ghee"
+      ]},
+
+      { type: "h2", text: "Transport: Semester Ticket is gold" },
+      { type: "p", text: "When you enroll, you pay a semester contribution (€100-400) that includes UNLIMITED public transport in your city + region. This is one of Germany's best perks." },
+      { type: "ul", items: [
+        "Munich: ~€72/semester for full city transport",
+        "Berlin: Semesterticket included in fee",
+        "Frankfurt area: Hessen-wide rail covered",
+        "NRW (Cologne, Düsseldorf, etc.): NRW-Ticket covers entire state"
+      ]},
+
+      { type: "h2", text: "Health insurance: mandatory" },
+      { type: "p", text: "All international students must have insurance. Public options:" },
+      { type: "ul", items: [
+        "TK (Techniker Krankenkasse): ~€120/month, English support",
+        "AOK: ~€115/month, regional",
+        "Barmer: ~€118/month, popular with international students"
+      ]},
+
+      { type: "h2", text: "Tips to save money (proven by Indian students)" },
+      { type: "ul", items: [
+        "Cook 5-6 days/week, eat out 1-2 days max",
+        "Use student discount at museums, gyms, software (Spotify, Netflix)",
+        "Get a bike — saves transport money + great exercise",
+        "Buy second-hand books from senior students or eBay Kleinanzeigen",
+        "Use Trinkgeld (refundable bottle deposit) — adds up to €5-10/week",
+        "Get a part-time job (€12-15/hour) after first semester"
+      ]},
+
+      { type: "h2", text: "Realistic budgets (Indian student examples)" },
+      { type: "h3", text: "Tight budget: €800/month (₹80K)" },
+      { type: "p", text: "Living in Leipzig/Dresden in a shared room, cooking all meals, biking everywhere, minimal eating out." },
+
+      { type: "h3", text: "Average: €1,100/month (₹1.1 lakh)" },
+      { type: "p", text: "Berlin/Cologne shared apartment, cook 5 days, eat out twice weekly, occasional movie/event." },
+
+      { type: "h3", text: "Comfortable: €1,500/month (₹1.5 lakh)" },
+      { type: "p", text: "Munich/Frankfurt with private room, eat out frequently, travel within Germany, gym membership." },
+
+      { type: "callout", emoji: "🎯", text: "Bottom line: Most Indian students need €11,904 for the blocked account + can manage on €1,000-1,200/month. Compared to UK (£1,500+/month) or USA ($1,500+/month), Germany is incredibly affordable for what you get." }
+    ]
+  },
+  {
+    slug: "uni-assist-step-by-step-guide",
+    title: "uni-assist Application: Complete Step-by-Step Guide (2026)",
+    excerpt: "Most German universities require uni-assist for international applications. Here's the exact process — documents, fees, deadlines, and how to avoid the most common rejection reasons.",
+    category: "Application Tips",
+    readTime: "9 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "📋",
+    coverGradient: "from-violet-500 to-purple-600",
+    tags: ["uni-assist", "Application", "Documents"],
+    body: [
+      { type: "p", text: "uni-assist is the central application portal that 180+ German universities use to process international applications. If you're applying from Pakistan, India, Bangladesh, or most other non-EU countries, you'll go through uni-assist. Here's exactly how it works." },
+      { type: "h2", text: "What is uni-assist?" },
+      { type: "p", text: "uni-assist (Arbeits- und Servicestelle für internationale Studienbewerbungen) is a non-profit service that verifies international students' documents on behalf of German universities. They convert your foreign grades to the German scale and forward verified applications to the universities." },
+      { type: "h2", text: "Which universities use uni-assist?" },
+      { type: "p", text: "About 180 of 400+ German universities use uni-assist, including:" },
+      { type: "ul", items: ["TU Berlin, Humboldt Berlin, FU Berlin", "Goethe University Frankfurt, TU Darmstadt", "RWTH Aachen, University of Cologne", "Universities of Cologne, Bonn, Münster", "Most universities in Baden-Württemberg + Hesse"] },
+      { type: "callout", emoji: "💡", text: "Important: TUM, LMU Munich, KIT and Heidelberg DO NOT use uni-assist — they have their own portals (TUMonline, LMU portal, etc.). Always check the specific university." },
+      { type: "h2", text: "Step-by-step application process" },
+      { type: "h3", text: "Step 1: Create account at uni-assist.de" },
+      { type: "p", text: "Go to my.uni-assist.de → Register. Fill in personal details, nationality, contact info. Use the same name as on your passport (exactly)." },
+      { type: "h3", text: "Step 2: Choose universities and programs" },
+      { type: "p", text: "Click 'Apply now' and search for your target university + program. You can apply to multiple universities in one application — uni-assist charges per university." },
+      { type: "h3", text: "Step 3: Upload documents" },
+      { type: "ul", items: ["Bachelor's degree + transcripts (HEC-attested for Pakistan)", "Higher Secondary (FSc/12th) + Matric (10th) certificates", "Translations to English/German by sworn translator", "Passport bio page", "English test scores (IELTS/TOEFL)", "GRE scores (if required)", "CV in English", "Letters of recommendation (if required)"] },
+      { type: "h3", text: "Step 4: Pay the fees" },
+      { type: "table", headers: ["Item", "Cost"], rows: [["First university", "€75"], ["Each additional university", "€30"], ["Re-application (next semester)", "€32-75"]] },
+      { type: "p", text: "Pay via credit card or bank transfer. Pakistani students often use Wise or international debit cards." },
+      { type: "h3", text: "Step 5: Submit and wait" },
+      { type: "p", text: "Processing time: 4-6 weeks during peak season (April-July). uni-assist verifies your documents, converts your grades, and forwards your application to each university." },
+      { type: "h2", text: "Common rejection reasons" },
+      { type: "ul", items: ["Missing attestations (HEC, MOFA for Pakistani students)", "Translations not by sworn translators", "Incomplete transcripts (yes, ALL semester results needed)", "Late submission (after university deadline)", "Wrong document format (must be PDF, color scans)", "Name mismatch between passport and certificates"] },
+      { type: "callout", emoji: "⚠️", text: "Tip: Apply 8-10 weeks before the university deadline. uni-assist processing alone takes 4-6 weeks — last-minute applications often miss the cut-off." },
+      { type: "h2", text: "Pakistani student tips" },
+      { type: "ul", items: ["HEC attestation BEFORE uploading — no shortcuts", "Apply to 4-6 universities (€75 + €30×5 = €225)", "Save scanned PDFs at 300 DPI minimum", "Keep originals safe — uni-assist needs digital only, but embassy needs originals", "Re-apply in next semester is cheaper if you don't get in"] },
+      { type: "callout", emoji: "✅", text: "Bottom line: uni-assist is bureaucratic but predictable. Start 3 months before the deadline, get HEC attestation done first, and apply to multiple universities for safety." }
+    ]
+  },
+  {
+    slug: "germany-visa-interview-questions",
+    title: "Germany Student Visa Interview: 25 Questions + Sample Answers",
+    excerpt: "The visa interview at the German embassy is short but decisive. Here are the 25 most common questions asked of Pakistani and Indian students, with sample answers that actually work.",
+    category: "Visa & Immigration",
+    readTime: "10 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "🎤",
+    coverGradient: "from-rose-500 to-pink-600",
+    tags: ["Visa Interview", "Embassy", "Questions"],
+    body: [
+      { type: "p", text: "The German embassy visa interview is usually 5-15 minutes. The officer is trying to assess: (1) are you a genuine student, (2) can you afford it, (3) will you return home after studies. Here are the 25 most asked questions with sample answers." },
+      { type: "h2", text: "Category 1: About your university and program" },
+      { type: "h3", text: "Q1: Why this university?" },
+      { type: "quote", text: "RWTH Aachen has Germany's strongest research in mechanical engineering, and Prof. Schmidt's work on additive manufacturing aligns directly with my Bachelor's thesis topic." },
+      { type: "h3", text: "Q2: Why this specific program?" },
+      { type: "quote", text: "The MSc in Mechatronics combines mechanical and electrical engineering with control systems — exactly what I need to work in automotive R&D back in Pakistan." },
+      { type: "h3", text: "Q3: Did you apply to other universities? Why?" },
+      { type: "quote", text: "Yes, I applied to 5 universities for safety — TU Berlin, RWTH Aachen, KIT, TUM, and Stuttgart. RWTH accepted me first and the program was my top choice." },
+      { type: "h2", text: "Category 2: Why Germany?" },
+      { type: "h3", text: "Q4: Why Germany over USA, UK, Canada?" },
+      { type: "quote", text: "Germany has the world's strongest manufacturing industry, tuition-free public universities, and excellent post-study work opportunities — exactly what I need for my career." },
+      { type: "h3", text: "Q5: Why didn't you apply for German universities in Pakistan?" },
+      { type: "quote", text: "No German universities operate in Pakistan. My field requires hands-on access to German industry and labs, which is only possible in Germany." },
+      { type: "h3", text: "Q6: Have you been to Germany before?" },
+      { type: "p", text: "Answer honestly. If you have visited (tourism, conference), mention it. If not, just say 'No, this will be my first time.'" },
+      { type: "h2", text: "Category 3: Financial questions" },
+      { type: "h3", text: "Q7: How will you finance your stay?" },
+      { type: "quote", text: "I have €11,904 in a blocked account at Expatrio. My parents are sponsoring me — my father runs a manufacturing business with [show documents]." },
+      { type: "h3", text: "Q8: Show me your blocked account confirmation." },
+      { type: "p", text: "Hand them the printed Expatrio/Fintiba confirmation. Have copies ready." },
+      { type: "h3", text: "Q9: What if your blocked account funds run out?" },
+      { type: "quote", text: "I will work part-time (up to 120 days/year per German law). My family can also send additional funds if needed — they have demonstrated savings of over €30,000." },
+      { type: "h3", text: "Q10: How much does it cost to live in Germany?" },
+      { type: "quote", text: "Approximately €1,000-1,200 per month. My city Aachen is moderately priced. The blocked account €992/month covers most of it." },
+      { type: "h2", text: "Category 4: Plans after studies" },
+      { type: "h3", text: "Q11: What will you do after graduating?" },
+      { type: "quote", text: "Germany offers an 18-month job-seeking visa. I plan to apply that period to gain industry experience with an automotive company, then return to Pakistan to apply my skills locally." },
+      { type: "h3", text: "Q12: Why will you return to Pakistan?" },
+      { type: "quote", text: "My family is in Pakistan, and there's a growing automotive sector. With German degree + experience, I can contribute to Pakistan's industrial development." },
+      { type: "h3", text: "Q13: What if you can't find a job in Germany?" },
+      { type: "quote", text: "I will return to Pakistan and apply to local automotive companies like Toyota IMC and Indus Motors. Pakistani companies value international degrees." },
+      { type: "h2", text: "Category 5: Personal background" },
+      { type: "h3", text: "Q14: Tell me about your family." },
+      { type: "p", text: "Mention parents, siblings, where they live. Keep it brief and factual." },
+      { type: "h3", text: "Q15: Are you married?" },
+      { type: "p", text: "Answer honestly. If yes, show marriage certificate and explain whether spouse will join later." },
+      { type: "h3", text: "Q16: Why did you choose engineering/your field?" },
+      { type: "p", text: "Share a personal story or interest. Be authentic." },
+      { type: "h2", text: "Category 6: Academic background" },
+      { type: "h3", text: "Q17: What were your grades?" },
+      { type: "quote", text: "My Bachelor's CGPA was 3.6/4.0 (top 10% of my class). My final year project on hybrid vehicles was selected for the national engineering competition." },
+      { type: "h3", text: "Q18: Why is there a gap between your Bachelor's and now?" },
+      { type: "p", text: "If applicable: 'I worked for X months/years to gain industry experience' or 'I was preparing for IELTS and university applications.' Be honest." },
+      { type: "h3", text: "Q19: What's your English level?" },
+      { type: "p", text: "Just speak confidently and naturally. They're testing your spoken English." },
+      { type: "h2", text: "Category 7: Logistics" },
+      { type: "h3", text: "Q20: Where will you live?" },
+      { type: "quote", text: "I've applied for a Studentenwerk dorm in Aachen. For the first 2 weeks, I have a confirmed reservation at a hostel/airbnb." },
+      { type: "h3", text: "Q21: Do you have health insurance?" },
+      { type: "p", text: "Show your insurance confirmation (Mawista for arrival, will switch to TK after enrollment)." },
+      { type: "h3", text: "Q22: When does your semester start?" },
+      { type: "p", text: "Know your exact date. 'Winter semester: October 1' or 'Summer semester: April 1'." },
+      { type: "h3", text: "Q23: Do you have a return ticket?" },
+      { type: "p", text: "Usually no — explain you'll book after visa approval." },
+      { type: "h3", text: "Q24: Have you ever been refused a visa?" },
+      { type: "p", text: "Answer honestly. If yes, explain what changed since then." },
+      { type: "h3", text: "Q25: Do you have any questions for me?" },
+      { type: "quote", text: "Just one — when can I expect a decision? Thank you for your time." },
+      { type: "h2", text: "How to prepare" },
+      { type: "ul", items: ["Memorize the basic facts (university, program, fees, city)", "Practice answers OUT LOUD with a friend", "Wear formal/business attire", "Arrive 30 minutes early", "Carry ALL documents in a clear folder", "Stay calm — they want to approve, not reject"] },
+      { type: "callout", emoji: "🎯", text: "Bottom line: The interview is short but decisive. Memorize facts, practice confidently, and emphasize your plan to return. Most Pakistani students who prepare well get approved on first try (~75-80% approval rate)." }
+    ]
+  },
+  {
+    slug: "german-language-learning-roadmap",
+    title: "Learn German for University: Complete Roadmap (A1 to C1)",
+    excerpt: "You don't always need German for English-taught programs, but learning it dramatically improves your life in Germany. Here's a practical roadmap from A1 to C1.",
+    category: "Living in Germany",
+    readTime: "9 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "🗣️",
+    coverGradient: "from-yellow-500 to-amber-600",
+    tags: ["German Language", "Learning", "TestDaF"],
+    body: [
+      { type: "p", text: "If you're studying in Germany in English, you technically don't need German. But here's the truth — your life, friendships, jobs, and integration will be 10x better if you learn it. This is a practical roadmap from zero to C1." },
+      { type: "h2", text: "Why bother learning German?" },
+      { type: "ul", items: ["50% of Master's programs are German-taught — opens more options", "Part-time jobs pay 30% more if you speak German", "Better integration with German classmates and locals", "Required for permanent residence (B1) and citizenship (B2)", "Daily life (bureaucracy, hospitals, shops) is much easier"] },
+      { type: "h2", text: "The German CEFR levels explained" },
+      { type: "table", headers: ["Level", "What you can do", "Time to reach"], rows: [["A1", "Order food, basic greetings", "1-2 months"], ["A2", "Simple conversations, shopping", "3-4 months"], ["B1", "Discuss familiar topics, travel", "6-9 months"], ["B2", "Watch movies, attend lectures", "1-1.5 years"], ["C1", "University-level, professional work", "2 years"], ["C2", "Native-like, rare for non-natives", "3+ years"]] },
+      { type: "h2", text: "Stage 1: A0 → A1 (start before Germany)" },
+      { type: "p", text: "Goal: Basic survival German before flying. Time: 2-3 months." },
+      { type: "ul", items: ["Duolingo (free, gamified) — 30 min/day", "Deutsch lernen mit Anja YouTube channel", "DW Learn German (free, government quality)", "Goethe Institut A1 book (best foundation)"] },
+      { type: "h2", text: "Stage 2: A1 → A2 (first semester)" },
+      { type: "p", text: "Goal: Daily conversations and simple texts. Time: 3 months." },
+      { type: "ul", items: ["Volkshochschule (VHS) classes — €100-200 for full semester", "Tandem language exchange (free) — meet Germans wanting to learn English", "Easy German YouTube — Berlin street interviews", "Goethe-Zertifikat A2 exam (€90, official certificate)"] },
+      { type: "h2", text: "Stage 3: A2 → B1 (recommended target)" },
+      { type: "p", text: "B1 is the magic level — required for permanent residence and enables most jobs. Time: 4-6 months from A2." },
+      { type: "ul", items: ["Student association language classes (often free)", "Read Easy German news (nachrichtenleicht.de)", "Watch Tatort with German subtitles", "Goethe-Zertifikat B1 exam (€175)", "Get a German Stammtisch (regular meetup) at your university"] },
+      { type: "h2", text: "Stage 4: B1 → B2 / C1 (for jobs and integration)" },
+      { type: "p", text: "Time: 6-12 months. This is where you become functional in German society." },
+      { type: "ul", items: ["University DaF (Deutsch als Fremdsprache) courses — usually free for enrolled students", "Read German newspapers (Süddeutsche Zeitung, Die Zeit)", "Watch German Netflix (Dark, Babylon Berlin)", "TestDaF or DSH exam if needed for German-taught Master's"] },
+      { type: "h2", text: "Best apps and resources" },
+      { type: "ul", items: ["Duolingo (free, gamified)", "Anki flashcards (free, science-based memorization)", "Babbel (paid, ~€10/month)", "Lingoda (paid live classes, ~€100/month)", "Pimsleur (audio-only, great for commute)"] },
+      { type: "h2", text: "Real costs to reach B2 in Germany" },
+      { type: "table", headers: ["Item", "Cost"], rows: [["Goethe A1 textbook", "€25"], ["VHS A1-A2 course", "€150"], ["VHS B1-B2 course", "€250"], ["Goethe certificates (A1+A2+B1+B2)", "~€600"], ["Total estimate", "€1,000-1,500"]] },
+      { type: "h2", text: "TestDaF vs DSH (for German-taught programs)" },
+      { type: "p", text: "If you want to study a German-taught Master's, you need either TestDaF or DSH. Both are accepted equally." },
+      { type: "ul", items: ["TestDaF: International, can take from Pakistan/India (~€200)", "DSH: Only in Germany (~€100-180), university-specific", "Required level: TDN 4 (each of 4 sections) or DSH-2"] },
+      { type: "callout", emoji: "🎯", text: "Bottom line: You don't NEED German for English programs, but learning it transforms your life. Target A2 before flying + B1 by end of first year. Total cost: €1,000 over 18 months. Worth every euro." }
+    ]
+  },
+  {
+    slug: "german-student-jobs-werkstudent",
+    title: "Werkstudent Guide: How Pakistani Students Earn €1500+/month in Germany",
+    excerpt: "Working students (Werkstudent) earn €15-25/hour for up to 20 hours/week. Here's how to find one, what the rules are, and how much you can actually make.",
+    category: "Living in Germany",
+    readTime: "8 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "💼",
+    coverGradient: "from-blue-500 to-indigo-600",
+    tags: ["Werkstudent", "Jobs", "Income"],
+    body: [
+      { type: "p", text: "The 'Werkstudent' (working student) job is one of Germany's best-kept secrets for international students. You can earn €1,000-2,000+ per month while studying, get real industry experience, and often land full-time work after graduation. Here's how it works." },
+      { type: "h2", text: "What is a Werkstudent job?" },
+      { type: "p", text: "A Werkstudentenjob is a special part-time employment status for enrolled university students. You work for a company (often in your field) up to 20 hours/week during the semester and full-time during semester breaks." },
+      { type: "h2", text: "The legal rules" },
+      { type: "table", headers: ["Rule", "Details"], rows: [["Max hours during semester", "20 hours/week"], ["Max hours in semester breaks", "Unlimited (full-time OK)"], ["Tax exemption threshold", "Earnings <€538/month = no tax"], ["Social insurance", "Reduced (~10% of salary)"], ["Visa work limit (non-EU)", "120 full days OR 240 half days per year"]] },
+      { type: "h2", text: "How much you can earn" },
+      { type: "table", headers: ["Field", "Hourly Rate", "Monthly (20h/week)"], rows: [["IT/Software", "€18-30/h", "€1,440-2,400"], ["Engineering R&D", "€15-22/h", "€1,200-1,760"], ["Finance/Consulting", "€16-25/h", "€1,280-2,000"], ["Marketing/Communications", "€13-18/h", "€1,040-1,440"], ["Research Assistant (HiWi)", "€12-15/h", "€960-1,200"]] },
+      { type: "callout", emoji: "💰", text: "Real example: A Pakistani Master's student at TUM working as Werkstudent at BMW earns €22/hour × 80 hours/month = €1,760/month tax-free. That's PKR 5.5 lakh/month — more than many CEO salaries in Pakistan." },
+      { type: "h2", text: "Where to find Werkstudent jobs" },
+      { type: "ul", items: ["StepStone.de — Germany's biggest job site", "LinkedIn Germany — filter 'Werkstudent'", "Indeed.de — broad listings", "Stellenwerk (university job boards)", "Company career pages directly (BMW, Siemens, SAP, etc.)", "University career service"] },
+      { type: "h2", text: "Top industries hiring Werkstudents" },
+      { type: "ul", items: ["Automotive: BMW, Mercedes-Benz, Audi, VW, Bosch", "Tech: SAP, Siemens, Software AG, Atlassian, Microsoft", "Banks: Deutsche Bank, Commerzbank, ING", "Consulting: McKinsey, BCG, Bain (very competitive)", "Pharma: Bayer, Roche, BioNTech", "Startups: Berlin/Munich are full of opportunities"] },
+      { type: "h2", text: "Application tips for Pakistani students" },
+      { type: "ul", items: ["German CV (1 page, with photo) is the norm", "Cover letter (Anschreiben) is REQUIRED in Germany", "Apply 3-6 months before you want to start", "B1 German helps massively for non-IT roles", "IT roles often accept English-only", "Highlight any project work or internships from Pakistan"] },
+      { type: "h2", text: "What is a 'Mini-Job' (different from Werkstudent)?" },
+      { type: "p", text: "Mini-jobs are simpler:" },
+      { type: "ul", items: ["Earn up to €538/month tax-free", "No work hour limit per week (just the earnings cap)", "Common in restaurants, retail, cafés", "Doesn't count toward Werkstudent status", "Good for first semester before you find a 'real' Werkstudent role"] },
+      { type: "h2", text: "Realistic timeline" },
+      { type: "table", headers: ["When", "What"], rows: [["Pre-arrival", "Polish German CV + LinkedIn"], ["Month 1-2", "Settle, attend networking events"], ["Month 2-3", "Apply to 20-30 Werkstudent roles"], ["Month 3-4", "First Werkstudent job (often)"], ["Year 2", "Likely promoted or moved to higher role"], ["Post-graduation", "Convert Werkstudent to full-time employee"]] },
+      { type: "h2", text: "The hidden bonus: career pipeline" },
+      { type: "p", text: "60%+ of Werkstudents get full-time job offers from the same company after graduation. Companies use Werkstudent positions as a try-before-buy. Pakistani students who do Werkstudent jobs have much higher post-study employment rates." },
+      { type: "callout", emoji: "🎯", text: "Bottom line: Werkstudent jobs let you earn €1,000-2,000/month while studying, gain real German industry experience, and often lead to full-time employment. Apply early, polish your German CV, and target your field." }
+    ]
+  },
+  {
+    slug: "german-dorm-vs-wg-housing-guide",
+    title: "Dorm vs WG: Where Should International Students Live in Germany?",
+    excerpt: "Studentenwerk dorms or WG (shared flat)? Each has pros and cons. Here's an honest comparison from Pakistani and Indian students who tried both.",
+    category: "Living in Germany",
+    readTime: "7 min read",
+    date: "2026-06-04",
+    author: "Study in Germany Team",
+    coverEmoji: "🏠",
+    coverGradient: "from-teal-500 to-cyan-600",
+    tags: ["Housing", "Dorm", "WG", "Studentenwerk"],
+    body: [
+      { type: "p", text: "Finding housing in Germany as an international student is the most stressful part of moving. The two main options: a Studentenwerk dorm (Wohnheim) or a shared flat (WG — Wohngemeinschaft). Here's an honest comparison." },
+      { type: "h2", text: "Option 1: Studentenwerk Dorms (Wohnheim)" },
+      { type: "h3", text: "Pros" },
+      { type: "ul", items: ["Cheapest — €250-400/month including utilities", "Easier to apply (online, in English)", "Already furnished (bed, desk, chair)", "Reliable internet included", "International student community already in place", "No security deposit games (predictable)"] },
+      { type: "h3", text: "Cons" },
+      { type: "ul", items: ["Long waitlists (3-12 months in Munich/Berlin)", "Strict rules (no parties, limited guest hours)", "Shared bathrooms/kitchens (depends on dorm)", "Smaller rooms (10-15 m²)", "Less 'real-life' German experience"] },
+      { type: "h2", text: "Option 2: WG (Wohngemeinschaft / Shared Flat)" },
+      { type: "h3", text: "Pros" },
+      { type: "ul", items: ["More space (rooms 12-20 m²)", "Better location (closer to city center)", "Real friendship with German flatmates", "Speak German daily — fastest way to learn", "Private bathroom/kitchen often", "More freedom (own keys, guests welcome)"] },
+      { type: "h3", text: "Cons" },
+      { type: "ul", items: ["Higher cost (€400-700/month for shared room)", "Casting process — WGs interview you before accepting", "Security deposit (3 months rent — €1,500-2,000)", "Furniture not included", "Need to compete with German students who often get preference"] },
+      { type: "h2", text: "Comparison by city" },
+      { type: "table", headers: ["City", "Dorm Range", "WG Range", "Recommendation"], rows: [["Munich", "€400-550/m", "€600-900/m", "Apply for dorm 1+ year ahead, try WG too"], ["Berlin", "€280-400/m", "€450-700/m", "WG easier here, lots of options"], ["Hamburg", "€350-450/m", "€500-700/m", "Mixed — try both"], ["Cologne", "€300-400/m", "€450-650/m", "WG usually better"], ["Leipzig", "€220-320/m", "€300-450/m", "Affordable — easy either way"], ["Heidelberg", "€350-450/m", "€450-650/m", "Very competitive — apply early"]] },
+      { type: "h2", text: "Where to search for WGs" },
+      { type: "ul", items: ["WG-Gesucht.de — biggest portal (must be member)", "ImmobilienScout24 — for full apartments", "Facebook groups specific to your city + 'Wohnung gesucht'", "University Stellenwerk", "Word of mouth from senior international students"] },
+      { type: "h2", text: "Pakistani/Indian student strategy" },
+      { type: "h3", text: "Step 1: Apply to dorm IMMEDIATELY when you get admission" },
+      { type: "p", text: "Don't wait for visa — apply now. Most dorms have waitlists. You can always cancel if you get something better." },
+      { type: "h3", text: "Step 2: Book temporary housing for 1-2 weeks" },
+      { type: "p", text: "Hostel, Airbnb, or short-term sublet. Don't fly to Germany without housing — finding a place takes 2-4 weeks." },
+      { type: "h3", text: "Step 3: WG hunt after arrival" },
+      { type: "p", text: "Visit WGs in person, learn German basics for the 'WG-Casting' (interview), accept the first reasonable offer." },
+      { type: "h2", text: "Common scams to avoid" },
+      { type: "ul", items: ["NEVER pay deposit before visiting the apartment", "Watch for 'too good to be true' offers (€200 for own apartment in Munich = SCAM)", "Verify the landlord/owner with public records", "Use only official platforms (WG-Gesucht, ImmoScout)", "Avoid Western Union / crypto deposits — bank transfers only"] },
+      { type: "callout", emoji: "🏠", text: "Bottom line: Apply for dorm FIRST (lowest cost, easiest), but actively hunt for WGs after arrival (better experience, more space). Most Pakistani students start in dorms and move to WGs in second semester. Plan for €400-700/month for housing." }
+    ]
+  },
 ];
 
 export const blogCategories = [
@@ -600,6 +1118,7 @@ export const blogCategories = [
   "Visa & Immigration",
   "Universities",
   "Application Tips",
+  "Living in Germany",
 ];
 
 export function getBlogPost(slug) {

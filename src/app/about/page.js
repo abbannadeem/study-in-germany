@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageHero from "@/components/PageHero";
 import { universities } from "@/data/universities";
 import { cities } from "@/data/cities";
 import { industries } from "@/data/industries";
@@ -7,91 +8,88 @@ import { ALL_PROGRAMS } from "@/lib/programs";
 export const metadata = {
   title: "About Us",
   description:
-    "We are a Germany-based team helping international students get admission to tuition-free public universities — guiding you through the entire procedure, from course selection to settling in.",
+    "Study in Germany is a free, independent platform built to help South Asian students navigate German university applications, visas, and life in Germany.",
 };
 
-const steps = [
+const values = [
   {
     icon: "🎯",
-    title: "University & course selection",
-    text: "We help you shortlist the right public universities and English-taught programmes for your field, grades and budget.",
+    title: "Free & honest",
+    text: "Everything is free to read. We mark affiliate links clearly and only recommend what we'd recommend to a friend.",
   },
   {
-    icon: "📝",
-    title: "Application & admission",
-    text: "Guidance on uni-assist, document preparation and submitting strong applications to get your admission letter.",
+    icon: "🇵🇰",
+    title: "South Asia focused",
+    text: "Generic study-abroad sites don't cover HEC attestation, APS Vietnam, or PKR conversion. We do.",
   },
   {
-    icon: "🗣️",
-    title: "Language & APS support",
-    text: "Help with IELTS/TOEFL or TestDaF/DSH requirements and the APS certificate where it's needed.",
+    icon: "📚",
+    title: "Research-backed",
+    text: "Every number — fees, blocked account, deadlines — links to its official source so you can verify.",
   },
   {
-    icon: "💳",
-    title: "Blocked account & visa",
-    text: "Step-by-step support with the blocked account, health insurance and the German student visa application.",
-  },
-  {
-    icon: "🏠",
-    title: "Accommodation",
-    text: "Assistance finding a dorm or shared flat (WG) before you arrive, so you land with a place to stay.",
-  },
-  {
-    icon: "🇩🇪",
-    title: "After you arrive",
-    text: "On-the-ground help with Anmeldung, tax ID, bank account, insurance and your residence permit.",
-  },
-];
-
-const reasons = [
-  {
-    title: "Based in Germany",
-    text: "We're located in Germany, so we know the system first-hand and can support you even after you arrive.",
-  },
-  {
-    title: "End-to-end guidance",
-    text: "From your first shortlist to your residence permit — one team for the entire journey, nothing left to guesswork.",
-  },
-  {
-    title: "Public universities focus",
-    text: "We specialise in tuition-free public universities, so you get a world-class degree without huge tuition costs.",
-  },
-  {
-    title: "Honest, up-to-date info",
-    text: "Everything we share is researched and regularly updated — and we always point you to official sources.",
+    icon: "🤝",
+    title: "Community-driven",
+    text: "We update the site based on questions from real students applying right now, not from theory.",
   },
 ];
 
 export default function AboutPage() {
   const stats = [
-    { value: `${universities.length}`, label: "Public universities" },
+    { value: `${universities.length}`, label: "Universities covered" },
     { value: `${ALL_PROGRAMS.length}+`, label: "English programmes" },
     { value: `${cities.length}`, label: "Student cities" },
-    { value: `${industries.length}`, label: "States covered" },
+    { value: "6", label: "Country guides" },
   ];
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-german text-white">
-        <div className="mx-auto max-w-6xl px-4 py-16">
-          <span className="mb-4 inline-block rounded-full bg-white/10 px-4 py-1 text-sm font-medium ring-1 ring-white/20">
-            🇩🇪 Based in Germany
-          </span>
-          <h1 className="max-w-3xl text-4xl font-extrabold leading-tight sm:text-5xl">
-            We help you get admission to Germany's public universities
-          </h1>
-          <p className="mt-5 max-w-2xl text-lg text-slate-200">
-            We're a Germany-based team that guides international students through the
-            entire journey — from choosing the right course to getting your
-            residence permit — so you can study at a world-class, tuition-free
-            public university with confidence.
-          </p>
+      <PageHero
+        eyebrow="🇩🇪 About"
+        title="Why this site exists"
+        subtitle="When I applied to a German university myself, I wasted weeks on outdated PDFs, vague forums, and contradictory advice. This is the guide I wish I had."
+      />
+
+      {/* Founder note */}
+      <section className="mx-auto max-w-3xl px-4 py-12">
+        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start">
+            {/* Photo placeholder — replace src with your real photo */}
+            <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-brand-500 to-amber-600 text-3xl font-bold text-white shadow-md">
+              TA
+            </div>
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-brand-600">
+                A note from the founder
+              </p>
+              <h2 className="mt-1 text-2xl font-bold text-ink-900">
+                Hi, I'm Talha 👋
+              </h2>
+              <p className="mt-3 text-slate-700">
+                I'm a student from Pakistan who applied to study in Germany. Like
+                most international applicants, I struggled with information that
+                was either too general (you'll need a blocked account) or buried
+                in 50-page government PDFs (in German).
+              </p>
+              <p className="mt-3 text-slate-700">
+                So I started writing it down — step by step, in plain English,
+                with real numbers and timelines. That side project became this
+                site. Today it covers{" "}
+                <strong>{universities.length} German public universities</strong>,{" "}
+                <strong>{ALL_PROGRAMS.length}+ English programmes</strong>, six
+                country guides, a cost calculator with currency conversion for
+                PKR/INR/BDT, and detailed visa and scholarship walk-throughs.
+              </p>
+              <p className="mt-3 text-slate-700">
+                It's still free. It always will be.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Stats */}
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
@@ -103,84 +101,94 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="mx-auto max-w-4xl px-4 py-16 text-center">
+      <section className="mx-auto max-w-3xl px-4 py-14 text-center">
         <h2 className="text-3xl font-bold text-ink-900">Our mission</h2>
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
-          Studying in Germany is one of the best opportunities in the world — but the
-          process can feel overwhelming from abroad. Our mission is to make it
-          simple and transparent: clear information, the right choices, and hands-on
-          support at every step, all the way until you're settled in your new home.
+        <p className="mx-auto mt-4 text-lg leading-relaxed text-slate-600">
+          To make studying in Germany <strong>understandable, affordable, and
+          honest</strong> for every South Asian student — without paying
+          consultants thousands of rupees for information that should be free.
         </p>
       </section>
 
-      {/* What we help with */}
-      <section className="bg-white py-16">
+      {/* Values */}
+      <section className="bg-white py-14">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-center text-3xl font-bold text-ink-900">
-            How we help — the full procedure
-          </h2>
-          <p className="mx-auto mt-2 max-w-2xl text-center text-slate-500">
-            We support you across every stage of getting admission and moving to
-            Germany.
-          </p>
-          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {steps.map((s) => (
+          <h2 className="text-center text-3xl font-bold text-ink-900">What we stand for</h2>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {values.map((v) => (
               <div
-                key={s.title}
+                key={v.title}
                 className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
               >
-                <div className="mb-3 text-3xl">{s.icon}</div>
-                <h3 className="mb-1 font-semibold text-ink-900">{s.title}</h3>
-                <p className="text-sm text-slate-600">{s.text}</p>
+                <div className="mb-3 text-3xl">{v.icon}</div>
+                <h3 className="mb-1 font-semibold text-ink-900">{v.title}</h3>
+                <p className="text-sm text-slate-600">{v.text}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Why us */}
-      <section className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-center text-3xl font-bold text-ink-900">Why students choose us</h2>
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
-          {reasons.map((r) => (
-            <div
-              key={r.title}
-              className="flex gap-4 rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <span className="text-2xl text-brand-500">✓</span>
-              <div>
-                <h3 className="mb-1 font-semibold text-ink-900">{r.title}</h3>
-                <p className="text-sm text-slate-600">{r.text}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* How we make money */}
+      <section className="mx-auto max-w-3xl px-4 py-14">
+        <h2 className="text-2xl font-bold text-ink-900">How we keep this free</h2>
+        <p className="mt-3 leading-relaxed text-slate-700">
+          We don't charge readers and we never will. To pay for hosting and our
+          time, we use:
+        </p>
+        <ul className="mt-4 space-y-3 text-slate-700">
+          <li className="flex items-start gap-3">
+            <span className="mt-1 text-emerald-500">✓</span>
+            <span>
+              <strong>Affiliate commissions</strong> — when you sign up for a
+              service we recommend (like a blocked account provider) via our
+              link, the company pays us a small fee at no extra cost to you.
+              These links are clearly marked.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 text-emerald-500">✓</span>
+            <span>
+              <strong>Advertising</strong> — minimal, non-intrusive ads on some
+              pages.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="mt-1 text-emerald-500">✓</span>
+            <span>
+              <strong>No paywalls.</strong> No "premium tier". No locking
+              students out of information they need.
+            </span>
+          </li>
+        </ul>
+        <p className="mt-5 text-sm text-slate-500">
+          Read more in our{" "}
+          <Link href="/privacy" className="font-medium text-brand-600 hover:underline">
+            Privacy Policy
+          </Link>{" "}
+          and{" "}
+          <Link href="/terms" className="font-medium text-brand-600 hover:underline">
+            Terms of Service
+          </Link>
+          .
+        </p>
       </section>
 
       {/* CTA */}
       <section className="bg-german">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center text-white">
-          <h2 className="text-3xl font-bold">Ready to start your journey?</h2>
+          <h2 className="text-3xl font-bold">Have a question? Get in touch.</h2>
           <p className="mx-auto mt-3 max-w-xl text-slate-200">
-            Explore universities and programmes, understand the visa process, or ask
-            our assistant anything — we're with you from your first question to your
-            first day in Germany.
+            We read every message. If you spot incorrect information, want a
+            specific guide added, or just want to share your experience —
+            reach out.
           </p>
-          <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/universities"
-              className="rounded-lg bg-brand-500 px-6 py-3 font-semibold text-ink-900 shadow transition hover:bg-brand-400"
-            >
-              Explore Universities
-            </Link>
-            <Link
-              href="/visa"
-              className="rounded-lg bg-white/10 px-6 py-3 font-semibold text-white ring-1 ring-white/30 transition hover:bg-white/20"
-            >
-              See the Visa Process →
-            </Link>
-          </div>
-          <p className="mt-6 text-sm text-slate-300">📍 Proudly based in Germany</p>
+          <Link
+            href="/contact"
+            className="mt-6 inline-block rounded-lg bg-brand-500 px-6 py-3 font-semibold text-ink-900 shadow transition hover:bg-brand-400"
+          >
+            Contact us →
+          </Link>
         </div>
       </section>
     </>

@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
+// Main nav links — "About" is intentionally separated so the country
+// selector button can sit between them.
 const links = [
   { href: "/start", label: "Start Here" },
   { href: "/universities", label: "Universities" },
@@ -14,14 +16,26 @@ const links = [
   { href: "/industries", label: "Industries" },
   { href: "/jobs", label: "Jobs" },
   { href: "/calculator", label: "Calculator" },
+  { href: "/compare", label: "Compare" },
+  { href: "/checklist", label: "Checklist" },
   { href: "/visa", label: "Visa" },
   { href: "/settle", label: "Settle In" },
-  { href: "/about", label: "About" },
 ];
+
+const aboutLink = { href: "/about", label: "About" };
 
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [country, setCountry] = useState(null);
+
+  // Load the chosen country so we can show its flag + name in the picker button
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem("student_country");
+      if (stored) setCountry(JSON.parse(stored));
+    } catch {}
+  }, []);
 
   const isActive = (href) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -40,7 +54,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop links */}
+        {/* Desktop nav (links + country button + About at end) */}
         <div className="hidden items-center gap-1 md:flex">
           {links.map((l) => (
             <Link
@@ -55,6 +69,41 @@ export default function Navbar() {
               {l.label}
             </Link>
           ))}
+
+          {/* Country selector — shows flag + "Change" if picked, otherwise "Select Country" */}
+          <button
+            onClick={() => {
+              localStorage.removeItem("student_country");
+              window.location.reload();
+            }}
+            title={country?.code && country.code !== "skip" ? `Change country (currently ${country.name})` : "Select your country"}
+            aria-label="Change country"
+            className="ml-1 inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 transition hover:border-brand-300 hover:bg-brand-50 hover:text-brand-700"
+          >
+            {country && country.code !== "skip" ? (
+              <>
+                <span className="text-base">{country.flag}</span>
+                <span>Change</span>
+              </>
+            ) : (
+              <>
+                <span>🌍</span>
+                <span>Select Country</span>
+              </>
+            )}
+          </button>
+
+          {/* About comes after the country button */}
+          <Link
+            href={aboutLink.href}
+            className={`rounded-md px-3 py-2 text-sm font-medium transition-colors ${
+              isActive(aboutLink.href)
+                ? "bg-brand-50 text-brand-700"
+                : "text-slate-600 hover:bg-slate-100 hover:text-ink-900"
+            }`}
+          >
+            {aboutLink.label}
+          </Link>
         </div>
 
         {/* Mobile toggle */}
@@ -91,6 +140,39 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
+
+            {/* Country selector (mobile) */}
+            <button
+              onClick={() => {
+                localStorage.removeItem("student_country");
+                window.location.reload();
+              }}
+              className="mt-1 flex items-center gap-1.5 rounded-md border border-slate-200 px-3 py-2 text-sm font-medium text-slate-700 hover:border-brand-300 hover:bg-brand-50"
+            >
+              {country && country.code !== "skip" ? (
+                <>
+                  <span>{country.flag}</span>
+                  <span>Change country</span>
+                </>
+              ) : (
+                <>
+                  <span>🌍</span>
+                  <span>Select Country</span>
+                </>
+              )}
+            </button>
+
+            <Link
+              href={aboutLink.href}
+              onClick={() => setOpen(false)}
+              className={`rounded-md px-3 py-2 text-sm font-medium ${
+                isActive(aboutLink.href)
+                  ? "bg-brand-50 text-brand-700"
+                  : "text-slate-700 hover:bg-slate-100"
+              }`}
+            >
+              {aboutLink.label}
+            </Link>
           </div>
         </div>
       )}

@@ -19,6 +19,21 @@ export default function BlockedAccountPage() {
       />
 
       <section className="mx-auto max-w-5xl px-4 py-10">
+        {/* Affiliate disclosure */}
+        <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm text-slate-700">
+          <p>
+            ℹ️ <strong className="text-ink-900">Honest disclosure:</strong>{" "}
+            Some links below are affiliate links. If you sign up through them,
+            we may receive a small commission at no extra cost to you. This
+            helps keep the site free. We only feature providers that are
+            officially accepted by German embassies — see our{" "}
+            <Link href="/privacy" className="font-medium text-brand-600 hover:underline">
+              Privacy Policy
+            </Link>{" "}
+            for details.
+          </p>
+        </div>
+
         {/* Quick summary table */}
         <div className="mb-8 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
           <div className="overflow-x-auto">

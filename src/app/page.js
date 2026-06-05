@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { universities } from "@/data/universities";
 import { cities } from "@/data/cities";
+import { testimonials } from "@/data/testimonials";
 import UniversityCard from "@/components/UniversityCard";
 import CityCard from "@/components/CityCard";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 const stats = [
   { value: "400+", label: "Public universities" },
@@ -250,6 +252,65 @@ export default function Home() {
             <Link href="/universities" className="text-sm font-medium text-brand-600 hover:underline">
               View all {universities.length} universities →
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Lead magnet — Free PDF + Newsletter signup */}
+      <section className="mx-auto max-w-4xl px-4 py-16">
+        <NewsletterSignup />
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-slate-50 py-16">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="mb-10 text-center">
+            <span className="mb-2 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700">
+              💬 Reader stories
+            </span>
+            <h2 className="text-3xl font-bold text-ink-900 sm:text-4xl">
+              From students who made it to Germany
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-slate-600">
+              These are representative experiences from South Asian students who
+              used the site to plan their move.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {testimonials.map((t) => (
+              <div
+                key={t.name + t.university}
+                className="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+              >
+                {/* Quote */}
+                <p className="text-sm leading-relaxed text-slate-700">
+                  <span className="text-2xl text-brand-400">"</span>
+                  {t.quote}
+                  <span className="text-2xl text-brand-400">"</span>
+                </p>
+
+                {/* Author */}
+                <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
+                  <div
+                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${t.color} text-sm font-bold text-white`}
+                  >
+                    {t.initials}
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-sm font-semibold text-ink-900">
+                      {t.flag} {t.name}
+                    </p>
+                    <p className="truncate text-xs text-slate-500">
+                      {t.program}
+                    </p>
+                    <p className="truncate text-xs text-slate-500">
+                      {t.university}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPost, getRelatedPosts } from "@/data/blog";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -151,6 +152,16 @@ export default async function BlogDetailPage({ params }) {
               #{t}
             </span>
           ))}
+        </div>
+
+        {/* Newsletter signup */}
+        <div className="mt-8">
+          <NewsletterSignup
+            variant="compact"
+            title="📚 Like this article? Get more in your inbox"
+            description="Weekly Germany application tips, scholarship deadlines and visa updates. Free forever."
+            cta="Subscribe"
+          />
         </div>
 
         {/* Share / CTA */}
