@@ -20,8 +20,8 @@ const contactMethods = [
     icon: "📧",
     title: "Email",
     text: "Best for detailed questions or document sharing.",
-    action: "hello@studying-in-germany.com",
-    href: "mailto:hello@studying-in-germany.com",
+    action: "studyingermanyguide@gmail.com",
+    href: "mailto:studyingermanyguide@gmail.com",
     color: "bg-blue-50 text-blue-700 border-blue-200",
   },
   {
@@ -91,7 +91,7 @@ export default function ContactPage() {
           </p>
 
           <form
-            action="mailto:hello@studying-in-germany.com"
+            action="mailto:studyingermanyguide@gmail.com"
             method="post"
             encType="text/plain"
             className="mt-5 space-y-4"
