@@ -6,6 +6,7 @@ import ChatWidget from "@/components/ChatWidget";
 import CountryPicker from "@/components/CountryPicker";
 import CountryBanner from "@/components/CountryBanner";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -94,6 +95,7 @@ export default function RootLayout({ children }) {
         <ChatWidget />
         <FloatingWhatsApp />
         <CountryPicker />
+        <GoogleAnalytics />
       </body>
     </html>
   );
