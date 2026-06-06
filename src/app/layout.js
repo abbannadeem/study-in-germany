@@ -75,6 +75,9 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
+  verification: {
+    google: "65YKMy75srqWXgIHzaN9Scym-fbYJy6Z8DvytzY9RV4",
+  },
 };
 
 export default function RootLayout({ children }) {
