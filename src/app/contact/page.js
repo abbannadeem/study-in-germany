@@ -25,11 +25,19 @@ const contactMethods = [
     color: "bg-blue-50 text-blue-700 border-blue-200",
   },
   {
-    icon: "🐦",
-    title: "X / Twitter",
-    text: "Follow for quick tips and deadline reminders.",
-    action: "Follow @studyingermanypk",
-    href: "https://x.com/",
+    icon: "📸",
+    title: "Instagram",
+    text: "Daily tips, university spotlights, deadline alerts.",
+    action: "@studyingermanyguide_",
+    href: "https://www.instagram.com/studyingermanyguide_",
+    color: "bg-pink-50 text-pink-700 border-pink-200",
+  },
+  {
+    icon: "🎵",
+    title: "TikTok",
+    text: "Quick video guides — visa, cost, application tips.",
+    action: "@studyingermanyguide_",
+    href: "https://www.tiktok.com/@studyingermanyguide_",
     color: "bg-slate-50 text-slate-700 border-slate-200",
   },
 ];
@@ -64,7 +72,7 @@ export default function ContactPage() {
 
       {/* Contact methods */}
       <section className="mx-auto max-w-5xl px-4 py-12">
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {contactMethods.map((m) => (
             <a
               key={m.title}
