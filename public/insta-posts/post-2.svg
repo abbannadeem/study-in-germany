@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <!-- Clean white background -->
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04">
+    <line x1="0" y1="200" x2="1080" y2="200" stroke="#000000" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1080" y2="400" stroke="#000000" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1080" y2="600" stroke="#000000" stroke-width="1"/>
+    <line x1="0" y1="800" x2="1080" y2="800" stroke="#000000" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="1080" stroke="#000000" stroke-width="1"/>
+    <line x1="540" y1="0" x2="540" y2="1080" stroke="#000000" stroke-width="1"/>
+    <line x1="880" y1="0" x2="880" y2="1080" stroke="#000000" stroke-width="1"/>
+  </g>
+
+  <!-- German flag ribbon top-left -->
+  <g transform="rotate(-15 0 50)">
+    <rect x="-50" y="40" width="500" height="35" fill="#000000"/>
+    <rect x="-50" y="75" width="500" height="35" fill="#DD0000"/>
+    <rect x="-50" y="110" width="500" height="35" fill="#FFCE00"/>
+  </g>
+
+  <!-- Small red eyebrow -->
+  <text x="80" y="320" font-family="Arial Black, sans-serif" font-size="60" font-weight="900" fill="#DD0000" letter-spacing="2">COMING UP</text>
+
+  <!-- HUGE black headline -->
+  <text x="80" y="490" font-family="Arial Black, sans-serif" font-size="180" font-weight="900" fill="#0F172A" letter-spacing="-8">THIS WEEK</text>
+
+  <!-- Yellow underline -->
+  <rect x="80" y="510" width="500" height="14" fill="#FFCE00"/>
+
+  <!-- Tagline -->
+  <text x="80" y="600" font-family="Arial, sans-serif" font-size="34" font-weight="500" fill="#475569">5 honest answers about Germany 🇩🇪</text>
+
+  <!-- Numbered topic list -->
+  <g transform="translate(80, 710)">
+    <!-- Item 1 -->
+    <text x="0" y="0" font-family="Arial Black, sans-serif" font-size="40" font-weight="900" fill="#DD0000">01</text>
+    <text x="90" y="0" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#0F172A">Why Germany?</text>
+
+    <!-- Item 2 -->
+    <text x="0" y="65" font-family="Arial Black, sans-serif" font-size="40" font-weight="900" fill="#DD0000">02</text>
+    <text x="90" y="65" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#0F172A">Real cost of living</text>
+
+    <!-- Item 3 -->
+    <text x="0" y="130" font-family="Arial Black, sans-serif" font-size="40" font-weight="900" fill="#DD0000">03</text>
+    <text x="90" y="130" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#0F172A">Visa process — myths busted</text>
+
+    <!-- Item 4 -->
+    <text x="0" y="195" font-family="Arial Black, sans-serif" font-size="40" font-weight="900" fill="#DD0000">04</text>
+    <text x="90" y="195" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#0F172A">Scholarships that actually pay</text>
+
+    <!-- Item 5 -->
+    <text x="0" y="260" font-family="Arial Black, sans-serif" font-size="40" font-weight="900" fill="#DD0000">05</text>
+    <text x="90" y="260" font-family="Arial, sans-serif" font-size="32" font-weight="600" fill="#0F172A">After you arrive in Germany</text>
+  </g>
+
+  <!-- CTA bottom -->
+  <rect x="80" y="980" width="920" height="70" rx="12" fill="#0F172A"/>
+  <text x="540" y="1027" font-family="Arial Black, sans-serif" font-size="32" font-weight="900" fill="#FFFFFF" text-anchor="middle">Follow @studyingermanyguide_</text>
+
+  <!-- Decorative German flag stripe bottom-right -->
+  <g transform="rotate(15 1080 1080)">
+    <rect x="700" y="950" width="500" height="25" fill="#000000"/>
+    <rect x="700" y="975" width="500" height="25" fill="#DD0000"/>
+    <rect x="700" y="1000" width="500" height="25" fill="#FFCE00"/>
+  </g>
+</svg>
