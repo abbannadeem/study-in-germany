@@ -14,8 +14,9 @@ export default function FloatingWhatsApp() {
   const [visible, setVisible] = useState(false);
 
   // Show after small delay so it doesn't compete with the country picker
+  // Increased to 4s so it doesn't appear too eagerly and overwhelm new visitors.
   useEffect(() => {
-    const t = setTimeout(() => setVisible(true), 2500);
+    const t = setTimeout(() => setVisible(true), 4000);
     return () => clearTimeout(t);
   }, []);
 

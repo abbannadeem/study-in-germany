@@ -25,12 +25,13 @@ export default function CountryPicker() {
   const [open, setOpen] = useState(false);
   const [picked, setPicked] = useState(null);
 
-  // Show only on first visit
+  // Show only on first visit — with substantial delay so user explores first.
+  // Aggressive modals on landing = high bounce rate.
   useEffect(() => {
     const stored = localStorage.getItem("student_country");
     if (!stored) {
-      // small delay so page loads first
-      const t = setTimeout(() => setOpen(true), 600);
+      // 8 seconds — gives user time to read hero, see value prop, BEFORE asking.
+      const t = setTimeout(() => setOpen(true), 8000);
       return () => clearTimeout(t);
     }
   }, []);
@@ -48,6 +49,16 @@ export default function CountryPicker() {
     localStorage.setItem("student_country", JSON.stringify({ code: "skip" }));
     setOpen(false);
   }
+
+  // Allow ESC key to dismiss
+  useEffect(() => {
+    if (!open) return;
+    function onKey(e) {
+      if (e.key === "Escape") skip();
+    }
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
 
   if (!open) return null;
 
