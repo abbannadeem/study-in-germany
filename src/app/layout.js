@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://study-in-germany-sable.vercel.app";
+const SITE_URL = "https://studyingermanyguide.com";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

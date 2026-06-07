@@ -7,6 +7,6 @@ export default function robots() {
       allow: "/",
       disallow: ["/api/"],
     },
-    sitemap: "https://study-in-germany-sable.vercel.app/sitemap.xml",
+    sitemap: "https://studyingermanyguide.com/sitemap.xml",
   };
 }

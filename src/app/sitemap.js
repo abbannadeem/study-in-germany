@@ -4,7 +4,7 @@ import { industries } from "@/data/industries";
 import { blogPosts } from "@/data/blog";
 import { countries } from "@/data/countries";
 
-const SITE = "https://study-in-germany-sable.vercel.app";
+const SITE = "https://studyingermanyguide.com";
 
 export const dynamic = "force-static";
 
