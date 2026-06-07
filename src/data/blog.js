@@ -1109,6 +1109,450 @@ export const blogPosts = [
       { type: "callout", emoji: "🏠", text: "Bottom line: Apply for dorm FIRST (lowest cost, easiest), but actively hunt for WGs after arrival (better experience, more space). Most Pakistani students start in dorms and move to WGs in second semester. Plan for €400-700/month for housing." }
     ]
   },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // NEW: Block Account comparison — affiliate-ready content
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {
+    slug: "blocked-account-expatrio-vs-fintiba-vs-coracle-2026",
+    title: "Expatrio vs Fintiba vs Coracle: Best Blocked Account for 2026/2027",
+    excerpt:
+      "Honest comparison of the three biggest blocked account providers — fees, opening time, refund speed, and which one is right for your country.",
+    category: "Finance & Insurance",
+    readTime: "10 min read",
+    date: "2026-06-07",
+    author: "Study in Germany Team",
+    coverEmoji: "💳",
+    coverGradient: "from-emerald-500 to-teal-600",
+    tags: ["Blocked Account", "Expatrio", "Fintiba", "Coracle", "Visa"],
+    body: [
+      { type: "p", text: "Every international student applying for a German student visa needs a blocked account (Sperrkonto) — proof that you can support yourself in Germany. Three providers dominate the market: Expatrio, Fintiba, and Coracle. Which one should you choose? Honest answer: it depends on your country, your timeline, and what extras you actually need. Here's the breakdown that students actually need." },
+
+      { type: "h2", text: "What is a blocked account and why you need one" },
+      { type: "p", text: "A blocked account holds €11,904 (or higher — €992/month × 12 in 2026) that gets released to you monthly after you arrive in Germany. The German embassy requires proof of this before issuing your student visa. Without it, your visa is rejected — no exceptions." },
+      { type: "callout", emoji: "⚠️", text: "Important: The required amount can increase. Always check the latest figure on the official German embassy website before transferring." },
+
+      { type: "h2", text: "Quick comparison table" },
+      { type: "table", headers: ["Feature", "Expatrio", "Fintiba", "Coracle"], rows: [
+        ["Setup fee", "€49 one-time", "€89 one-time", "€89 one-time"],
+        ["Monthly fee", "€0", "€5/month", "€0 first 24 months"],
+        ["Opening time", "1-3 business days", "1-2 business days", "1-2 business days"],
+        ["Country support", "190+ countries", "100+ countries", "180+ countries"],
+        ["Health insurance bundle", "Yes (DR-WALTER + DAK)", "Yes (DAK)", "Yes (DR-WALTER)"],
+        ["Refund speed (if visa denied)", "5-10 business days", "5-10 business days", "5-10 business days"],
+        ["German bank partner", "SolarisBank", "Sutor Bank", "SolarisBank"],
+      ]},
+
+      { type: "h2", text: "Expatrio — best for Pakistan, India, Bangladesh" },
+      { type: "p", text: "Expatrio is the most popular choice among South Asian students. The €49 setup fee is the lowest, and they have zero monthly fees. Their value bundle (blocked account + health insurance + IBAN account) is well-priced and bundled into one application." },
+      { type: "h3", text: "Pros" },
+      { type: "ul", items: [
+        "Lowest setup fee (€49 vs €89 elsewhere)",
+        "Strong support for Pakistan, India, Bangladesh students",
+        "All-in-one Value Package (saves time)",
+        "Optional Allianz health insurance (premium)",
+        "Mobile app for monthly management"
+      ]},
+      { type: "h3", text: "Cons" },
+      { type: "ul", items: [
+        "Customer support can be slow during peak season (June-August)",
+        "Some users report verification delays for less common countries"
+      ]},
+
+      { type: "h2", text: "Fintiba — fastest setup, best for last-minute applicants" },
+      { type: "p", text: "Fintiba was the pioneer — they offer the most polished mobile app and the fastest verification. The €5/month fee adds up over a year (€60), but if you need your account opened in 24-48 hours, Fintiba is the most reliable choice." },
+      { type: "h3", text: "Pros" },
+      { type: "ul", items: [
+        "Fastest opening (often within 24 hours)",
+        "Excellent mobile app with German-style banking features",
+        "Strong customer support in English",
+        "Sutor Bank partnership (reputable German bank)",
+        "Health insurance bundle with DAK (top-tier provider)"
+      ]},
+      { type: "h3", text: "Cons" },
+      { type: "ul", items: [
+        "€89 setup + €5/month = highest total cost",
+        "Some accounts get frozen for additional verification (random checks)"
+      ]},
+
+      { type: "h2", text: "Coracle — cheapest long-term option" },
+      { type: "p", text: "Coracle is the newest of the three, but their 24-month no-monthly-fee promise makes them the cheapest if you plan to stay in Germany for your full degree. Setup quality is comparable to Fintiba." },
+      { type: "h3", text: "Pros" },
+      { type: "ul", items: [
+        "Zero monthly fees for first 24 months",
+        "Same SolarisBank partnership as Expatrio",
+        "Modern mobile app",
+        "Strong support for African and Asian students"
+      ]},
+      { type: "h3", text: "Cons" },
+      { type: "ul", items: [
+        "Less established brand (smaller user base)",
+        "€89 upfront setup fee",
+        "Fewer reviews/reports than Expatrio or Fintiba"
+      ]},
+
+      { type: "h2", text: "Which one should YOU choose?" },
+      { type: "h3", text: "Choose Expatrio if:" },
+      { type: "ul", items: [
+        "You're from Pakistan, India, Bangladesh, or Nepal",
+        "You want the lowest upfront cost",
+        "You want everything (blocked account + insurance) in one application",
+        "You have 3+ weeks before your visa appointment"
+      ]},
+      { type: "h3", text: "Choose Fintiba if:" },
+      { type: "ul", items: [
+        "You need your account opened in 24-48 hours",
+        "Your visa appointment is in less than 2 weeks",
+        "You value polished apps and customer service",
+        "You're okay paying €60 more per year for reliability"
+      ]},
+      { type: "h3", text: "Choose Coracle if:" },
+      { type: "ul", items: [
+        "You're staying in Germany for 2+ years",
+        "You want to minimize total cost over time",
+        "Expatrio doesn't fully support your country",
+        "You're comfortable with a newer provider"
+      ]},
+
+      { type: "callout", emoji: "💡", text: "Pro tip: All three providers will refund your money if your visa is denied. You're not locked in. Pick the one that fits your immediate needs and switch later if you want." },
+
+      { type: "h2", text: "Common mistakes to avoid" },
+      { type: "ul", items: [
+        "Waiting until the last week before visa appointment — leave at least 3 weeks",
+        "Transferring less than the required amount — always overshoot by €100-200",
+        "Forgetting to register your German address (Anmeldung) before activating the account",
+        "Not setting up SCHUFA-free direct debit for monthly payments",
+        "Using the wrong SWIFT/IBAN format — copy directly from the welcome email"
+      ]},
+
+      { type: "h2", text: "Step-by-step setup process" },
+      { type: "p", text: "Regardless of provider, the steps are nearly identical:" },
+      { type: "ul", items: [
+        "1. Choose provider and complete online application (15 min)",
+        "2. Upload passport copy and university admission letter",
+        "3. Receive welcome email with IBAN within 1-3 business days",
+        "4. Transfer required amount from your home bank account (5-10 days)",
+        "5. Receive confirmation letter (PDF) — this is what the embassy needs",
+        "6. Use the confirmation in your visa application"
+      ]},
+
+      { type: "h2", text: "Final verdict" },
+      { type: "p", text: "For 95% of South Asian students, Expatrio is the right choice — lowest cost, well-supported, all-in-one. Only switch to Fintiba if you're in a hurry, or to Coracle if you're optimizing for long-term cost. Don't overthink it — the differences are small, the consequences of not having ANY blocked account are huge." },
+
+      { type: "callout", emoji: "✅", text: "Quick decision: 80% of our community uses Expatrio. Start there unless you have a specific reason to pick another." }
+    ]
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // NEW: Visa rejection reasons — high search volume
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {
+    slug: "germany-student-visa-rejection-reasons-2026",
+    title: "Top 10 Germany Student Visa Rejection Reasons (and How to Avoid Them)",
+    excerpt:
+      "The exact reasons German embassies reject student visas — based on real cases. Avoid these mistakes and dramatically improve your approval chances.",
+    category: "Visa Process",
+    readTime: "11 min read",
+    date: "2026-06-07",
+    author: "Study in Germany Team",
+    coverEmoji: "⚠️",
+    coverGradient: "from-orange-500 to-red-600",
+    tags: ["Visa Rejection", "Student Visa", "Germany Embassy", "Application Tips"],
+    body: [
+      { type: "p", text: "German student visa rejection rates vary wildly by country — from 5% to over 35%. The good news: most rejections are preventable. The bad news: most applicants don't know why they were rejected until it's too late. Here are the 10 most common reasons embassies deny student visas, with real fixes for each." },
+
+      { type: "callout", emoji: "📊", text: "Statistics: Pakistan ~25% rejection rate, India ~15%, Bangladesh ~30%, Vietnam ~18%. The biggest factor isn't your country — it's how well you prepare." },
+
+      { type: "h2", text: "1. Insufficient financial proof" },
+      { type: "p", text: "By far the #1 rejection reason. The embassy needs absolute certainty you won't become a financial burden." },
+      { type: "h3", text: "How it happens" },
+      { type: "ul", items: [
+        "Blocked account opened too late (within 1 week of interview)",
+        "Wrong amount — €11,904 minimum (changes yearly, always check)",
+        "Bank statements showing recently-deposited large sums (looks suspicious)",
+        "Sponsor's financial situation unclear or weak"
+      ]},
+      { type: "h3", text: "How to avoid" },
+      { type: "ul", items: [
+        "Open blocked account 4-6 weeks before visa appointment",
+        "Add €200-500 buffer over the minimum",
+        "If using sponsor, show 6+ months of bank statements with stable balance",
+        "Include sponsor's income tax returns, business registration, employment letter"
+      ]},
+
+      { type: "h2", text: "2. Weak motivation letter / unclear study plan" },
+      { type: "p", text: "Visa officers want proof you'll actually study and return home — not just use the visa to enter Europe." },
+      { type: "h3", text: "How it happens" },
+      { type: "ul", items: [
+        "Generic letter that could apply to any country",
+        "No clear reason WHY Germany over UK/US/Canada",
+        "No clear post-study plan (return home? PR? unclear)",
+        "Contradictions with academic CV"
+      ]},
+      { type: "h3", text: "How to avoid" },
+      { type: "ul", items: [
+        "Mention 2-3 SPECIFIC German universities and programs",
+        "Explain why your home country needs this skill",
+        "Be honest about post-study plans (return + work, family ties)",
+        "Connect your past degree clearly to chosen program"
+      ]},
+
+      { type: "h2", text: "3. Insufficient language proof" },
+      { type: "p", text: "Even for English-taught programs, German embassies sometimes question if you'll cope with daily life." },
+      { type: "h3", text: "How to avoid" },
+      { type: "ul", items: [
+        "IELTS 6.5 minimum (5.5 per band) for English programs",
+        "Add at least A1/A2 German certificate (Goethe Institut preferred)",
+        "If your program is in German, get TestDaF or DSH — no exceptions",
+        "Bring physical certificates to interview"
+      ]},
+
+      { type: "h2", text: "4. Inconsistent or false information" },
+      { type: "p", text: "Embassy officers cross-check everything. One inconsistency = rejection." },
+      { type: "h3", text: "Common slip-ups" },
+      { type: "ul", items: [
+        "Different dates on documents vs application form",
+        "Job title mismatch between CV and previous visa applications",
+        "Family details inconsistent across forms",
+        "Travel history not matching passport stamps"
+      ]},
+      { type: "callout", emoji: "❌", text: "Critical: Never lie on a German visa form. If caught (and they usually catch), you'll be banned from Schengen for 5 years. One mistake = your future." },
+
+      { type: "h2", text: "5. Doubts about your return after studies" },
+      { type: "p", text: "Visa officers specifically check 'ties to home country.' If your ties seem weak, they assume you'll overstay." },
+      { type: "h3", text: "Strengthen your ties" },
+      { type: "ul", items: [
+        "Property ownership documents (you or family)",
+        "Family business registration",
+        "Letter from current/future employer showing job waiting after studies",
+        "Strong family roots (married, kids, elderly parents)",
+        "Bank accounts and investments in home country"
+      ]},
+
+      { type: "h2", text: "6. Wrong or incomplete documents" },
+      { type: "p", text: "Sounds basic, but document errors cause 20% of rejections." },
+      { type: "h3", text: "Most missed documents" },
+      { type: "ul", items: [
+        "HEC attestation missing on Pakistani degrees",
+        "APS certificate missing for India/China applicants",
+        "Birth certificate not legalized/apostilled",
+        "Marriage certificate (if married) not included",
+        "University admission letter copy (need original + 2 copies)"
+      ]},
+
+      { type: "h2", text: "7. Suspicious bank transactions" },
+      { type: "p", text: "Embassy officers review your bank statements for red flags." },
+      { type: "h3", text: "Red flags they look for" },
+      { type: "ul", items: [
+        "Large deposits (>€2,000) just before visa appointment",
+        "Bank statement gaps (missing months)",
+        "Cash deposits without source explanation",
+        "Multiple accounts with conflicting balances"
+      ]},
+      { type: "h3", text: "Fix it" },
+      { type: "ul", items: [
+        "Show 6 months of clean, consistent statements",
+        "Document any large deposit (loan agreement, property sale, gift letter)",
+        "Avoid emergency transfers in final 2-3 weeks before appointment"
+      ]},
+
+      { type: "h2", text: "8. Poor interview performance" },
+      { type: "p", text: "Embassy officers ask questions to verify your application is genuine. Nervous, contradictory, or vague answers = rejection." },
+      { type: "h3", text: "Common interview questions" },
+      { type: "ul", items: [
+        "Why Germany specifically? (Not 'free education' — be substantive)",
+        "Why this program? Why this university?",
+        "What will you do after graduating?",
+        "Who's paying for your studies? (Match this with financial docs)",
+        "Have you applied for visas to other countries? (Be honest)"
+      ]},
+      { type: "h3", text: "Interview prep tips" },
+      { type: "ul", items: [
+        "Read your own application 3-5 times before the interview",
+        "Practice answers OUT LOUD (not just in your head)",
+        "Wear clean, professional clothes (not formal — comfortable)",
+        "Arrive 30 minutes early",
+        "Bring extra copies of every document"
+      ]},
+
+      { type: "h2", text: "9. Previous visa rejections (other countries)" },
+      { type: "p", text: "Schengen countries share visa databases. If you've been rejected for a UK/US/Canada visa, German embassy knows." },
+      { type: "h3", text: "How to handle" },
+      { type: "ul", items: [
+        "Be honest in the application — never hide rejections",
+        "Prepare a 1-page explanation of WHY you were rejected before",
+        "Show what's different now (job, education, family situation)",
+        "Apply only when you're 100% prepared — don't apply 'just to try'"
+      ]},
+
+      { type: "h2", text: "10. Underprepared / suspicious profile" },
+      { type: "p", text: "Sometimes the rejection reason is vague — but it usually comes down to: 'This person doesn't seem like a real student.'" },
+      { type: "h3", text: "Make yourself look genuine" },
+      { type: "ul", items: [
+        "Strong academic transcripts (consistent, not patchy)",
+        "Clear academic progression (no random gap years without explanation)",
+        "LinkedIn profile matching CV",
+        "References from professors (with their email + phone)",
+        "Evidence of subject interest (projects, internships, publications)"
+      ]},
+
+      { type: "h2", text: "What to do if you ARE rejected" },
+      { type: "p", text: "Rejection isn't the end. You can reapply, but you need to address WHY first." },
+      { type: "ul", items: [
+        "1. Request the rejection letter (in writing) from the embassy",
+        "2. Identify the specific reason cited",
+        "3. Wait 1-2 months before reapplying (shows you took it seriously)",
+        "4. Address the specific issue (more money, better letter, etc.)",
+        "5. Get a lawyer review if reapplying — €100-200 well spent"
+      ]},
+
+      { type: "callout", emoji: "💡", text: "Bottom line: 80% of German student visa rejections are preventable. Strong financials + clear motivation + honest application = ~90% approval rate. Don't skip steps to save time — a rejection costs you 6-12 months of life." }
+    ]
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // NEW: 2027 application timeline — evergreen, practical
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {
+    slug: "germany-university-application-timeline-2027",
+    title: "Germany University Application Timeline 2027 (Month-by-Month Plan)",
+    excerpt:
+      "Exact month-by-month timeline for applying to German universities for Winter 2027/2028 intake — when to start, deadlines, and what to do each month.",
+    category: "Application Tips",
+    readTime: "9 min read",
+    date: "2026-06-07",
+    author: "Study in Germany Team",
+    coverEmoji: "📅",
+    coverGradient: "from-indigo-500 to-blue-600",
+    tags: ["Timeline", "Application", "2027", "Planning"],
+    body: [
+      { type: "p", text: "Most students underestimate how long the German university application process takes. The reality: you need to start 12-18 months before your intended start date. This month-by-month plan walks you through exactly what to do, when — based on the Winter 2027 intake (October 2027 start)." },
+
+      { type: "callout", emoji: "⏰", text: "Quick rule: Winter intake (October) — start applying by July of previous year. Summer intake (April) — start applying by November of previous year." },
+
+      { type: "h2", text: "12-15 months before (June-September 2026)" },
+      { type: "h3", text: "Research phase" },
+      { type: "ul", items: [
+        "Research 15-20 universities and shortlist 8-10",
+        "Identify 5-7 specific programs (Master's or Bachelor's)",
+        "Check exact admission requirements for each",
+        "Note application deadlines for each program",
+        "Start saving for application fees (€75 × 5-7 programs = €375-525)"
+      ]},
+
+      { type: "h2", text: "10-12 months before (October-December 2026)" },
+      { type: "h3", text: "Language tests" },
+      { type: "ul", items: [
+        "Register for IELTS or TOEFL (3 weeks lead time)",
+        "If German programs: book TestDaF or DSH",
+        "Aim to take test by January 2027",
+        "Plan a retake buffer (2 attempts is normal)"
+      ]},
+      { type: "h3", text: "Document prep" },
+      { type: "ul", items: [
+        "Apply for HEC attestation (Pakistan) — takes 4-6 weeks",
+        "Apply for APS certificate (India/China) — takes 8-12 weeks",
+        "Get transcripts translated into English/German if needed",
+        "Order official transcripts (sealed envelopes)"
+      ]},
+
+      { type: "h2", text: "8-10 months before (January-February 2027)" },
+      { type: "h3", text: "Application materials" },
+      { type: "ul", items: [
+        "Start writing Statement of Purpose (3-4 drafts minimum)",
+        "Request 2-3 Letters of Recommendation from professors",
+        "Update CV in German/European format",
+        "Take language test if not done",
+        "Get all documents notarized/legalized"
+      ]},
+
+      { type: "h2", text: "6-8 months before (March-April 2027)" },
+      { type: "h3", text: "Submit applications" },
+      { type: "ul", items: [
+        "Submit to uni-assist (most public unis) — €75 per application",
+        "Submit to TUM, LMU separately (have their own portals)",
+        "Upload all required documents",
+        "Pay application fees",
+        "Get confirmation emails for each application"
+      ]},
+      { type: "callout", emoji: "⚠️", text: "Critical deadline: Most German universities deadline July 15 for Winter intake. Apply by April-May to avoid rushed mistakes." },
+
+      { type: "h2", text: "4-6 months before (May-June 2027)" },
+      { type: "h3", text: "Wait + supplementary actions" },
+      { type: "ul", items: [
+        "Follow up with universities (after 4 weeks of no response)",
+        "Start learning basic German (A1 level)",
+        "Research housing in target cities",
+        "Open conversation with sponsors about financial proof",
+        "Start blocked account research (Expatrio, Fintiba, Coracle)"
+      ]},
+
+      { type: "h2", text: "3-4 months before (June-July 2027)" },
+      { type: "h3", text: "Admission decisions + visa prep" },
+      { type: "ul", items: [
+        "Receive admission letters (usually June-July)",
+        "Accept your preferred offer",
+        "Pay semester fee (€150-350 depending on uni)",
+        "Open blocked account with €11,904+ (€992/month × 12)",
+        "Get health insurance confirmation",
+        "Apply for student visa appointment"
+      ]},
+
+      { type: "h2", text: "1-2 months before (August-September 2027)" },
+      { type: "h3", text: "Visa + travel prep" },
+      { type: "ul", items: [
+        "Attend visa interview (book 2-3 months ahead in peak season)",
+        "Receive visa (4-12 weeks processing)",
+        "Book flights (cheaper if 4-6 weeks ahead)",
+        "Apply for university dorm (if not done)",
+        "Convert spare money to Euros at good rate"
+      ]},
+
+      { type: "h2", text: "Final 2-4 weeks (September 2027)" },
+      { type: "h3", text: "Departure prep" },
+      { type: "ul", items: [
+        "Pack winter clothes (German autumn is cold by October)",
+        "Print 3 copies of every important document",
+        "Set up international roaming for first week",
+        "Confirm housing pickup/check-in",
+        "Inform bank of travel (to avoid card blocks)",
+        "Buy German SIM card on arrival day"
+      ]},
+
+      { type: "h2", text: "After arrival (October 2027 onward)" },
+      { type: "ul", items: [
+        "Register address (Anmeldung) within 14 days — mandatory",
+        "Get tax ID (Steuer-ID) at local Rathaus",
+        "Open German bank account",
+        "Activate health insurance",
+        "Convert visa to residence permit at Ausländerbehörde",
+        "Start the semester!"
+      ]},
+
+      { type: "h2", text: "Compressed timeline (if you start late)" },
+      { type: "p", text: "If you're starting 6-8 months out instead of 12-15, here's the compressed plan:" },
+      { type: "ul", items: [
+        "Month 1: Research + select 3-5 unis (not 10)",
+        "Month 2: Language test + document prep in parallel",
+        "Month 3: Submit applications immediately",
+        "Month 4-5: Wait for admission",
+        "Month 6: Visa + blocked account",
+        "Month 7-8: Travel + arrival"
+      ]},
+      { type: "callout", emoji: "💡", text: "Honest truth: 80% of failures happen in compressed timelines. If you're under 6 months — strongly consider applying for Summer 2028 intake instead. Patience pays." },
+
+      { type: "h2", text: "What if you miss the deadline?" },
+      { type: "p", text: "Most German universities have ONE intake per year (Winter). Some offer Summer intake (April) — usually for non-popular programs. If you miss Winter:" },
+      { type: "ul", items: [
+        "Apply for Summer intake (limited options)",
+        "Apply to private universities (rolling admissions)",
+        "Use the extra year productively — internship, German course, GRE prep",
+        "Apply early for next Winter intake (becomes 14-month plan)"
+      ]},
+
+      { type: "callout", emoji: "📅", text: "Bottom line: Studying in Germany rewards planners. Start 12-15 months early, follow this timeline, and you'll have a smooth application. Rushing = mistakes = rejection = lost year." }
+    ]
+  },
 ];
 
 export const blogCategories = [
@@ -1126,5 +1570,25 @@ export function getBlogPost(slug) {
 }
 
 export function getRelatedPosts(currentSlug, limit = 3) {
-  return blogPosts.filter((p) => p.slug !== currentSlug).slice(0, limit);
+  const current = blogPosts.find((p) => p.slug === currentSlug);
+  if (!current) return blogPosts.filter((p) => p.slug !== currentSlug).slice(0, limit);
+
+  // Prefer same category, then same tags, then anything else
+  const sameCategory = blogPosts.filter(
+    (p) => p.slug !== currentSlug && p.category === current.category
+  );
+  const sameTags = blogPosts.filter(
+    (p) =>
+      p.slug !== currentSlug &&
+      p.category !== current.category &&
+      p.tags?.some((t) => current.tags?.includes(t))
+  );
+  const others = blogPosts.filter(
+    (p) =>
+      p.slug !== currentSlug &&
+      p.category !== current.category &&
+      !p.tags?.some((t) => current.tags?.includes(t))
+  );
+
+  return [...sameCategory, ...sameTags, ...others].slice(0, limit);
 }

@@ -100,8 +100,37 @@ export default async function BlogDetailPage({ params }) {
   if (!post) notFound();
   const related = getRelatedPosts(slug, 3);
 
+  // JSON-LD Article schema for richer Google search results
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: "https://studyingermanyguide.com",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Study in Germany Guide",
+      url: "https://studyingermanyguide.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://studyingermanyguide.com/blog/${post.slug}`,
+    },
+    keywords: post.tags?.join(", "),
+  };
+
   return (
     <article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {/* Hero with gradient cover */}
       <section
         className={`bg-gradient-to-br ${post.coverGradient} text-white`}
