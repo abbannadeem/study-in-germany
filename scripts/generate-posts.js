@@ -1,20 +1,21 @@
-// Editorial Instagram series — refined question-based posts
+// Editorial Instagram series — uses ACTUAL logo file
 import sharp from "sharp";
 import path from "path";
 
 const OUT = path.resolve("public/insta-posts");
+const LOGO = path.resolve("public/logo.svg");
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Smooth gradient — photo darkens toward bottom
+// Smooth gradient — text legibility
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function gradientOverlay() {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%"  stop-color="black" stop-opacity="0.35"/>
-        <stop offset="30%" stop-color="black" stop-opacity="0.10"/>
+        <stop offset="0%"  stop-color="black" stop-opacity="0.40"/>
+        <stop offset="25%" stop-color="black" stop-opacity="0.10"/>
         <stop offset="55%" stop-color="black" stop-opacity="0.35"/>
-        <stop offset="100%" stop-color="black" stop-opacity="0.92"/>
+        <stop offset="100%" stop-color="black" stop-opacity="0.94"/>
       </linearGradient>
     </defs>
     <rect width="1080" height="1080" fill="url(#g)"/>
@@ -22,47 +23,7 @@ function gradientOverlay() {
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// BIG brand block — matches actual logo proportions
-// (German flag block prominent + clean wordmark)
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-function brandBlock() {
-  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
-    <g transform="translate(60, 60)">
-      <!-- German flag block — bigger, prominent like actual logo -->
-      <defs>
-        <clipPath id="rf">
-          <rect x="0" y="0" width="90" height="90" rx="18" ry="18"/>
-        </clipPath>
-      </defs>
-      <g clip-path="url(#rf)">
-        <rect x="0"  y="0" width="30" height="90" fill="#000000"/>
-        <rect x="30" y="0" width="30" height="90" fill="#DD0000"/>
-        <rect x="60" y="0" width="30" height="90" fill="#F59E0B"/>
-      </g>
-
-      <!-- Wordmark — Study in Germany -->
-      <text x="110" y="42"
-            font-family="Arial, sans-serif"
-            font-size="26"
-            font-weight="700"
-            fill="#FFFFFF">Study in <tspan fill="#F59E0B">Germany</tspan></text>
-
-      <!-- GUIDE tracked subtitle -->
-      <text x="110" y="74"
-            font-family="Arial, sans-serif"
-            font-size="13"
-            font-weight="500"
-            fill="#FFFFFF"
-            opacity="0.6"
-            letter-spacing="10">G U I D E</text>
-    </g>
-
-    <!-- Top-right: subtle series tag -->
-  </svg>`);
-}
-
-// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Top-right: series indicator
+// Top-right series indicator
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function seriesIndicator(label) {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
@@ -80,11 +41,11 @@ function seriesIndicator(label) {
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Editorial content — bigger breathing room, refined hierarchy
+// Editorial content — eyebrow + question + tagline + CTA
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function contentOverlay({ eyebrow, headline1, headline2, tagline, cta }) {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
-    <!-- Eyebrow — minimal yellow accent + tracked small caps -->
+    <!-- Eyebrow -->
     <g transform="translate(60, 660)">
       <rect x="0" y="6" width="40" height="2" fill="#F59E0B"/>
       <text x="56" y="13"
@@ -95,7 +56,7 @@ function contentOverlay({ eyebrow, headline1, headline2, tagline, cta }) {
             letter-spacing="6">${eyebrow}</text>
     </g>
 
-    <!-- Editorial question headline -->
+    <!-- Editorial headline -->
     <text x="60" y="790"
           font-family="Georgia, serif"
           font-size="88"
@@ -110,7 +71,7 @@ function contentOverlay({ eyebrow, headline1, headline2, tagline, cta }) {
           letter-spacing="-1"
           font-style="italic">${headline2}</text>
 
-    <!-- Tagline (answer/teaser) -->
+    <!-- Tagline -->
     <text x="60" y="940"
           font-family="Arial, sans-serif"
           font-size="22"
@@ -118,10 +79,10 @@ function contentOverlay({ eyebrow, headline1, headline2, tagline, cta }) {
           fill="#FFFFFF"
           opacity="0.82">${tagline}</text>
 
-    <!-- Hairline divider -->
+    <!-- Hairline -->
     <line x1="60" y1="995" x2="1020" y2="995" stroke="#FFFFFF" stroke-width="0.5" opacity="0.25"/>
 
-    <!-- Footer: website + arrow -->
+    <!-- Footer -->
     <text x="60" y="1040"
           font-family="Arial, sans-serif"
           font-size="14"
@@ -141,17 +102,73 @@ function contentOverlay({ eyebrow, headline1, headline2, tagline, cta }) {
   </svg>`);
 }
 
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Prepare logo PNG (small, white-text version for dark photo overlay)
+// We render the actual logo SVG but invert colors for dark backgrounds.
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+async function getLogoBuffer() {
+  // Create a version with white text on transparent for dark backgrounds.
+  const logoForDark = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+    <g transform="translate(280, 320)">
+      <defs>
+        <clipPath id="rf">
+          <rect x="0" y="0" width="520" height="520" rx="60" ry="60"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#rf)">
+        <rect x="0"   y="0" width="174" height="520" fill="#000000"/>
+        <rect x="174" y="0" width="173" height="520" fill="#DD0000"/>
+        <rect x="347" y="0" width="173" height="520" fill="#F59E0B"/>
+      </g>
+    </g>
+    <text x="540" y="940"
+          font-family="Arial Black, sans-serif"
+          font-size="80"
+          font-weight="900"
+          fill="#FFFFFF"
+          text-anchor="middle">Study in <tspan fill="#F59E0B">Germany</tspan></text>
+    <text x="540" y="1010"
+          font-family="Arial, sans-serif"
+          font-size="38"
+          font-weight="500"
+          fill="#FFFFFF"
+          opacity="0.7"
+          text-anchor="middle"
+          letter-spacing="16">GUIDE</text>
+  </svg>`;
+
+  // Render logo at smaller size (220px wide) for placement top-left of post
+  return await sharp(Buffer.from(logoForDark))
+    .resize(280, 280)
+    .png()
+    .toBuffer();
+}
+
+// Top-left logo positioning
+async function logoOverlay() {
+  const logoBuffer = await getLogoBuffer();
+  // Composite logo at position (60, 50) on a 1080x1080 transparent canvas
+  return await sharp({
+    create: { width: 1080, height: 1080, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } }
+  })
+    .composite([{ input: logoBuffer, top: 50, left: 50 }])
+    .png()
+    .toBuffer();
+}
+
 async function makePost({
   photo, output,
   series,
   eyebrow, headline1, headline2, tagline, cta,
 }) {
+  const logo = await logoOverlay();
+
   await sharp(`public/cities/${photo}`)
     .resize(1080, 1080, { fit: "cover", position: "center" })
-    .modulate({ saturation: 1.05, brightness: 0.9 })
+    .modulate({ saturation: 1.05, brightness: 0.88 })
     .composite([
       { input: gradientOverlay(), blend: "over" },
-      { input: brandBlock(), blend: "over" },
+      { input: logo, blend: "over" },
       { input: seriesIndicator(series), blend: "over" },
       {
         input: contentOverlay({ eyebrow, headline1, headline2, tagline, cta }),
@@ -165,9 +182,7 @@ async function makePost({
 }
 
 async function run() {
-  // Question-based series — each post asks one question
-
-  // Post 1 — Welcome (intro to the series)
+  // Post 1 — Welcome
   await makePost({
     photo: "berlin.jpg",
     output: "post-1.png",
@@ -191,7 +206,7 @@ async function run() {
     cta: "READ AT STUDYINGERMANYGUIDE.COM",
   });
 
-  // Post 3 — Where are you from?
+  // Post 3 — Which country?
   await makePost({
     photo: "munich.jpg",
     output: "post-3.png",
@@ -199,11 +214,11 @@ async function run() {
     eyebrow: "THE WHO",
     headline1: "Which",
     headline2: "country?",
-    tagline: "We've got country-specific guides — APS, embassy, documents.",
+    tagline: "Country-specific guides — APS, embassy, documents.",
     cta: "GUIDES AT STUDYINGERMANYGUIDE.COM",
   });
 
-  // Post 4 — Real cost
+  // Post 4 — Cost
   await makePost({
     photo: "cologne.jpg",
     output: "post-4.png",
@@ -239,7 +254,7 @@ async function run() {
     cta: "EXPLORE AT STUDYINGERMANYGUIDE.COM",
   });
 
-  console.log("\n6 refined editorial series posts ready.");
+  console.log("\n6 posts ready with actual logo!");
 }
 
 run().catch(console.error);
