@@ -1,20 +1,21 @@
-// Generate PREMIUM Instagram posts — editorial/magazine style
-// Real photo + gradient overlay + premium typography + brand badges
+// Generate PREMIUM Instagram posts — refined editorial style
+// Real photo + smooth gradient + actual SG logo + refined typography
 import sharp from "sharp";
 import path from "path";
+import { readFile } from "fs/promises";
 
 const OUT = path.resolve("public/insta-posts");
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Bottom gradient overlay — dark fade for text legibility
+// Smooth bottom gradient overlay
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function gradientOverlay() {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
     <defs>
       <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stop-color="black" stop-opacity="0"/>
-        <stop offset="35%" stop-color="black" stop-opacity="0.1"/>
-        <stop offset="70%" stop-color="black" stop-opacity="0.75"/>
+        <stop offset="0%"  stop-color="black" stop-opacity="0.15"/>
+        <stop offset="40%" stop-color="black" stop-opacity="0.05"/>
+        <stop offset="70%" stop-color="black" stop-opacity="0.78"/>
         <stop offset="100%" stop-color="black" stop-opacity="0.95"/>
       </linearGradient>
     </defs>
@@ -23,62 +24,70 @@ function gradientOverlay() {
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Top overlay — logo + brand mark
+// Top brand bar — actual SG logo + small caps wordmark
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function topBrandOverlay() {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
-    <!-- Top-left: brand logo block -->
+    <!-- Top-left brand block -->
     <g transform="translate(60, 60)">
-      <!-- German flag mini icon -->
-      <g>
-        <rect x="0"  y="0" width="20" height="60" rx="4" fill="#000000"/>
-        <rect x="20" y="0" width="20" height="60" fill="#DD0000"/>
-        <rect x="40" y="0" width="20" height="60" rx="4" fill="#F59E0B"/>
+      <!-- German flag mini icon (matches site header exactly) -->
+      <defs>
+        <clipPath id="rf">
+          <rect x="0" y="0" width="56" height="56" rx="10" ry="10"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#rf)">
+        <rect x="0"  y="0" width="19" height="56" fill="#000000"/>
+        <rect x="19" y="0" width="18" height="56" fill="#DD0000"/>
+        <rect x="37" y="0" width="19" height="56" fill="#F59E0B"/>
       </g>
-      <!-- Brand text -->
-      <text x="80" y="24" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#FFFFFF" opacity="0.9">studyingermany</text>
-      <text x="80" y="50" font-family="Arial Black, sans-serif" font-size="28" font-weight="900" fill="#FFFFFF" letter-spacing="1">GUIDE</text>
+      <!-- Wordmark — refined, smaller -->
+      <text x="76" y="26" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#FFFFFF" opacity="0.95">Study in <tspan fill="#F59E0B" font-weight="700">Germany</tspan></text>
+      <text x="76" y="48" font-family="Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" opacity="0.6" letter-spacing="6">G U I D E</text>
     </g>
 
-    <!-- Top-right: small badge -->
-    <g transform="translate(880, 70)">
-      <rect x="0" y="0" width="160" height="40" rx="20" fill="#FFCE00"/>
-      <text x="80" y="27" font-family="Arial Black, sans-serif" font-size="16" font-weight="900" fill="#0F172A" text-anchor="middle" letter-spacing="2">FREE GUIDE</text>
+    <!-- Top-right: subtle badge -->
+    <g transform="translate(880, 75)">
+      <rect x="0" y="0" width="140" height="32" rx="16" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+      <text x="70" y="22" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle" letter-spacing="3" opacity="0.9">FREE GUIDE</text>
     </g>
   </svg>`);
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Bottom content overlay — eyebrow + headline + tagline + CTA
+// Bottom content — refined editorial composition
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function contentOverlay({ eyebrow, headline1, headline2, tagline, cta }) {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
-    <!-- Eyebrow -->
-    <g transform="translate(60, 600)">
-      <rect x="0" y="0" width="14" height="34" fill="#FFCE00"/>
-      <text x="30" y="26" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#FFCE00" letter-spacing="5">${eyebrow}</text>
+    <!-- Eyebrow with refined accent -->
+    <g transform="translate(60, 660)">
+      <rect x="0" y="6" width="40" height="2" fill="#F59E0B"/>
+      <text x="56" y="13" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#F59E0B" letter-spacing="6">${eyebrow}</text>
     </g>
 
-    <!-- Main headline (massive, editorial) -->
-    <text x="60" y="770" font-family="Georgia, serif" font-size="130" font-weight="900" fill="#FFFFFF" letter-spacing="-4">${headline1}</text>
-    <text x="60" y="890" font-family="Georgia, serif" font-size="130" font-weight="900" fill="#FFFFFF" letter-spacing="-4" font-style="italic">${headline2}</text>
+    <!-- Headline — Georgia, lighter weight, more breathing room -->
+    <text x="60" y="800" font-family="Georgia, serif" font-size="96" font-weight="700" fill="#FFFFFF" letter-spacing="-2">${headline1}</text>
+    <text x="60" y="900" font-family="Georgia, serif" font-size="96" font-weight="700" fill="#FFFFFF" letter-spacing="-2" font-style="italic">${headline2}</text>
 
     <!-- Tagline -->
-    <text x="60" y="950" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#FFFFFF" opacity="0.85">${tagline}</text>
+    <text x="60" y="955" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#FFFFFF" opacity="0.8">${tagline}</text>
 
-    <!-- Bottom divider line -->
-    <line x1="60" y1="990" x2="1020" y2="990" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+    <!-- Refined divider -->
+    <line x1="60" y1="1000" x2="1020" y2="1000" stroke="#FFFFFF" stroke-width="0.5" opacity="0.25"/>
 
     <!-- Footer: website + arrow -->
-    <text x="60" y="1040" font-family="Arial Black, sans-serif" font-size="26" font-weight="900" fill="#FFFFFF" letter-spacing="1">${cta}</text>
-    <text x="1020" y="1040" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#FFCE00" text-anchor="end">→</text>
+    <text x="60" y="1042" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#FFFFFF" letter-spacing="3">${cta}</text>
+    <g transform="translate(1010, 1030)">
+      <circle cx="0" cy="0" r="18" fill="none" stroke="#F59E0B" stroke-width="1.5"/>
+      <text x="0" y="6" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#F59E0B" text-anchor="middle">→</text>
+    </g>
   </svg>`);
 }
 
 async function makePost({ photo, output, eyebrow, headline1, headline2, tagline, cta }) {
   await sharp(`public/cities/${photo}`)
     .resize(1080, 1080, { fit: "cover", position: "center" })
-    .modulate({ saturation: 1.1, brightness: 0.95 })
+    .modulate({ saturation: 1.08, brightness: 0.92 })
     .composite([
       { input: gradientOverlay(), blend: "over" },
       { input: topBrandOverlay(), blend: "over" },
@@ -110,8 +119,8 @@ async function run() {
     photo: "munich.jpg",
     output: "post-2.png",
     eyebrow: "THIS WEEK",
-    headline1: "Coming",
-    headline2: "Up.",
+    headline1: "What's",
+    headline2: "coming.",
     tagline: "Five honest answers about studying in Germany.",
     cta: "FOLLOW @STUDYINGERMANYGUIDE_",
   });
@@ -127,13 +136,13 @@ async function run() {
     cta: "READ AT STUDYINGERMANYGUIDE.COM",
   });
 
-  // Post 4 — Real cost
+  // Post 4 — Cost
   await makePost({
     photo: "cologne.jpg",
     output: "post-4.png",
     eyebrow: "PART 02 — THE COST",
-    headline1: "What does",
-    headline2: "it cost?",
+    headline1: "What",
+    headline2: "it costs.",
     tagline: "Tuition, rent, food — the honest numbers, no fluff.",
     cta: "CALCULATOR AT STUDYINGERMANYGUIDE.COM",
   });
@@ -149,7 +158,7 @@ async function run() {
     cta: "GUIDE AT STUDYINGERMANYGUIDE.COM",
   });
 
-  console.log("\n5 premium editorial posts generated.");
+  console.log("\n5 refined editorial posts generated.");
 }
 
 run().catch(console.error);
