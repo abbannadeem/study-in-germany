@@ -1,112 +1,96 @@
-// Premium Instagram series — clean composition, no text duplication
+// Minimalist editorial Instagram series — centered serif + logo corner + URL bottom
 import sharp from "sharp";
 import path from "path";
 
 const OUT = path.resolve("public/insta-posts");
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Smooth gradient
+// Subtle full-image overlay (very gentle darkening for text legibility)
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-function gradientOverlay() {
+function softOverlay() {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
-    <defs>
-      <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%"  stop-color="black" stop-opacity="0.35"/>
-        <stop offset="30%" stop-color="black" stop-opacity="0.05"/>
-        <stop offset="55%" stop-color="black" stop-opacity="0.35"/>
-        <stop offset="100%" stop-color="black" stop-opacity="0.93"/>
-      </linearGradient>
-    </defs>
-    <rect width="1080" height="1080" fill="url(#g)"/>
+    <rect width="1080" height="1080" fill="black" opacity="0.42"/>
   </svg>`);
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// SMALL clean brand mark — just flag + tiny tag (NO duplicate text)
+// Logo top-left (full logo: flag block + Study in Germany + GUIDE)
+// On dark photo overlay → white text version
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-function brandMark() {
+function logoTopLeft() {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
     <g transform="translate(60, 60)">
-      <!-- Small German flag block (60x60) -->
+      <!-- Flag block -->
       <defs>
         <clipPath id="rf">
-          <rect x="0" y="0" width="60" height="60" rx="12" ry="12"/>
+          <rect x="0" y="0" width="80" height="80" rx="16" ry="16"/>
         </clipPath>
       </defs>
       <g clip-path="url(#rf)">
-        <rect x="0"  y="0" width="20" height="60" fill="#000000"/>
-        <rect x="20" y="0" width="20" height="60" fill="#DD0000"/>
-        <rect x="40" y="0" width="20" height="60" fill="#F59E0B"/>
+        <rect x="0"  y="0" width="27" height="80" fill="#000000"/>
+        <rect x="27" y="0" width="26" height="80" fill="#DD0000"/>
+        <rect x="53" y="0" width="27" height="80" fill="#F59E0B"/>
       </g>
 
-      <!-- Tiny website handle next to flag -->
-      <text x="78" y="38"
+      <!-- Wordmark stacked vertically -->
+      <text x="100" y="36"
+            font-family="Georgia, serif"
+            font-size="24"
+            font-weight="700"
+            fill="#FFFFFF">Study in <tspan fill="#F59E0B">Germany</tspan></text>
+      <text x="100" y="64"
             font-family="Arial, sans-serif"
-            font-size="16"
-            font-weight="600"
+            font-size="12"
+            font-weight="500"
             fill="#FFFFFF"
-            letter-spacing="2"
-            opacity="0.92">studyingermanyguide.com</text>
-    </g>
-
-    <!-- Top-right: minimal tag -->
-    <g transform="translate(1020, 90)">
-      <text x="0" y="0"
-            font-family="Arial, sans-serif"
-            font-size="13"
-            font-weight="600"
-            fill="#FFFFFF"
-            text-anchor="end"
-            opacity="0.6"
-            letter-spacing="4">FREE GUIDE</text>
+            opacity="0.65"
+            letter-spacing="10">G U I D E</text>
     </g>
   </svg>`);
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-// Editorial content
+// CENTERED big serif text — main statement
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-function contentOverlay({ eyebrow, headline1, headline2, tagline, footer, series }) {
+function centerHeadline({ line1, line2, eyebrow }) {
   return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
-    <!-- Eyebrow -->
-    <g transform="translate(60, 660)">
-      <rect x="0" y="6" width="40" height="2" fill="#F59E0B"/>
-      <text x="56" y="13"
-            font-family="Arial, sans-serif"
-            font-size="13"
-            font-weight="700"
-            fill="#F59E0B"
-            letter-spacing="6">${eyebrow}</text>
-    </g>
-
-    <!-- Editorial headline -->
-    <text x="60" y="790"
-          font-family="Georgia, serif"
-          font-size="100"
-          font-weight="700"
-          fill="#FFFFFF"
-          letter-spacing="-2">${headline1}</text>
-    <text x="60" y="892"
-          font-family="Georgia, serif"
-          font-size="100"
-          font-weight="700"
-          fill="#FFFFFF"
-          letter-spacing="-2"
-          font-style="italic">${headline2}</text>
-
-    <!-- Tagline -->
-    <text x="60" y="948"
+    <!-- Tiny eyebrow above headline (optional) -->
+    <text x="540" y="440"
           font-family="Arial, sans-serif"
-          font-size="22"
+          font-size="14"
+          font-weight="600"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          opacity="0.7"
+          letter-spacing="8">${eyebrow}</text>
+
+    <!-- Big elegant serif headline, centered -->
+    <text x="540" y="560"
+          font-family="Georgia, serif"
+          font-size="120"
           font-weight="400"
           fill="#FFFFFF"
-          opacity="0.82">${tagline}</text>
+          text-anchor="middle"
+          letter-spacing="-2">${line1}</text>
 
-    <!-- Hairline -->
-    <line x1="60" y1="1000" x2="1020" y2="1000" stroke="#FFFFFF" stroke-width="0.5" opacity="0.25"/>
+    <text x="540" y="690"
+          font-family="Georgia, serif"
+          font-size="120"
+          font-weight="400"
+          fill="#FFFFFF"
+          text-anchor="middle"
+          font-style="italic"
+          letter-spacing="-2">${line2}</text>
+  </svg>`);
+}
 
-    <!-- Footer left: series indicator -->
-    <text x="60" y="1042"
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Bottom: URL on right side + arrow
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+function bottomUrl({ series }) {
+  return Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1080">
+    <!-- Bottom-left: series tag -->
+    <text x="60" y="1020"
           font-family="Arial, sans-serif"
           font-size="13"
           font-weight="600"
@@ -114,40 +98,33 @@ function contentOverlay({ eyebrow, headline1, headline2, tagline, footer, series
           opacity="0.7"
           letter-spacing="4">${series}</text>
 
-    <!-- Footer right: cta + arrow -->
-    <text x="970" y="1042"
+    <!-- Bottom-right: URL + arrow -->
+    <text x="1010" y="1020"
           font-family="Arial, sans-serif"
-          font-size="14"
+          font-size="16"
           font-weight="600"
           fill="#FFFFFF"
           text-anchor="end"
-          letter-spacing="3">${footer}</text>
+          letter-spacing="2">studyingermanyguide.com</text>
 
-    <g transform="translate(1020, 1032)">
-      <text x="0" y="6"
-            font-family="Arial, sans-serif"
-            font-size="20"
-            font-weight="700"
-            fill="#F59E0B"
-            text-anchor="middle">→</text>
-    </g>
+    <text x="1020" y="1020"
+          font-family="Arial, sans-serif"
+          font-size="20"
+          font-weight="700"
+          fill="#F59E0B"
+          text-anchor="start">  →</text>
   </svg>`);
 }
 
-async function makePost({
-  photo, output,
-  series, eyebrow, headline1, headline2, tagline, footer,
-}) {
+async function makePost({ photo, output, eyebrow, line1, line2, series }) {
   await sharp(`public/cities/${photo}`)
     .resize(1080, 1080, { fit: "cover", position: "center" })
-    .modulate({ saturation: 1.05, brightness: 0.88 })
+    .modulate({ saturation: 1.05, brightness: 0.92 })
     .composite([
-      { input: gradientOverlay(), blend: "over" },
-      { input: brandMark(), blend: "over" },
-      {
-        input: contentOverlay({ eyebrow, headline1, headline2, tagline, footer, series }),
-        blend: "over",
-      },
+      { input: softOverlay(), blend: "over" },
+      { input: logoTopLeft(), blend: "over" },
+      { input: centerHeadline({ eyebrow, line1, line2 }), blend: "over" },
+      { input: bottomUrl({ series }), blend: "over" },
     ])
     .png({ quality: 100 })
     .toFile(`${OUT}/${output}`);
@@ -156,79 +133,67 @@ async function makePost({
 }
 
 async function run() {
-  // Post 1 — Welcome (intro)
+  // Post 1 — Welcome
   await makePost({
     photo: "berlin.jpg",
     output: "post-1.png",
-    series: "INTRO",
     eyebrow: "WELCOME",
-    headline1: "Hello,",
-    headline2: "future student.",
-    tagline: "A complete guide to studying in Germany — by students, for students.",
-    footer: "READ NOW",
+    line1: "Study in",
+    line2: "Germany.",
+    series: "INTRO",
   });
 
   // Post 2 — Why Germany?
   await makePost({
     photo: "heidelberg.jpg",
     output: "post-2.png",
-    series: "Q 01 / 05",
     eyebrow: "THE WHY",
-    headline1: "Why",
-    headline2: "Germany?",
-    tagline: "World-class education. Tuition-free. A future, not a fee.",
-    footer: "READ THE ANSWER",
+    line1: "Why",
+    line2: "Germany?",
+    series: "Q 01 / 05",
   });
 
   // Post 3 — Which country?
   await makePost({
     photo: "munich.jpg",
     output: "post-3.png",
-    series: "Q 02 / 05",
     eyebrow: "THE WHO",
-    headline1: "Where",
-    headline2: "are you from?",
-    tagline: "Country-specific guides — APS, embassy, documents.",
-    footer: "FIND YOUR GUIDE",
+    line1: "Where",
+    line2: "are you from?",
+    series: "Q 02 / 05",
   });
 
   // Post 4 — Cost
   await makePost({
     photo: "cologne.jpg",
     output: "post-4.png",
-    series: "Q 03 / 05",
     eyebrow: "THE COST",
-    headline1: "Can",
-    headline2: "I afford it?",
-    tagline: "Tuition, rent, food — the honest numbers, no fluff.",
-    footer: "USE THE CALCULATOR",
+    line1: "Can you",
+    line2: "afford it?",
+    series: "Q 03 / 05",
   });
 
   // Post 5 — Visa
   await makePost({
     photo: "frankfurt.jpg",
     output: "post-5.png",
-    series: "Q 04 / 05",
     eyebrow: "THE VISA",
-    headline1: "How long",
-    headline2: "is the visa?",
-    tagline: "Real timelines — what's true, what's myth, step by step.",
-    footer: "GET THE GUIDE",
+    line1: "How long",
+    line2: "is the visa?",
+    series: "Q 04 / 05",
   });
 
   // Post 6 — Universities
   await makePost({
     photo: "hamburg.jpg",
     output: "post-6.png",
-    series: "Q 05 / 05",
     eyebrow: "THE UNIVERSITIES",
-    headline1: "Which",
-    headline2: "university?",
-    tagline: "From TUM to Heidelberg — explore every public option.",
-    footer: "EXPLORE NOW",
+    line1: "Which",
+    line2: "university?",
+    series: "Q 05 / 05",
   });
 
-  console.log("\n6 clean editorial posts ready.");
+  console.log("\n6 minimal editorial posts ready.");
 }
 
 run().catch(console.error);
