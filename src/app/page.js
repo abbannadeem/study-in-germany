@@ -98,9 +98,14 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative mx-auto max-w-6xl px-4 py-24 text-center sm:py-28">
-          <span className="mb-5 inline-block rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium ring-1 ring-white/30 backdrop-blur">
-            🇩🇪 Your complete guide to studying in Germany
-          </span>
+          <div className="mb-5 flex flex-wrap justify-center gap-2">
+            <span className="inline-block rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium ring-1 ring-white/30 backdrop-blur">
+              🇩🇪 Your complete guide to studying in Germany
+            </span>
+            <span className="inline-block rounded-full bg-emerald-500/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald-300 ring-1 ring-emerald-400/40 backdrop-blur">
+              ✓ Updated June 2026
+            </span>
+          </div>
           <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight drop-shadow-lg sm:text-6xl">
             World-class education,{" "}
             <span className="text-brand-400">tuition-free</span>.

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-// Top countries by number of students sent to Germany (2024 data).
+// Top countries by number of students sent to Germany (2026 data).
 // Countries with a "guide" property have a dedicated /guides/[slug] page.
 // Only show countries with complete dedicated guides.
 // More will be added as we build their content.

@@ -266,7 +266,7 @@ export const blogPosts = [
     coverGradient: "from-red-500 to-pink-600",
     tags: ["Visa", "Pakistan", "Embassy", "Documents"],
     body: [
-      { type: "p", text: "Getting a German student visa from Pakistan is straightforward IF you prepare properly. This guide is based on actual timelines reported by Pakistani students in 2024-2026, including what really happens at the German Embassy in Islamabad and consulate in Karachi." },
+      { type: "p", text: "Getting a German student visa from Pakistan is straightforward IF you prepare properly. This guide is based on actual timelines reported by Pakistani students through 2026, including what really happens at the German Embassy in Islamabad and consulate in Karachi." },
 
       { type: "h2", text: "Visa types — which one do you need?" },
       { type: "ul", items: [

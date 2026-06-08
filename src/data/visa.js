@@ -58,7 +58,7 @@ export const blockedAccount = {
   amountPerYear: 11904,
   amountPerMonth: 992,
   note:
-    "As of 2025 you must show roughly €11,904 for one year (≈ €992/month). This figure is reviewed yearly by the German government and tends to rise — always check the current amount.",
+    "As of 2026 you must show roughly €11,904 for one year (≈ €992/month). This figure is reviewed yearly by the German government and tends to rise — always check the current amount.",
   providers: ["Expatrio", "Fintiba", "Coracle", "Deutsche Bank"],
 };
 

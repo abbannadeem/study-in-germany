@@ -7,11 +7,11 @@ export const workRules = {
   studentHours:
     "International (non-EU) students may work up to 140 full days or 280 half days per year without extra permission. EU/EEA students can work freely.",
   minimumWage:
-    "Germany's statutory minimum wage is about €12.82 per hour (2025), so part-time work meaningfully helps with living costs.",
+    "Germany's statutory minimum wage is about €13.90 per hour (2026), so part-time work meaningfully helps with living costs.",
   workingStudent:
     "As a 'Werkstudent' (working student) you can work up to 20 hours per week during the semester and full-time during semester breaks.",
   miniJob:
-    "A 'Mini-job' lets you earn up to ~€556 per month (2025) largely tax-free — common in cafés, retail and logistics.",
+    "A 'Mini-job' lets you earn up to ~€600 per month (2026) largely tax-free — common in cafés, retail and logistics.",
   postStudy:
     "After graduating, non-EU graduates can apply for an 18-month residence permit to find a job related to their degree.",
 };
