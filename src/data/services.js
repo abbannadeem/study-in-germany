@@ -7,11 +7,9 @@ export const services = [
     icon: "🎯",
     title: "University Shortlist Consultation",
     tagline: "Find your best-fit German universities",
-    price: 2000,
-    priceLabel: "Rs 2,000 / €20",
     duration: "30 minutes",
     description:
-      "Stuck choosing between 183 German universities? In a 30-minute call, I'll help you narrow down to 3-5 best-fit programs based on your background, budget, field, and goals.",
+      "Stuck choosing between 183 German universities? In a 30-minute call, we'll help you narrow down to 3-5 best-fit programs based on your background, budget, field, and goals.",
     includes: [
       "Review of your academic background",
       "5 ranked university recommendations",
@@ -26,11 +24,9 @@ export const services = [
     icon: "✍️",
     title: "Statement of Purpose Review",
     tagline: "Make your SOP stand out",
-    price: 3000,
-    priceLabel: "Rs 3,000 / €30",
     duration: "1-2 days turnaround",
     description:
-      "I'll review your Statement of Purpose / Motivation Letter line-by-line — find weak spots, improve structure, and make sure it actually answers what German admissions committees look for.",
+      "We'll review your Statement of Purpose / Motivation Letter line-by-line — find weak spots, improve structure, and make sure it answers what German admissions committees look for.",
     includes: [
       "Line-by-line written feedback",
       "Structural and tone improvements",
@@ -45,8 +41,6 @@ export const services = [
     icon: "📋",
     title: "Full Application Review",
     tagline: "End-to-end application audit",
-    price: 8000,
-    priceLabel: "Rs 8,000 / €80",
     duration: "3-5 days",
     description:
       "Complete review of your entire application package — SOP, CV, transcripts, documents, university choices, and overall strategy. Get every part right before you submit.",
@@ -65,9 +59,7 @@ export const services = [
     slug: "visa-interview-prep",
     icon: "🎤",
     title: "Visa Interview Preparation",
-    tagline: "Get visa approved with confidence",
-    price: 5000,
-    priceLabel: "Rs 5,000 / €50",
+    tagline: "Walk in confident",
     duration: "1 hour mock + feedback",
     description:
       "Don't let the visa interview be the reason you lose a year. 1-hour mock interview with the most common embassy questions, real-time feedback, and a complete document checklist.",
@@ -86,8 +78,6 @@ export const services = [
     icon: "🚀",
     title: "End-to-End Mentorship",
     tagline: "From shortlist to arrival in Germany",
-    price: 25000,
-    priceLabel: "Rs 25,000 / €250",
     duration: "3-6 months support",
     description:
       "Premium 1-on-1 mentorship through your full Germany journey. Weekly calls, unlimited WhatsApp support, document reviews, visa prep, and post-arrival guidance. Done-with-you, not done-for-you.",
@@ -107,8 +97,8 @@ export const services = [
 
 export const faqs = [
   {
-    q: "How do I pay?",
-    a: "We accept payments via bank transfer, JazzCash, EasyPaisa, Wise, PayPal, or Stripe — whatever works for your country.",
+    q: "How much do these services cost?",
+    a: "Pricing is shared during the free 10-minute consultation — we tailor it to your situation and currency. We work with students globally; payment options include international transfers (Wise, PayPal, Stripe), local methods in your country, and bank transfer.",
   },
   {
     q: "Are these refundable?",
@@ -119,8 +109,8 @@ export const faqs = [
     a: "No — these are coaching / review services. You do the work, we make sure you do it RIGHT. This is more sustainable and builds your own skills.",
   },
   {
-    q: "What if I'm from a country other than Pakistan/India?",
-    a: "We work with students from 11+ countries (Pakistan, India, Bangladesh, Nepal, Sri Lanka, Vietnam, UAE, Saudi Arabia, Iran, Turkey, Egypt). Some country-specific advice may vary.",
+    q: "Which countries do you work with?",
+    a: "We work with international students from all over the world — South Asia, Middle East, Africa, Southeast Asia, Europe, and beyond. Application advice is tailored to your specific country's requirements.",
   },
   {
     q: "Why should I pay when there are free agents?",

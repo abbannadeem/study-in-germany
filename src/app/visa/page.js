@@ -203,8 +203,8 @@ export default function VisaPage() {
               <p className="mt-2 text-xs font-bold uppercase tracking-wide text-slate-500">
                 Visa interview prep
               </p>
-              <p className="mt-1 text-3xl font-extrabold text-brand-600">Rs 5,000</p>
-              <p className="text-sm text-slate-600">€50 · 1 hour</p>
+              <p className="mt-1 text-lg font-bold text-brand-600">1 hour mock</p>
+              <p className="text-sm text-slate-600">Free 10-min call first</p>
               <ul className="mt-3 space-y-1 text-xs text-slate-600">
                 <li>✓ Mock interview (Zoom)</li>
                 <li>✓ 20+ embassy questions</li>

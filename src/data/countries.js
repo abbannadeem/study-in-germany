@@ -666,6 +666,84 @@ export const countries = [
       "Show clear sponsorship + family ties to Egypt for higher approval chances.",
     ],
   },
+  {
+    slug: "syria",
+    name: "Syria",
+    flag: "🇸🇾",
+    embassyCity: "Beirut (Lebanon) — primary; Amman (Jordan) — alternative",
+    apsRequired: false,
+    apsNote:
+      "Syria does not have its own APS office. Document verification is handled directly by the German embassy in Beirut (or Amman/Cairo depending on availability). Due to ongoing conflict and document-availability issues, additional verification of original certificates is common — expect longer processing.",
+    keySteps: [
+      {
+        title: "Recover and authenticate your academic documents",
+        body: "Obtain original Syrian Ministry of Higher Education–attested certificates (high school + bachelor's). If originals are unavailable due to conflict, contact your university directly for re-issued documents. The German embassy will require originals — not copies.",
+      },
+      {
+        title: "Get documents legalised + translated",
+        body: "Syrian Ministry of Foreign Affairs + the German embassy's recognized translation service. Arabic documents must be translated to German or English by an officially recognized translator (German embassy maintains a list).",
+      },
+      {
+        title: "Choose German university and programme",
+        body: "Apply via uni-assist or directly to the university. Many German universities offer special pathways and waived application fees for Syrian students under refugee/displaced student programmes (e.g., DAAD's Leadership for Syria). Check each university's Refugees Welcome / Integra programmes.",
+      },
+      {
+        title: "Apply for scholarships (highly recommended)",
+        body: "DAAD's Leadership for Syria, the Welcome Programme for Refugees, and many universities (TUM, Heidelberg, RWTH Aachen, FU Berlin) offer dedicated scholarships and tuition waivers for Syrian students. Apply BEFORE the university application — these can fund your blocked account requirement.",
+      },
+      {
+        title: "Open a blocked account",
+        body: "Expatrio, Fintiba, and Coracle all accept Syrian applicants but may require extra documentation. Transfers from Syrian banks are heavily restricted by international sanctions — most students transfer from a third-country account (Lebanon, Turkey, UAE, or via family abroad). Expect 2-4 weeks for the account to open vs. the usual 1-2 weeks.",
+      },
+      {
+        title: "Visa appointment in Beirut, Amman, or Istanbul",
+        body: "The German embassy in Damascus is closed. Most Syrian students apply via Beirut (Lebanon), Amman (Jordan), or Istanbul (Turkey). Beirut is the primary route. Processing time: 3-6 months — apply as early as possible.",
+      },
+      {
+        title: "Travel and arrival",
+        body: "Once visa is granted, plan travel via Beirut, Istanbul, or Amman (direct Syrian flights to Germany are extremely limited). On arrival, register with the local Ausländerbehörde and confirm your residence permit.",
+      },
+    ],
+    documents: [
+      "Syrian secondary school certificate (Baccalaureate / Shahada Thanawia) — original + attested",
+      "Bachelor's degree + transcripts (Syrian Ministry of Higher Education attested)",
+      "Translations into German/English by embassy-recognized translator",
+      "Passport (valid ≥1 year, with at least 2 blank pages)",
+      "Admission letter from a German university",
+      "Blocked account confirmation (€11,904+ for 12 months; verify current minimum)",
+      "Health insurance confirmation",
+      "Language certificate (IELTS / TOEFL / TestDaF / DSH)",
+      "Motivation letter and CV (German or English)",
+      "Scholarship confirmation (if applicable — strongly recommended for visa approval)",
+      "Visa application form + 2 biometric photos",
+      "Visa fee (~€75)",
+      "Travel insurance for arrival period",
+      "Optional but helpful: Proof of family ties to Syria (for visa interview)",
+    ],
+    timeline: [
+      { when: "12-15 months before", what: "Research German universities + Syria-specific scholarship programmes (DAAD Leadership for Syria, Welcome Programme)" },
+      { when: "10-12 months before", what: "Take IELTS / TOEFL / TestDaF (book early — testing centres limited)" },
+      { when: "8-10 months before", what: "Recover + attest original Syrian documents (allow 2-3 months due to logistical challenges)" },
+      { when: "6-8 months before", what: "Apply for scholarships (DAAD, university-specific) — deadlines often in October" },
+      { when: "5-6 months before", what: "Apply to universities via uni-assist (some have free fee waivers for Syrian students)" },
+      { when: "3-4 months before", what: "Receive admission letter; begin blocked account process (allow extra time for sanctions-related delays)" },
+      { when: "3 months before", what: "Book visa appointment in Beirut / Amman / Istanbul (book 2-3 months ahead — slots fill fast)" },
+      { when: "1-3 months before", what: "Visa interview + waiting period (often 3-6 months total)" },
+      { when: "On approval", what: "Plan travel via Beirut, Istanbul, or Amman; register in Germany within 14 days of arrival" },
+    ],
+    tips: [
+      "Apply for Syria-specific DAAD scholarships FIRST — they cover tuition, living costs, and can fulfil the blocked account requirement.",
+      "The Welcome Programme for Refugees at many German universities offers free German language courses + waived application fees.",
+      "Damascus German embassy is closed — Beirut is the primary visa centre. Apply 5-6 months ahead.",
+      "Sanctions complicate money transfers from Syrian banks — use a third-country account (family in Lebanon/Turkey/UAE) for blocked account funding.",
+      "Syrian engineers, doctors, and IT graduates are highly valued — many German universities have direct pathways.",
+      "Recovering original documents during/after conflict can take months — start this process FIRST, before anything else.",
+      "Strong motivation letter explaining your story + commitment to studies massively improves visa approval chances.",
+      "Connect with the Syrian student associations in Germany (universities like TU Berlin, Heidelberg, RWTH Aachen have active groups).",
+      "Free German language courses (Integrationskurs, A1-B2) are available to recognized refugees and asylum-seekers.",
+      "Apostille convention does not apply to Syria — full attestation chain (Syrian MoFA → German embassy) is mandatory.",
+    ],
+  },
 ];
 
 export function getCountry(slug) {

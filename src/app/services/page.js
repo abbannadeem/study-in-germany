@@ -11,7 +11,7 @@ export const metadata = {
 const WHATSAPP_NUMBER = "491706963809";
 
 function whatsappLink(service) {
-  const message = `Hi! I'm interested in your "${service.title}" service (${service.priceLabel}). Can we discuss?`;
+  const message = `Hi! I'm interested in your "${service.title}" service. Can we discuss pricing and timing?`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
@@ -83,10 +83,12 @@ export default function ServicesPage() {
               <p className="mt-1 text-sm text-slate-500">{s.tagline}</p>
 
               <div className="my-4 border-y border-slate-100 py-3">
-                <p className="text-2xl font-extrabold text-brand-600">
-                  {s.priceLabel}
+                <p className="text-sm font-semibold text-brand-600">
+                  ⏱️ {s.duration}
                 </p>
-                <p className="text-xs text-slate-500">⏱️ {s.duration}</p>
+                <p className="mt-1 text-xs text-slate-500">
+                  Pricing on free 10-min call
+                </p>
               </div>
 
               <p className="mb-3 text-sm leading-relaxed text-slate-700">

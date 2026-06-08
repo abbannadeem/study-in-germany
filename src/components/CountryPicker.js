@@ -15,6 +15,7 @@ const TOP_COUNTRIES = [
   { code: "eg", name: "Egypt", flag: "🇪🇬", students: "7,000+", guide: "egypt" },
   { code: "vn", name: "Vietnam", flag: "🇻🇳", students: "5,500+", guide: "vietnam" },
   { code: "bd", name: "Bangladesh", flag: "🇧🇩", students: "5,000+", guide: "bangladesh" },
+  { code: "sy", name: "Syria", flag: "🇸🇾", students: "5,000+", guide: "syria" },
   { code: "ae", name: "UAE (Dubai)", flag: "🇦🇪", students: "3,500+", guide: "uae" },
   { code: "sa", name: "Saudi Arabia", flag: "🇸🇦", students: "2,500+", guide: "saudi-arabia" },
   { code: "np", name: "Nepal", flag: "🇳🇵", students: "2,500+", guide: "nepal" },
@@ -25,13 +26,12 @@ export default function CountryPicker() {
   const [open, setOpen] = useState(false);
   const [picked, setPicked] = useState(null);
 
-  // Show only on first visit — with substantial delay so user explores first.
-  // Aggressive modals on landing = high bounce rate.
+  // Show only on first visit — gentle delay so hero loads first.
   useEffect(() => {
     const stored = localStorage.getItem("student_country");
     if (!stored) {
-      // 8 seconds — gives user time to read hero, see value prop, BEFORE asking.
-      const t = setTimeout(() => setOpen(true), 8000);
+      // 4 seconds — enough for hero to render, not so long users miss the ask.
+      const t = setTimeout(() => setOpen(true), 4000);
       return () => clearTimeout(t);
     }
   }, []);
@@ -39,10 +39,17 @@ export default function CountryPicker() {
   function choose(country) {
     localStorage.setItem("student_country", JSON.stringify(country));
     setPicked(country);
-    // Close after short delay
-    setTimeout(() => setOpen(false), 400);
-    // Reload to show personalized banner
-    setTimeout(() => window.location.reload(), 500);
+    // Close modal + navigate user DIRECTLY to their country guide so they
+    // actually SEE the personalized content (the small top banner is easy
+    // to miss after scrolling).
+    setTimeout(() => {
+      setOpen(false);
+      if (country.guide) {
+        window.location.href = `/guides/${country.guide}`;
+      } else {
+        window.location.reload();
+      }
+    }, 350);
   }
 
   function skip() {
