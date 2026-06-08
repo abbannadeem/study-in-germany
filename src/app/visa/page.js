@@ -166,6 +166,56 @@ export default function VisaPage() {
         </div>
       </section>
 
+      {/* High-intent CTA: visa interview prep service */}
+      <section className="mx-auto max-w-4xl px-4 pb-12">
+        <div className="overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 ring-1 ring-emerald-200 sm:p-8">
+          <div className="grid items-center gap-6 sm:grid-cols-[1.5fr_1fr]">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">
+                🎤 Worried about the visa interview?
+              </p>
+              <h3 className="mt-2 text-2xl font-extrabold text-ink-900">
+                Don't lose a year over 20 questions.
+              </h3>
+              <p className="mt-2 text-slate-700">
+                Get a 1-hour mock interview, real embassy question prep, and document
+                checklist from a Pakistani student already in Germany.
+              </p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href="/services"
+                  className="rounded-lg bg-ink-900 px-5 py-2.5 font-semibold text-white transition hover:bg-ink-800"
+                >
+                  See visa interview prep →
+                </a>
+                <a
+                  href="https://wa.me/491706963809?text=Hi! I want help with my visa interview."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg bg-emerald-500 px-5 py-2.5 font-semibold text-white transition hover:bg-emerald-600"
+                >
+                  💬 Free 10-min call
+                </a>
+              </div>
+            </div>
+            <div className="rounded-xl bg-white p-5 shadow-sm">
+              <p className="text-3xl">🎤</p>
+              <p className="mt-2 text-xs font-bold uppercase tracking-wide text-slate-500">
+                Visa interview prep
+              </p>
+              <p className="mt-1 text-3xl font-extrabold text-brand-600">Rs 5,000</p>
+              <p className="text-sm text-slate-600">€50 · 1 hour</p>
+              <ul className="mt-3 space-y-1 text-xs text-slate-600">
+                <li>✓ Mock interview (Zoom)</li>
+                <li>✓ 20+ embassy questions</li>
+                <li>✓ Real-time feedback</li>
+                <li>✓ Document checklist</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <JourneyNav
         prev={{ href: "/calculator", label: "Plan your budget" }}
         next={{ href: "/blocked-account", label: "Open a blocked account" }}

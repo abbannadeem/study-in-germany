@@ -256,6 +256,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Services CTA — paid 1-on-1 help (primary income source) */}
+      <section className="mx-auto max-w-5xl px-4 py-16">
+        <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 via-brand-400 to-brand-500 p-8 shadow-xl sm:p-12">
+          <div className="grid items-center gap-8 sm:grid-cols-[1.4fr_1fr]">
+            <div>
+              <span className="inline-block rounded-full bg-ink-900 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-400">
+                🤝 1-on-1 Services
+              </span>
+              <h2 className="mt-3 text-3xl font-extrabold text-ink-900 sm:text-4xl">
+                Need personal help?
+              </h2>
+              <p className="mt-3 text-lg leading-relaxed text-ink-900/80">
+                The free guide gets you 80% there. For the rest — university shortlist, SOP review, visa interview prep — get 1-on-1 help from a real Pakistani student already in Germany.
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2 text-sm text-ink-900/80">
+                <span className="rounded-full bg-white/40 px-3 py-1">✓ Honest pricing</span>
+                <span className="rounded-full bg-white/40 px-3 py-1">✓ Free 10-min call first</span>
+                <span className="rounded-full bg-white/40 px-3 py-1">✓ Refund guarantee</span>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <Link
+                  href="/services"
+                  className="rounded-lg bg-ink-900 px-6 py-3 font-bold text-white transition hover:bg-ink-800"
+                >
+                  See all services →
+                </Link>
+                <a
+                  href="https://wa.me/491706963809?text=Hi! I want to discuss services."
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-lg bg-emerald-500 px-6 py-3 font-bold text-white transition hover:bg-emerald-600"
+                >
+                  💬 WhatsApp now
+                </a>
+              </div>
+            </div>
+            <div className="space-y-3">
+              <div className="rounded-xl bg-white/90 p-4 shadow-sm">
+                <p className="text-2xl">🎯</p>
+                <p className="mt-2 font-bold text-ink-900">University shortlist</p>
+                <p className="text-sm text-slate-600">Rs 2,000 · 30 min</p>
+              </div>
+              <div className="rounded-xl bg-white p-4 shadow-md ring-2 ring-ink-900/20">
+                <p className="text-2xl">✍️</p>
+                <p className="mt-2 font-bold text-ink-900">SOP review <span className="rounded-full bg-emerald-500 px-2 py-0.5 text-[10px] text-white">POPULAR</span></p>
+                <p className="text-sm text-slate-600">Rs 3,000 · 1-2 days</p>
+              </div>
+              <div className="rounded-xl bg-white/90 p-4 shadow-sm">
+                <p className="text-2xl">🎤</p>
+                <p className="mt-2 font-bold text-ink-900">Visa interview prep</p>
+                <p className="text-sm text-slate-600">Rs 5,000 · 1 hour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Lead magnet — Free PDF + Newsletter signup */}
       <section className="mx-auto max-w-4xl px-4 py-16">
         <NewsletterSignup />

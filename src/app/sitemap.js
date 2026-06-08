@@ -25,6 +25,7 @@ export default function sitemap() {
     "/blocked-account",
     "/settle",
     "/blog",
+    "/services",
     "/about",
     "/contact",
     "/privacy",

@@ -36,7 +36,8 @@ const navGroups = [
   {
     label: "Learn",
     items: [
-      { href: "/blog", label: "📚 Blog & Guides", desc: "13 detailed articles" },
+      { href: "/blog", label: "📚 Blog & Guides", desc: "16 detailed articles" },
+      { href: "/services", label: "🤝 1-on-1 Services", desc: "Personal help (paid)" },
       { href: "/about", label: "ℹ️ About Us", desc: "Our mission" },
       { href: "/contact", label: "📬 Contact", desc: "WhatsApp + email" },
     ],
