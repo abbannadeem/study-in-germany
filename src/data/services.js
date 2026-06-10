@@ -9,7 +9,7 @@ export const services = [
     tagline: "Find your best-fit German universities",
     duration: "30 minutes",
     description:
-      "Stuck choosing between 183 German universities? In a 30-minute call, we'll help you narrow down to 3-5 best-fit programs based on your background, budget, field, and goals.",
+      "Stuck choosing between hundreds of German public universities? In a 30-minute call, we'll help you narrow down to 3-5 best-fit programs based on your background, budget, field, and goals.",
     includes: [
       "Review of your academic background",
       "5 ranked university recommendations",

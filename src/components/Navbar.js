@@ -1,5 +1,14 @@
 "use client";
 
+// Global z-index scale (kept consistent across the app):
+//   chat / floating widgets ........ z-40
+//   nav dropdowns .................. z-30
+//   fixed modals / CountryPicker ... z-50
+//   modal close buttons ............ z-[60]
+// The sticky header itself sits at z-50 so it stays above page content,
+// but nav dropdowns drop to z-30 so the chat widget and country modal
+// can layer on top correctly.
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -9,17 +18,17 @@ const navGroups = [
   {
     label: "Explore",
     items: [
-      { href: "/universities", label: "🎓 Universities", desc: "Browse 183 public unis" },
-      { href: "/programs", label: "📖 Programs", desc: "130+ English programmes" },
+      { href: "/universities", label: "🎓 Universities", desc: "Public university directory" },
+      { href: "/programs", label: "📖 Programs", desc: "English-taught programmes" },
       { href: "/compare", label: "⚖️ Compare", desc: "Side-by-side comparison" },
-      { href: "/cities", label: "🏙️ Cities", desc: "37 student cities" },
+      { href: "/cities", label: "🏙️ Cities", desc: "Student cities by state" },
     ],
   },
   {
     label: "Plan",
     items: [
-      { href: "/calculator", label: "🧮 Cost Calculator", desc: "EUR → PKR/INR/BDT" },
-      { href: "/scholarships", label: "💰 Scholarships", desc: "DAAD + 13 more" },
+      { href: "/calculator", label: "🧮 Cost Calculator", desc: "Multi-currency estimates" },
+      { href: "/scholarships", label: "💰 Scholarships", desc: "DAAD + many more" },
       { href: "/industries", label: "🏭 Industries", desc: "Jobs per state" },
       { href: "/jobs", label: "💼 Jobs", desc: "Werkstudent + mini-jobs" },
     ],
@@ -36,7 +45,7 @@ const navGroups = [
   {
     label: "Learn",
     items: [
-      { href: "/blog", label: "📚 Blog & Guides", desc: "16 detailed articles" },
+      { href: "/blog", label: "📚 Blog & Guides", desc: "Detailed articles & guides" },
       { href: "/about", label: "ℹ️ About Us", desc: "Our mission" },
       { href: "/contact", label: "📬 Contact", desc: "WhatsApp + email" },
     ],
@@ -100,7 +109,7 @@ export default function Navbar() {
                 : "text-slate-700 hover:bg-slate-100 hover:text-ink-900"
             }`}
           >
-            🚀 Start
+            Start
           </Link>
 
           {navGroups.map((group) => {
@@ -120,14 +129,21 @@ export default function Navbar() {
                   }`}
                 >
                   {group.label}
-                  <span className={`text-xs transition-transform ${isOpen ? "rotate-180" : ""}`}>
-                    ▼
-                  </span>
+                  <svg
+                    className={`h-4 w-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    aria-hidden="true"
+                  >
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
                 </button>
 
                 {/* Dropdown panel */}
                 {isOpen && (
-                  <div className="absolute left-0 top-full z-50 mt-2 w-72 rounded-xl border border-slate-200 bg-white p-2 shadow-xl">
+                  <div className="absolute left-0 top-full z-30 mt-2 w-72 rounded-xl border border-slate-200 bg-white p-2 shadow-xl">
                     {group.items.map((item) => (
                       <Link
                         key={item.href}
@@ -192,7 +208,7 @@ export default function Navbar() {
               onClick={() => setMobileOpen(false)}
               className="block rounded-md bg-brand-50 px-3 py-3 font-semibold text-brand-700"
             >
-              🚀 Start Here
+              Start
             </Link>
 
             <div className="mt-2 space-y-2">

@@ -12,7 +12,7 @@ const contactMethods = [
     icon: "💬",
     title: "WhatsApp",
     text: "Fastest reply — usually within a few hours.",
-    action: "Open WhatsApp →",
+    action: "Open WhatsApp",
     href: "https://wa.me/491706963809",
     color: "bg-emerald-50 text-emerald-700 border-emerald-200",
   },
@@ -57,7 +57,7 @@ const faqs = [
   },
   {
     q: "Can I contribute / write for the site?",
-    a: "Yes! If you're a current Pakistani/Indian/South Asian student in Germany and want to share your story or write a guide, message us.",
+    a: "Yes! If you're a current international student in Germany and want to share your story or write a guide, message us.",
   },
 ];
 
@@ -65,9 +65,9 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="📬 Contact"
+        eyebrow="Contact"
         title="Get in touch"
-        subtitle="Have a question, spotted an error, or want to share your story? Pick the channel that works for you."
+        subtitle="We read every message personally. No bots, no delays."
       />
 
       {/* Contact methods */}
@@ -79,9 +79,8 @@ export default function ContactPage() {
               href={m.href}
               target={m.href.startsWith("http") ? "_blank" : undefined}
               rel="noreferrer"
-              className={`group flex flex-col rounded-xl border-2 p-6 transition-all hover:-translate-y-1 hover:shadow-md ${m.color}`}
+              className={`group flex flex-col rounded-2xl border p-6 transition-all duration-200 hover:shadow-md ${m.color}`}
             >
-              <div className="mb-3 text-4xl">{m.icon}</div>
               <h3 className="text-lg font-bold">{m.title}</h3>
               <p className="mt-1 text-sm opacity-80">{m.text}</p>
               <span className="mt-4 inline-block text-sm font-semibold">
@@ -144,9 +143,9 @@ export default function ContactPage() {
             </div>
             <button
               type="submit"
-              className="rounded-lg bg-brand-500 px-5 py-2.5 font-semibold text-ink-900 transition hover:bg-brand-400"
+              className="rounded-lg bg-brand-500 px-5 py-2.5 font-semibold text-ink-900 transition-all duration-200 hover:bg-brand-400"
             >
-              Send message →
+              Send message
             </button>
           </form>
         </div>
@@ -172,7 +171,7 @@ export default function ContactPage() {
           </div>
 
           <div className="mt-8 rounded-xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
-            📍 <strong className="text-ink-900">Based in:</strong> Pakistan, with
+            <strong className="text-ink-900">Based in:</strong> Pakistan, with
             on-the-ground experience in Germany. We respond personally — no
             chatbots, no canned responses.
           </div>

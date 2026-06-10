@@ -36,7 +36,8 @@ export default function ChatWidget() {
     send();
   }
 
-  const showSuggestions = messages.length <= 1;
+  // Show suggestion chips only until the user has sent their first message.
+  const showSuggestions = messages.filter((m) => m.role === "user").length === 0;
 
   return (
     <>
@@ -44,14 +45,14 @@ export default function ChatWidget() {
       <button
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? "Close assistant" : "Open assistant"}
-        className="fixed bottom-5 right-5 z-[60] flex h-14 w-14 items-center justify-center rounded-full bg-brand-500 text-2xl text-ink-900 shadow-lg ring-1 ring-black/10 transition hover:bg-brand-400"
+        className="fixed bottom-5 right-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-brand-500 text-2xl text-ink-900 shadow-lg ring-1 ring-black/10 transition hover:bg-brand-400"
       >
         {open ? "✕" : "💬"}
       </button>
 
       {/* Panel */}
       {open && (
-        <div className="fixed bottom-24 right-5 z-[60] flex h-[min(560px,75vh)] w-[min(380px,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
+        <div className="fixed bottom-24 right-5 z-40 flex h-[min(560px,75vh)] w-[min(380px,calc(100vw-2.5rem))] flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
           {/* Header */}
           <div className="bg-german px-4 py-3 text-white">
             <div className="flex items-center gap-2">
@@ -66,10 +67,10 @@ export default function ChatWidget() {
           </div>
 
           {/* Messages */}
-          <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto bg-slate-50 p-3">
+          <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto bg-slate-50 p-4">
             {messages.map((m, i) => (
               <div
-                key={i}
+                key={`${m.role}-${i}-${(m.text || "").slice(0, 8)}`}
                 className={`flex ${m.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
@@ -132,7 +133,7 @@ export default function ChatWidget() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Ask anything about studying in Germany…"
-              className="flex-1 rounded-full border border-slate-300 px-3 py-2 text-sm outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+              className="flex-1 rounded-full border border-slate-300 px-3 py-2 text-sm focus:outline-none focus:border-brand-500 focus:ring-2 focus:ring-brand-500"
             />
             <button
               type="submit"

@@ -49,7 +49,7 @@ export const metadata = {
     siteName: "Study in Germany Guide",
     title: "Study in Germany — Free Guide for International Students",
     description:
-      "183 public universities, cost calculator (PKR/INR/BDT), scholarships, visa process and country-specific guides — all free.",
+      "Public universities directory, multi-currency cost calculator, scholarships, visa process and country-specific guides — all free, updated 2026.",
     images: [
       {
         url: "/logo.svg",
@@ -63,7 +63,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Study in Germany — Free Guide",
     description:
-      "183 unis, scholarships, visa guide, cost calculator. For international students worldwide.",
+      "Universities, scholarships, visa guide, cost calculator. For international students worldwide.",
     images: ["/logo.svg"],
   },
   robots: {

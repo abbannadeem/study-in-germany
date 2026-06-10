@@ -32,7 +32,7 @@ export default function FloatingWhatsApp() {
       target="_blank"
       rel="noreferrer"
       aria-label="Chat on WhatsApp"
-      className="fixed bottom-5 left-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-all hover:scale-110 hover:bg-[#1ebe57] sm:h-16 sm:w-16"
+      className="fixed bottom-5 left-5 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform duration-200 hover:scale-105 hover:bg-[#1ebe57] hover:shadow-2xl sm:h-16 sm:w-16"
     >
       {/* WhatsApp SVG icon */}
       <svg

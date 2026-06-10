@@ -1,4 +1,4 @@
-// Complete Pakistan-to-Germany student journey checklist.
+// Complete international-student-to-Germany journey checklist.
 // Each step is grouped by stage. Users tick them off and progress is saved in
 // localStorage so they can return to where they left off.
 
@@ -88,7 +88,7 @@ export const checklistGroups = [
       "Organize ALL documents in a clear folder",
       "Attend visa interview at German embassy",
       "Submit biometrics",
-      "Pay visa fee (~€75 in PKR)",
+      "Pay visa fee (~€75 in your local currency)",
       "Wait for visa decision (4-12 weeks)",
       "Collect passport with visa stamp",
     ],

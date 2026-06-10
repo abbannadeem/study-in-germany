@@ -29,7 +29,10 @@ export default function CostCalculator() {
     [currencyCode]
   );
 
-  const rows = useMemo(() => breakdown(city, lifestyle.mult), [city, lifestyle]);
+  const rows = useMemo(
+    () => breakdown(city, lifestyle.mult),
+    [city, lifestyle]
+  );
   const monthly = rows[rows.length - 1].value;
   const yearly = monthly * 12;
   const blockedAccount = 11904; // current minimum to show
@@ -52,7 +55,7 @@ export default function CostCalculator() {
             ))}
           </select>
           <p className="mt-1 text-xs text-slate-500">
-            Avg. rent in {city.name}: ~€{city.avgRent}/month
+            Avg. rent in {city?.name || "this city"}: ~€{city?.avgRent ?? "—"}/month
           </p>
         </div>
 

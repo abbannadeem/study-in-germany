@@ -94,7 +94,7 @@ export default function DocumentChecklist() {
           return (
             <details
               key={group.id}
-              open={groupPct < 100}
+              open
               className="group overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
             >
               <summary
@@ -121,7 +121,7 @@ export default function DocumentChecklist() {
                   const isDone = !!completed[key];
                   return (
                     <label
-                      key={i}
+                      key={`${group.id}:${item}`}
                       className="flex cursor-pointer items-start gap-3 px-5 py-3 hover:bg-slate-50"
                     >
                       <input

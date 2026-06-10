@@ -8,7 +8,7 @@ import { ALL_PROGRAMS } from "@/lib/programs";
 export const metadata = {
   title: "About Us",
   description:
-    "Study in Germany is a free, independent platform built to help South Asian students navigate German university applications, visas, and life in Germany.",
+    "Study in Germany Guide is a free, independent platform built to help international students navigate German university applications, visas, and life in Germany.",
 };
 
 const values = [
@@ -18,9 +18,9 @@ const values = [
     text: "Everything is free to read. We mark affiliate links clearly and only recommend what we'd recommend to a friend.",
   },
   {
-    icon: "🇵🇰",
-    title: "South Asia focused",
-    text: "Generic study-abroad sites don't cover HEC attestation, APS Vietnam, or PKR conversion. We do.",
+    icon: "🌍",
+    title: "Truly global",
+    text: "Generic study-abroad sites skip country-specific details. We cover APS, embassy specifics, document chains and currency conversion for every region.",
   },
   {
     icon: "📚",
@@ -39,15 +39,15 @@ export default function AboutPage() {
     { value: `${universities.length}`, label: "Universities covered" },
     { value: `${ALL_PROGRAMS.length}+`, label: "English programmes" },
     { value: `${cities.length}`, label: "Student cities" },
-    { value: "6", label: "Country guides" },
+    { value: "12", label: "Country guides" },
   ];
 
   return (
     <>
       <PageHero
-        eyebrow="🇩🇪 About"
+        eyebrow="About"
         title="Why this site exists"
-        subtitle="When I applied to a German university myself, I wasted weeks on outdated PDFs, vague forums, and contradictory advice. This is the guide I wish I had."
+        subtitle="When I applied, I wasted 6 weeks on outdated info. This guide gives international students the truth about tuition-free German degrees, real deadlines, and real costs — updated every month."
       />
 
       {/* Founder note */}
@@ -63,22 +63,22 @@ export default function AboutPage() {
                 A note from the founder
               </p>
               <h2 className="mt-1 text-2xl font-bold text-ink-900">
-                Hi, I'm Talha 👋
+                Hi, I'm Talha
               </h2>
               <p className="mt-3 text-slate-700">
-                I'm a student from Pakistan who applied to study in Germany. Like
-                most international applicants, I struggled with information that
-                was either too general (you'll need a blocked account) or buried
-                in 50-page government PDFs (in German).
+                I am Talha, an international student who applied to German universities.
+                Like you, I was drowning in confusion — information was either too
+                general ("you'll need a blocked account") or buried in 50-page German
+                government PDFs.
               </p>
               <p className="mt-3 text-slate-700">
                 So I started writing it down — step by step, in plain English,
                 with real numbers and timelines. That side project became this
                 site. Today it covers{" "}
                 <strong>{universities.length} German public universities</strong>,{" "}
-                <strong>{ALL_PROGRAMS.length}+ English programmes</strong>, six
-                country guides, a cost calculator with currency conversion for
-                PKR/INR/BDT, and detailed visa and scholarship walk-throughs.
+                <strong>{ALL_PROGRAMS.length}+ English programmes</strong>, twelve
+                country guides, a cost calculator with multi-currency conversion,
+                and detailed visa and scholarship walk-throughs.
               </p>
               <p className="mt-3 text-slate-700">
                 It's still free. It always will be.
@@ -93,7 +93,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-3xl font-extrabold text-brand-600">{s.value}</div>
+              <div className="text-3xl font-bold text-brand-600">{s.value}</div>
               <div className="mt-1 text-sm text-slate-500">{s.label}</div>
             </div>
           ))}
@@ -104,9 +104,8 @@ export default function AboutPage() {
       <section className="mx-auto max-w-3xl px-4 py-14 text-center">
         <h2 className="text-3xl font-bold text-ink-900">Our mission</h2>
         <p className="mx-auto mt-4 text-lg leading-relaxed text-slate-600">
-          To make studying in Germany <strong>understandable, affordable, and
-          honest</strong> for every South Asian student — without paying
-          consultants thousands of rupees for information that should be free.
+          Make the German education-consultant industry unnecessary by giving
+          international students the truth for free.
         </p>
       </section>
 
@@ -118,10 +117,9 @@ export default function AboutPage() {
             {values.map((v) => (
               <div
                 key={v.title}
-                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
+                className="rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-200 hover:shadow-md"
               >
-                <div className="mb-3 text-3xl">{v.icon}</div>
-                <h3 className="mb-1 font-semibold text-ink-900">{v.title}</h3>
+                <h3 className="mb-2 font-semibold text-ink-900">{v.title}</h3>
                 <p className="text-sm text-slate-600">{v.text}</p>
               </div>
             ))}
@@ -138,7 +136,7 @@ export default function AboutPage() {
         </p>
         <ul className="mt-4 space-y-3 text-slate-700">
           <li className="flex items-start gap-3">
-            <span className="mt-1 text-emerald-500">✓</span>
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden="true" />
             <span>
               <strong>Affiliate commissions</strong> — when you sign up for a
               service we recommend (like a blocked account provider) via our
@@ -147,14 +145,14 @@ export default function AboutPage() {
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-1 text-emerald-500">✓</span>
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden="true" />
             <span>
               <strong>Advertising</strong> — minimal, non-intrusive ads on some
               pages.
             </span>
           </li>
           <li className="flex items-start gap-3">
-            <span className="mt-1 text-emerald-500">✓</span>
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden="true" />
             <span>
               <strong>No paywalls.</strong> No "premium tier". No locking
               students out of information they need.
@@ -175,7 +173,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-german">
+      <section className="bg-gradient-to-br from-ink-900 to-slate-800">
         <div className="mx-auto max-w-4xl px-4 py-16 text-center text-white">
           <h2 className="text-3xl font-bold">Have a question? Get in touch.</h2>
           <p className="mx-auto mt-3 max-w-xl text-slate-200">
@@ -185,9 +183,9 @@ export default function AboutPage() {
           </p>
           <Link
             href="/contact"
-            className="mt-6 inline-block rounded-lg bg-brand-500 px-6 py-3 font-semibold text-ink-900 shadow transition hover:bg-brand-400"
+            className="mt-6 inline-block rounded-lg bg-brand-500 px-6 py-3 font-semibold text-ink-900 shadow transition-all duration-200 hover:bg-brand-400"
           >
-            Contact us →
+            Contact us
           </Link>
         </div>
       </section>

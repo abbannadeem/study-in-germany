@@ -167,7 +167,7 @@ export default async function BlogDetailPage({ params }) {
       {/* Article body */}
       <section className="mx-auto max-w-3xl px-4 py-10">
         {post.body.map((section, i) => (
-          <Section key={i} section={section} />
+          <Section key={`${section.type}-${i}`} section={section} />
         ))}
 
         {/* Tags */}
@@ -205,7 +205,7 @@ export default async function BlogDetailPage({ params }) {
           </p>
           <div className="mt-4 flex flex-wrap gap-2">
             <a
-              href={`https://wa.me/?text=${encodeURIComponent(post.title)}`}
+              href={`https://wa.me/?text=${encodeURIComponent(`Check out: ${post.title} https://studyingermanyguide.com/blog/${post.slug}`)}`}
               target="_blank"
               rel="noreferrer"
               className="rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
@@ -213,7 +213,7 @@ export default async function BlogDetailPage({ params }) {
               Share on WhatsApp
             </a>
             <a
-              href={`https://www.linkedin.com/sharing/share-offsite/`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://studyingermanyguide.com/blog/${slug}`)}`}
               target="_blank"
               rel="noreferrer"
               className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"

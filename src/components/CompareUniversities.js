@@ -14,6 +14,9 @@ export default function CompareUniversities() {
   );
   // Selected uni slugs (up to 3)
   const [selected, setSelected] = useState([]);
+  // Controlled value for the "Add a university" select, so it visually
+  // resets to the placeholder option after each addition.
+  const [selectedOption, setSelectedOption] = useState("");
 
   const selectedUnis = selected
     .map((slug) => universities.find((u) => u.slug === slug))
@@ -39,8 +42,11 @@ export default function CompareUniversities() {
         </p>
         <div className="flex flex-wrap gap-2">
           <select
-            value=""
-            onChange={(e) => addUni(e.target.value)}
+            value={selectedOption}
+            onChange={(e) => {
+              addUni(e.target.value);
+              setSelectedOption("");
+            }}
             disabled={selected.length >= MAX_SLOTS}
             className="flex-1 min-w-[200px] rounded-lg border border-slate-300 px-3 py-2 text-sm outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
           >

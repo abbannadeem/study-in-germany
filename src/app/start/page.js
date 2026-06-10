@@ -56,8 +56,8 @@ const steps = [
     body: "Follow the 8-step visa process — choose course, get admission, blocked account, embassy appointment.",
     links: [
       { label: "Visa & Process", href: "/visa" },
-      { label: "🇵🇰 Pakistan guide", href: "/guides/pakistan" },
-      { label: "🇮🇳 India guide", href: "/guides/india" },
+      { label: "Pakistan guide", href: "/guides/pakistan" },
+      { label: "India guide", href: "/guides/india" },
     ],
   },
   {
@@ -90,19 +90,28 @@ export default function StartPage() {
   return (
     <>
       <PageHero
-        eyebrow="🚀 Start here"
+        eyebrow="Start here"
         title="Your step-by-step journey"
         subtitle="New to studying in Germany? Follow these 9 steps in order — from picking a university all the way to your first job after graduation."
+        backgroundImage="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80&auto=format&fit=crop"
       />
+
+      {/* Above-the-fold deadline reminder */}
+      <section className="mx-auto max-w-4xl px-4 pt-8">
+        <div className="rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-900">
+          <strong className="text-ink-900">Application deadlines: Jan 15 – Feb 15.</strong>{" "}
+          Start now to hit yours.
+        </div>
+      </section>
 
       {/* Quick chooser at top */}
       <section className="mx-auto max-w-4xl px-4 py-8">
         <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
           <p className="mb-2 text-sm font-semibold text-ink-900">
-            💬 Got a specific question?
+            Got a specific question?
           </p>
           <p className="text-sm text-slate-600">
-            Open the floating chat assistant (bottom-right 💬 button) — it can answer
+            Open the floating chat assistant (bottom-right) — it can answer
             anything about tuition, jobs, the visa or settling in, and link you to the
             right page.
           </p>
@@ -118,8 +127,8 @@ export default function StartPage() {
               className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"
             >
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-50 text-2xl">
-                  {s.icon}
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand-50 text-lg font-bold text-brand-600">
+                  {s.n}
                 </div>
                 <div className="min-w-0 flex-1">
                   <div className="mb-1 text-xs font-bold uppercase tracking-wide text-brand-600">
@@ -132,9 +141,9 @@ export default function StartPage() {
                       <Link
                         key={l.href}
                         href={l.href}
-                        className="rounded-lg bg-brand-500 px-3 py-1.5 text-xs font-semibold text-ink-900 transition hover:bg-brand-400"
+                        className="rounded-lg bg-brand-500 px-3 py-1.5 text-xs font-semibold text-ink-900 transition-all duration-200 hover:bg-brand-400"
                       >
-                        {l.label} →
+                        {l.label}
                       </Link>
                     ))}
                   </div>
@@ -147,15 +156,30 @@ export default function StartPage() {
           ))}
         </div>
 
-        <div className="mt-10 rounded-xl border border-brand-200 bg-gradient-to-br from-brand-50 to-white p-6 text-center shadow-sm">
-          <p className="text-2xl">🎉</p>
-          <p className="mt-2 text-lg font-bold text-ink-900">
-            That's the whole journey!
+        <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+          <p className="text-lg font-bold text-ink-900">
+            Ready? Open step 1 above. Stuck? Message us on WhatsApp.
           </p>
           <p className="mt-1 text-sm text-slate-600">
             Bookmark this page and come back to it whenever you're not sure what to do
             next.
           </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/universities"
+              className="rounded-lg bg-ink-900 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 hover:bg-ink-800"
+            >
+              Browse universities
+            </Link>
+            <a
+              href="https://wa.me/491706963809?text=Hi! I'm starting my Germany application and have questions."
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-slate-200 px-5 py-2.5 text-sm font-semibold text-ink-900 transition-all duration-200 hover:border-brand-400"
+            >
+              Message on WhatsApp
+            </a>
+          </div>
         </div>
       </section>
     </>

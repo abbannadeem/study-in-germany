@@ -6,14 +6,14 @@ export default function UniversityCard({ uni }) {
   return (
     <Link
       href={`/universities/${uni.slug}`}
-      className="group flex h-full flex-col rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-300 hover:shadow-md"
+      className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-400 hover:shadow-md"
     >
       <div className="mb-2 flex items-start justify-between gap-2">
         <h3 className="font-semibold leading-tight text-ink-900 group-hover:text-brand-700">
           {uni.name}
         </h3>
         {uni.worldRanking && (
-          <span className="shrink-0 rounded-full bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-700">
+          <span className="shrink-0 rounded-full bg-brand-50 px-2 py-0.5 text-xs font-semibold text-brand-700 transition-colors duration-200 group-hover:bg-brand-100">
             #{uni.worldRanking}
           </span>
         )}

@@ -5,7 +5,7 @@ import JourneyNav from "@/components/JourneyNav";
 export const metadata = {
   title: "Cost of Living Calculator",
   description:
-    "Estimate your monthly and yearly cost of studying in Germany — pick a city and lifestyle, view costs in EUR, PKR, INR, BDT or USD.",
+    "Estimate your monthly and yearly cost of studying in Germany — pick a city and lifestyle, view costs in EUR or your local currency.",
 };
 
 export default function CalculatorPage() {

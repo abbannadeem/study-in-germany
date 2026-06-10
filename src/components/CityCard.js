@@ -6,9 +6,14 @@ export default function CityCard({ city }) {
   return (
     <Link
       href={`/cities/${city.slug}`}
-      className="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+      className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm transition-all duration-200 hover:shadow-md"
     >
-      <CityImage city={city} className="h-36 w-full" />
+      <CityImage
+        city={city}
+        alt={`${city.name}, ${city.state}`}
+        className="h-36 w-full"
+        imgClassName="transition duration-200 group-hover:brightness-110"
+      />
       <div className="flex flex-1 flex-col p-4">
         <h3 className="font-semibold text-ink-900 group-hover:text-brand-700">
           {city.name}

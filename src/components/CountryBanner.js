@@ -19,7 +19,7 @@ export default function CountryBanner() {
 
   return (
     <div className="bg-gradient-to-r from-brand-50 to-amber-50 px-4 py-2 text-sm">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2">
+      <div className="mx-auto flex max-w-6xl flex-col gap-3 md:flex-row md:items-center md:justify-between">
         <span className="flex items-center gap-2 text-slate-700">
           <span className="text-base">{country.flag}</span>
           <span>

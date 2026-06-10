@@ -5,7 +5,7 @@ import { blogPosts } from "@/data/blog";
 export const metadata = {
   title: "Blog — Tips & Guides for Studying in Germany",
   description:
-    "In-depth articles for Pakistani, Indian, and South Asian students applying to German universities — TUM application guides, DAAD scholarship tips, visa timeline, SOP writing and more.",
+    "In-depth articles for international students applying to German universities — TUM application guides, DAAD scholarship tips, visa timelines, SOP writing and more.",
 };
 
 export default function BlogPage() {
@@ -14,9 +14,9 @@ export default function BlogPage() {
   return (
     <>
       <PageHero
-        eyebrow={`📚 ${blogPosts.length} in-depth articles`}
+        eyebrow={`${blogPosts.length} in-depth articles`}
         title="Blog & Guides"
-        subtitle="Detailed guides written for Pakistani and South Asian students applying to German universities — from TUM applications to DAAD scholarships, visas, and writing winning SOPs."
+        subtitle="Detailed guides written for international students applying to German universities — from TUM applications to DAAD scholarships, visas, and writing winning SOPs."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-10">
@@ -25,14 +25,18 @@ export default function BlogPage() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition-all hover:-translate-y-1 hover:border-brand-300 hover:shadow-md"
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition-all duration-200 hover:border-brand-400"
             >
               {/* Cover */}
-              <div
-                className={`relative flex h-44 items-center justify-center bg-gradient-to-br ${post.coverGradient}`}
-              >
-                <span className="text-6xl drop-shadow-lg">{post.coverEmoji}</span>
-                <div className="absolute left-3 top-3 rounded-full bg-white/90 px-2.5 py-1 text-xs font-semibold text-slate-700">
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-100">
+                <img
+                  src={post.coverImage}
+                  alt={post.title}
+                  className="absolute inset-0 h-full w-full object-cover"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-ink-900/20" />
+                <div className="absolute left-3 top-3 rounded-full bg-white/95 px-2.5 py-1 text-xs font-semibold text-slate-700">
                   {post.category}
                 </div>
               </div>
@@ -42,7 +46,7 @@ export default function BlogPage() {
                 <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-slate-500">
                   <span>{post.date}</span>
                   <span>·</span>
-                  <span>⏱️ {post.readTime}</span>
+                  <span>{post.readTime}</span>
                 </div>
 
                 <h2 className="mb-2 line-clamp-2 text-lg font-bold leading-snug text-ink-900 group-hover:text-brand-700">
@@ -56,7 +60,7 @@ export default function BlogPage() {
                 <div className="mt-auto flex flex-wrap gap-1.5">
                   {post.tags.slice(0, 3).map((t) => (
                     <span
-                      key={t}
+                      key={`${post.slug}:${t}`}
                       className="rounded-md bg-slate-100 px-2 py-0.5 text-xs text-slate-600"
                     >
                       #{t}
@@ -65,16 +69,15 @@ export default function BlogPage() {
                 </div>
 
                 <span className="mt-4 inline-block text-sm font-medium text-brand-600">
-                  Read article →
+                  Read article
                 </span>
               </div>
             </Link>
           ))}
         </div>
 
-        <div className="mt-12 rounded-xl border border-slate-200 bg-slate-50 p-6 text-center">
-          <p className="text-2xl">📬</p>
-          <h3 className="mt-2 text-lg font-bold text-ink-900">
+        <div className="mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6 text-center">
+          <h3 className="text-lg font-bold text-ink-900">
             More articles coming weekly
           </h3>
           <p className="mt-1 text-sm text-slate-600">

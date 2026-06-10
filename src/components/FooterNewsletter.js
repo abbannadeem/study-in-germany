@@ -28,11 +28,11 @@ export default function FooterNewsletter() {
   }
 
   return (
-    <div className="border-b border-white/10 bg-gradient-to-r from-ink-900 via-ink-800 to-ink-900 px-4 py-10">
+    <div className="border-b border-white/10 bg-gradient-to-r from-ink-900 to-slate-800 px-4 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 text-center md:flex-row md:justify-between md:text-left">
         <div>
           <p className="text-lg font-bold text-white sm:text-xl">
-            📚 Get the free Pakistan-to-Germany checklist
+            Get the free Germany application checklist
           </p>
           <p className="mt-1 text-sm text-slate-400">
             Weekly tips, deadlines, and scholarship updates. No spam.
@@ -54,7 +54,7 @@ export default function FooterNewsletter() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your-email@example.com"
-              className="flex-1 rounded-lg border border-white/20 bg-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-400 outline-none focus:border-brand-400 focus:bg-white/20"
+              className="flex-1 rounded-lg border border-white/20 bg-white/10 px-4 py-2.5 text-sm text-white placeholder-slate-300 outline-none focus:border-brand-400 focus:bg-white/20"
             />
             <button
               type="submit"

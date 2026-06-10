@@ -39,11 +39,13 @@ export default function CountryPicker() {
   function choose(country) {
     localStorage.setItem("student_country", JSON.stringify(country));
     setPicked(country);
-    // Close modal + navigate user DIRECTLY to their country guide so they
-    // actually SEE the personalized content (the small top banner is easy
-    // to miss after scrolling).
+    // Navigate user DIRECTLY to their country guide so they actually SEE the
+    // personalized content (the small top banner is easy to miss after
+    // scrolling). The brief delay lets the picked-state highlight render.
+    // We do NOT close the modal here — navigation will unmount the component,
+    // and prematurely closing creates a race condition where the modal
+    // disappears before the new page begins loading.
     setTimeout(() => {
-      setOpen(false);
       if (country.guide) {
         window.location.href = `/guides/${country.guide}`;
       } else {
@@ -76,7 +78,7 @@ export default function CountryPicker() {
         <button
           onClick={() => setOpen(false)}
           aria-label="Close"
-          className="absolute right-3 top-3 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-xl font-bold text-white backdrop-blur transition hover:bg-black/70"
+          className="absolute right-3 top-3 z-[60] flex h-10 w-10 items-center justify-center rounded-full bg-brand-700 text-xl font-bold text-white transition-all duration-200 hover:bg-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2"
         >
           ✕
         </button>
@@ -104,10 +106,10 @@ export default function CountryPicker() {
             <button
               key={c.code}
               onClick={() => choose(c)}
-              className={`group flex flex-col items-center rounded-xl border-2 p-4 transition-all hover:-translate-y-1 hover:shadow-md ${
+              className={`group flex flex-col items-center rounded-2xl border-2 p-4 transition-all duration-200 hover:-translate-y-1 hover:border-brand-400 hover:shadow-lg ${
                 picked?.code === c.code
                   ? "border-brand-500 bg-brand-50"
-                  : "border-slate-200 bg-white hover:border-brand-300"
+                  : "border-slate-200 bg-white"
               }`}
             >
               <span className="text-4xl sm:text-5xl">{c.flag}</span>

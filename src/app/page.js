@@ -7,9 +7,9 @@ import CityCard from "@/components/CityCard";
 import NewsletterSignup from "@/components/NewsletterSignup";
 
 const stats = [
-  { value: "400+", label: "Public universities" },
-  { value: "€0", label: "Tuition in most states" },
-  { value: "2,000+", label: "English programmes" },
+  { value: "Tuition-free", label: "Public universities" },
+  { value: "€0/sem", label: "In most states" },
+  { value: "English", label: "Programmes offered" },
   { value: "18 mo", label: "Post-study stay" },
 ];
 
@@ -28,51 +28,51 @@ const landmarks = [
 const features = [
   {
     href: "/universities",
-    emoji: "🎓",
     title: "Universities",
-    text: "Explore top tuition-free public universities, their programmes, fees and rankings.",
+    text: "Explore tuition-free public universities, their programmes, fees and rankings.",
+    cta: "Browse all universities",
   },
   {
     href: "/programs",
-    emoji: "📖",
     title: "Programs",
     text: "Search English-taught Bachelor's and Master's programmes by field.",
+    cta: "Find your programme",
   },
   {
     href: "/scholarships",
-    emoji: "💰",
     title: "Scholarships",
-    text: "DAAD, Deutschlandstipendium, Erasmus+ and 11 more — find funding.",
+    text: "DAAD, Deutschlandstipendium, Erasmus+ and more — find funding.",
+    cta: "Discover scholarships",
   },
   {
     href: "/cities",
-    emoji: "🏙️",
     title: "Cities",
     text: "Compare student cities by cost of living, lifestyle and job opportunities.",
+    cta: "Explore cities",
   },
   {
     href: "/calculator",
-    emoji: "🧮",
     title: "Cost Calculator",
-    text: "Estimate monthly + yearly costs in EUR, PKR, INR, BDT or USD.",
+    text: "Estimate monthly + yearly costs in your local currency.",
+    cta: "Open the calculator",
   },
   {
     href: "/visa",
-    emoji: "📋",
     title: "Visa & Process",
     text: "Follow the full step-by-step student visa and application process.",
+    cta: "Read the visa guide",
   },
   {
     href: "/blog",
-    emoji: "📚",
     title: "Blog & Guides",
     text: "In-depth articles: TUM application, DAAD scholarship, SOP writing.",
+    cta: "Read the blog",
   },
   {
-    href: "/guides/pakistan",
-    emoji: "🇵🇰",
+    href: "/start",
     title: "Country guides",
-    text: "Pakistan, India, Bangladesh — APS, embassy, country-specific tips.",
+    text: "12 country-by-country guides — APS, embassy, document specifics.",
+    cta: "Pick your country",
   },
 ];
 
@@ -91,47 +91,32 @@ export default function Home() {
             alt="Berlin Brandenburg Gate"
             className="h-full w-full object-cover"
           />
-          {/* Dark gradient overlay for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-black/70 to-black/60" />
-          <div className="absolute inset-0 bg-gradient-to-t from-ink-900/95 via-transparent to-transparent" />
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-ink-900/80 to-ink-900/30" />
         </div>
 
         {/* Content */}
-        <div className="relative mx-auto max-w-6xl px-4 py-24 text-center sm:py-28">
-          <div className="mb-5 flex flex-wrap justify-center gap-2">
-            <span className="inline-block rounded-full bg-white/15 px-4 py-1.5 text-sm font-medium ring-1 ring-white/30 backdrop-blur">
-              🇩🇪 Your complete guide to studying in Germany
-            </span>
-            <span className="inline-block rounded-full bg-emerald-500/20 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-emerald-300 ring-1 ring-emerald-400/40 backdrop-blur">
-              ✓ Updated June 2026
-            </span>
-          </div>
-          <h1 className="mx-auto max-w-3xl text-4xl font-extrabold leading-tight drop-shadow-lg sm:text-6xl">
-            World-class education,{" "}
-            <span className="text-brand-400">tuition-free</span>.
+        <div className="relative mx-auto max-w-6xl px-4 py-16 sm:py-24 text-center">
+          <h1 className="mx-auto max-w-3xl text-4xl sm:text-5xl font-bold leading-tight text-white">
+            Study in Germany tuition-free (and actually get a job after).
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90 drop-shadow sm:text-xl">
-            Everything you need to know about studying in Germany — universities,
-            cities, jobs, scholarships and the complete visa process, all in one
-            place.
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">
+            A free, comprehensive guide for international students applying to German public universities. Honest visa walkthroughs, scholarship matching, cost calculator in your currency, and step-by-step application tips.
           </p>
-          <div className="mt-9 flex flex-wrap justify-center gap-3">
+          <div className="mt-12 flex flex-col sm:flex-row flex-wrap justify-center gap-3">
             <Link
               href="/start"
-              className="rounded-lg bg-brand-500 px-7 py-3.5 text-lg font-bold text-ink-900 shadow-xl transition hover:scale-105 hover:bg-brand-400"
+              className="rounded-lg bg-brand-500 px-6 py-2.5 text-base font-bold text-ink-900 shadow-md transition-all duration-200 hover:bg-brand-400"
             >
-              🚀 Start Here — Your Journey
+              Get started
             </Link>
             <Link
               href="/universities"
-              className="rounded-lg bg-white/15 px-6 py-3 font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/25"
+              className="rounded-lg bg-white/15 px-6 py-2.5 text-base font-semibold text-white ring-1 ring-white/40 backdrop-blur transition-all duration-200 hover:bg-white/25"
             >
-              Or browse universities →
+              Browse universities
             </Link>
           </div>
-          <p className="mt-4 text-sm text-white/80 drop-shadow">
-            New here? The 9-step guided journey is the fastest way to know what to do next.
-          </p>
         </div>
       </section>
 
@@ -140,7 +125,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-12 md:grid-cols-4">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <div className="text-4xl font-extrabold text-brand-600">{s.value}</div>
+              <div className="text-3xl font-bold text-brand-600">{s.value}</div>
               <div className="mt-1 text-sm font-medium text-slate-500">{s.label}</div>
             </div>
           ))}
@@ -151,15 +136,11 @@ export default function Home() {
       <section className="bg-slate-50 py-16">
         <div className="mx-auto max-w-6xl px-4">
           <div className="mb-10 text-center">
-            <span className="mb-2 inline-block rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-700">
-              🇩🇪 Discover Germany
-            </span>
             <h2 className="text-3xl font-bold text-ink-900 sm:text-4xl">
-              Study where history meets innovation
+              Find your city
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-slate-600">
-              From medieval castles to modern tech hubs — Germany's 37 student
-              cities offer some of Europe's most iconic places to live and study.
+              From Berlin tech hubs to Munich's Fortune 500s — student cities across every German state.
             </p>
           </div>
 
@@ -176,7 +157,7 @@ export default function Home() {
                 <img
                   src={`/cities/${l.slug}.jpg`}
                   alt={`${l.name}, ${l.city}`}
-                  className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
+                  className={`w-full object-cover transition-opacity duration-300 group-hover:opacity-90 ${
                     i === 0 ? "h-full min-h-[320px]" : "h-44 sm:h-52"
                   }`}
                   loading="lazy"
@@ -186,7 +167,7 @@ export default function Home() {
                 {/* Caption */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
                   <p className="text-xs font-medium text-white/80 sm:text-sm">
-                    {l.emoji} {l.city}
+                    <span aria-hidden="true">{l.emoji}</span> {l.city}
                   </p>
                   <p className={`font-bold text-white drop-shadow ${i === 0 ? "text-xl sm:text-2xl" : "text-sm sm:text-base"}`}>
                     {l.name}
@@ -199,9 +180,9 @@ export default function Home() {
           <div className="mt-8 text-center">
             <Link
               href="/cities"
-              className="inline-block rounded-lg bg-ink-900 px-6 py-3 font-semibold text-white shadow-md transition hover:bg-ink-700"
+              className="inline-block rounded-lg bg-ink-900 px-6 py-3 font-semibold text-white shadow-sm transition-all duration-200 hover:bg-ink-700"
             >
-              Explore all 37 cities →
+              Explore all cities
             </Link>
           </div>
         </div>
@@ -210,7 +191,7 @@ export default function Home() {
       {/* Feature cards */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-center text-3xl font-bold text-ink-900 sm:text-4xl">
-          Everything in one place
+          Stop jumping between 10 tabs. Everything in one place.
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-slate-500">
           Browse curated, up-to-date information across all the topics that matter
@@ -221,15 +202,14 @@ export default function Home() {
             <Link
               key={f.href}
               href={f.href}
-              className="group rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:border-brand-300 hover:shadow-md"
+              className="group rounded-xl bg-white p-5 shadow-sm transition-all duration-200 hover:shadow-md"
             >
-              <div className="mb-3 text-4xl">{f.emoji}</div>
-              <h3 className="mb-1 text-lg font-semibold text-ink-900 group-hover:text-brand-700">
+              <h3 className="mb-1 text-lg font-semibold text-ink-900">
                 {f.title}
               </h3>
               <p className="text-sm text-slate-500">{f.text}</p>
               <span className="mt-3 inline-block text-sm font-medium text-brand-600">
-                Learn more →
+                {f.cta}
               </span>
             </Link>
           ))}
@@ -263,56 +243,54 @@ export default function Home() {
 
       {/* Need personal help — services teaser (no prices, global) */}
       <section className="mx-auto max-w-5xl px-4 py-16">
-        <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-brand-500 via-brand-400 to-brand-500 p-8 shadow-xl sm:p-12">
+        <div className="rounded-3xl border border-slate-200 bg-white p-10 sm:p-12 shadow-sm">
           <div className="grid items-center gap-8 sm:grid-cols-[1.4fr_1fr]">
             <div>
-              <span className="inline-block rounded-full bg-ink-900 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-400">
-                🤝 1-on-1 Services
+              <span className="inline-block rounded-full bg-brand-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-brand-700">
+                1-on-1 services
               </span>
-              <h2 className="mt-3 text-3xl font-extrabold text-ink-900 sm:text-4xl">
+              <h2 className="mt-3 text-3xl font-bold text-ink-900 sm:text-4xl">
                 Need personal help?
               </h2>
               <p className="mt-3 text-lg leading-relaxed text-ink-900/80">
-                The free guide gets you 80% there. For the rest — university shortlist, SOP review, visa interview prep — get personal 1-on-1 help from someone who's been through it.
+                Our free guide covers the fundamentals. Get personalized help for university selection, statement review, and interview prep from someone who completed the process.
               </p>
-              <div className="mt-5 flex flex-wrap gap-2 text-sm text-ink-900/80">
-                <span className="rounded-full bg-white/40 px-3 py-1">✓ Honest guidance</span>
-                <span className="rounded-full bg-white/40 px-3 py-1">✓ Free 10-min call first</span>
-                <span className="rounded-full bg-white/40 px-3 py-1">✓ Refund guarantee</span>
-              </div>
+              <ul className="mt-5 space-y-2 text-sm text-ink-900/80">
+                <li>Honest guidance from a recent graduate</li>
+                <li>Free 10-minute discovery call before you commit</li>
+                <li>Refund guarantee if you are not satisfied</li>
+              </ul>
               <div className="mt-6 flex flex-wrap gap-3">
                 <Link
                   href="/services"
-                  className="rounded-lg bg-ink-900 px-6 py-3 font-bold text-white transition hover:bg-ink-800"
+                  className="rounded-lg bg-ink-900 px-6 py-2.5 text-base font-semibold text-white transition-all duration-200 hover:bg-ink-800"
                 >
-                  See all services →
+                  See all services
                 </Link>
                 <a
                   href="https://wa.me/491706963809?text=Hi! I want to discuss services."
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-lg bg-emerald-500 px-6 py-3 font-bold text-white transition hover:bg-emerald-600"
+                  className="rounded-lg bg-emerald-500 px-6 py-2.5 text-base font-semibold text-white transition-all duration-200 hover:bg-emerald-600"
                 >
-                  💬 WhatsApp now
+                  Message on WhatsApp
                 </a>
               </div>
             </div>
             <div className="space-y-3">
-              <div className="rounded-xl bg-white/90 p-4 shadow-sm">
-                <p className="text-2xl">🎯</p>
-                <p className="mt-2 font-bold text-ink-900">University shortlist</p>
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-600">Strategy</p>
+                <p className="mt-1 font-bold text-ink-900">University shortlist</p>
                 <p className="text-sm text-slate-600">30-minute strategy call</p>
               </div>
-              <div className="rounded-xl bg-white p-4 shadow-md ring-2 ring-ink-900/20">
-                <p className="text-2xl">✍️</p>
-                <p className="mt-2 font-bold text-ink-900">
-                  SOP review <span className="rounded-full bg-emerald-500 px-2 py-0.5 text-[10px] text-white">POPULAR</span>
-                </p>
+              <div className="rounded-2xl bg-slate-50 p-4 ring-2 ring-ink-900/20">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-600">Most popular</p>
+                <p className="mt-1 font-bold text-ink-900">SOP review</p>
                 <p className="text-sm text-slate-600">Line-by-line written feedback</p>
               </div>
-              <div className="rounded-xl bg-white/90 p-4 shadow-sm">
-                <p className="text-2xl">🎤</p>
-                <p className="mt-2 font-bold text-ink-900">Visa interview prep</p>
+              <div className="rounded-2xl bg-slate-50 p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-600">Interview</p>
+                <p className="mt-1 font-bold text-ink-900">Visa interview prep</p>
                 <p className="text-sm text-slate-600">Mock interview + feedback</p>
               </div>
             </div>
@@ -330,22 +308,22 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4">
           <div className="mb-10 text-center">
             <span className="mb-2 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-bold uppercase tracking-wide text-emerald-700">
-              💬 Reader stories
+              Reader stories
             </span>
             <h2 className="text-3xl font-bold text-ink-900 sm:text-4xl">
               From students who made it to Germany
             </h2>
             <p className="mx-auto mt-3 max-w-2xl text-slate-600">
-              These are representative experiences from South Asian students who
-              used the site to plan their move.
+              Representative experiences from international students who used
+              the site to plan their move.
             </p>
           </div>
 
           <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((t) => (
               <div
-                key={t.name + t.university}
-                className="flex flex-col rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+                key={`${t.name}:${t.university}`}
+                className="flex flex-col rounded-2xl bg-white p-6 shadow-sm transition-all duration-200 hover:shadow-md"
               >
                 {/* Quote */}
                 <p className="text-sm leading-relaxed text-slate-700">
@@ -357,13 +335,13 @@ export default function Home() {
                 {/* Author */}
                 <div className="mt-5 flex items-center gap-3 border-t border-slate-100 pt-4">
                   <div
-                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${t.color} text-sm font-bold text-white`}
+                    className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${t.color} text-sm font-bold text-white`}
                   >
                     {t.initials}
                   </div>
                   <div className="min-w-0">
                     <p className="text-sm font-semibold text-ink-900">
-                      {t.flag} {t.name}
+                      <span aria-hidden="true">{t.flag}</span> {t.name}
                     </p>
                     <p className="truncate text-xs text-slate-500">
                       {t.program}
@@ -408,25 +386,24 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-ink-900/95 via-ink-900/80 to-ink-900/60" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 py-20 text-center">
-          <h2 className="text-3xl font-bold drop-shadow-lg sm:text-4xl">
-            Ready to start your journey?
+          <h2 className="text-3xl font-bold text-white sm:text-4xl">
+            Follow the exact 9-step path thousands of students took to Germany.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg text-white/90 drop-shadow">
-            Understand each step — from choosing a course to getting your residence
-            permit — with our complete visa and application guide.
+          <p className="mx-auto mt-4 max-w-xl text-lg text-white/90">
+            Understand each step from choosing a course to getting your residence permit, with our complete visa and application guide.
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <div className="mt-8 flex flex-col sm:flex-row flex-wrap justify-center gap-3">
             <Link
               href="/start"
-              className="rounded-lg bg-brand-500 px-7 py-3.5 text-lg font-bold text-ink-900 shadow-xl transition hover:scale-105 hover:bg-brand-400"
+              className="rounded-lg bg-brand-500 px-6 py-2.5 text-base font-bold text-ink-900 shadow-md transition-all duration-200 hover:bg-brand-400"
             >
-              🚀 Start Your Journey
+              Get started
             </Link>
             <Link
               href="/visa"
-              className="rounded-lg bg-white/15 px-6 py-3 font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/25"
+              className="rounded-lg bg-white/15 px-6 py-2.5 text-base font-semibold text-white ring-1 ring-white/40 backdrop-blur transition-all duration-200 hover:bg-white/25"
             >
-              See visa process →
+              See visa process
             </Link>
           </div>
         </div>

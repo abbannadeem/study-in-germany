@@ -13,16 +13,17 @@ export default function BlockedAccountPage() {
   return (
     <>
       <PageHero
-        eyebrow="💳 Visa step 4"
+        eyebrow="Visa step 4"
         title="Blocked Account Comparison"
         subtitle="A blocked account (Sperrkonto) holds your €11,904/year of proof-of-funds for the visa. Pick the provider that fits your budget and timeline."
+        backgroundImage="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80&auto=format&fit=crop"
       />
 
       <section className="mx-auto max-w-5xl px-4 py-10">
         {/* Affiliate disclosure */}
         <div className="mb-6 rounded-xl border border-blue-200 bg-blue-50 p-4 text-sm text-slate-700">
           <p>
-            ℹ️ <strong className="text-ink-900">Honest disclosure:</strong>{" "}
+            <strong className="text-ink-900">Honest disclosure:</strong>{" "}
             Some links below are affiliate links. If you sign up through them,
             we may receive a small commission at no extra cost to you. This
             helps keep the site free. We only feature providers that are
@@ -79,7 +80,7 @@ export default function BlockedAccountPage() {
                   rel="noreferrer"
                   className="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-ink-900 transition hover:bg-brand-400"
                 >
-                  Open account ↗
+                  Open account
                 </a>
               </div>
 
@@ -118,7 +119,7 @@ export default function BlockedAccountPage() {
                   <ul className="space-y-1">
                     {p.pros.map((pro) => (
                       <li key={pro} className="flex items-start gap-2 text-sm text-slate-600">
-                        <span className="text-emerald-500">✓</span>
+                        <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500" aria-hidden="true" />
                         {pro}
                       </li>
                     ))}
@@ -140,14 +141,14 @@ export default function BlockedAccountPage() {
               </div>
 
               <p className="mt-4 rounded-lg border border-slate-200 bg-slate-50 p-3 text-xs text-slate-600">
-                💡 {p.bundleNote}
+                {p.bundleNote}
               </p>
             </div>
           ))}
         </div>
 
         <div className="mt-8 rounded-xl border border-amber-200 bg-amber-50 p-5 text-sm text-amber-800">
-          ⚠️ Always confirm that the provider you choose is accepted by the German
+          <strong className="text-amber-900">Heads up:</strong> Always confirm that the provider you choose is accepted by the German
           embassy/consulate in your country before you transfer money. Fees and
           monthly charges can change at any time.
         </div>

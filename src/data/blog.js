@@ -12,8 +12,7 @@ export const blogPosts = [
     readTime: "12 min read",
     date: "2026-06-03",
     author: "Study in Germany Team",
-    coverEmoji: "🎓",
-    coverGradient: "from-blue-500 to-purple-600",
+    coverImage: "https://images.unsplash.com/photo-1599946347371-68eb71b16afc?w=1200&q=80&auto=format&fit=crop",
     tags: ["TUM", "Munich", "Application", "Pakistan"],
     body: [
       { type: "p", text: "Technical University of Munich (TUM) is Germany's #1 ranked university and one of Europe's top engineering schools. For Pakistani students aiming for the best of the best, TUM is often the dream destination — but the application process can feel intimidating. This guide breaks it down step by step." },
@@ -132,8 +131,7 @@ export const blogPosts = [
     readTime: "10 min read",
     date: "2026-06-02",
     author: "Study in Germany Team",
-    coverEmoji: "💰",
-    coverGradient: "from-amber-500 to-orange-600",
+    coverImage: "https://images.unsplash.com/photo-1570303008244-7e80fcdfb5f2?w=1200&q=80&auto=format&fit=crop",
     tags: ["DAAD", "Scholarship", "Pakistan", "Funding"],
     body: [
       { type: "p", text: "DAAD (Deutscher Akademischer Austauschdienst) is the world's largest funder of academic exchanges. For Pakistani students, it offers full scholarships covering tuition, monthly stipend, health insurance, and travel — worth roughly €20,000+ per year. This guide shows you exactly how to apply and win." },
@@ -262,8 +260,7 @@ export const blogPosts = [
     readTime: "11 min read",
     date: "2026-06-01",
     author: "Study in Germany Team",
-    coverEmoji: "📋",
-    coverGradient: "from-red-500 to-pink-600",
+    coverImage: "/cities/berlin.jpg",
     tags: ["Visa", "Pakistan", "Embassy", "Documents"],
     body: [
       { type: "p", text: "Getting a German student visa from Pakistan is straightforward IF you prepare properly. This guide is based on actual timelines reported by Pakistani students through 2026, including what really happens at the German Embassy in Islamabad and consulate in Karachi." },
@@ -394,8 +391,7 @@ export const blogPosts = [
     readTime: "8 min read",
     date: "2026-05-30",
     author: "Study in Germany Team",
-    coverEmoji: "🎓",
-    coverGradient: "from-emerald-500 to-teal-600",
+    coverImage: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=1200&q=80&auto=format&fit=crop",
     tags: ["Free Education", "Universities", "Tuition"],
     body: [
       { type: "p", text: "Germany is one of the very few countries in the world where international students can study for FREE at top-ranked universities. Yes, you read that right. No tuition fees for Pakistani, Indian, Bangladeshi, Nigerian — anyone. Here's how it works and where to go." },
@@ -490,8 +486,7 @@ export const blogPosts = [
     readTime: "9 min read",
     date: "2026-05-28",
     author: "Study in Germany Team",
-    coverEmoji: "✍️",
-    coverGradient: "from-purple-500 to-indigo-600",
+    coverImage: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&q=80&auto=format&fit=crop",
     tags: ["SOP", "Application", "Writing Tips"],
     body: [
       { type: "p", text: "The Statement of Purpose (SOP, also called motivation letter or Lebenslauf in German) is often THE deciding factor for German university applications. Your transcripts get you considered; your SOP gets you accepted. Here's how to write one that actually works." },
@@ -600,8 +595,7 @@ export const blogPosts = [
     readTime: "9 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "💳",
-    coverGradient: "from-green-500 to-emerald-600",
+    coverImage: "https://images.unsplash.com/photo-1579621970795-f51ebb16cc21?w=1200&q=80&auto=format&fit=crop",
     tags: ["Blocked Account", "Pakistan", "Sperrkonto", "Expatrio"],
     body: [
       { type: "p", text: "Every Pakistani student applying for a German visa needs to deposit ~€11,904 in a blocked account (Sperrkonto). It's one of the biggest stress points in the visa process — but it doesn't have to be. Here's the exact step-by-step process to open one from Pakistan in 24 hours." },
@@ -681,8 +675,7 @@ export const blogPosts = [
     readTime: "8 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "📝",
-    coverGradient: "from-cyan-500 to-blue-600",
+    coverImage: "https://images.unsplash.com/photo-1507842217343-583f7270bfba?w=1200&q=80&auto=format&fit=crop",
     tags: ["IELTS", "Language", "TOEFL", "Application"],
     body: [
       { type: "p", text: "If you want to study in Germany without learning German first, you'll need to prove your English ability. Most students take IELTS. But how high do you really need to score? Here's the real data for top German universities in 2026." },
@@ -771,8 +764,7 @@ export const blogPosts = [
     readTime: "10 min read",
     date: "2026-06-03",
     author: "Study in Germany Team",
-    coverEmoji: "💰",
-    coverGradient: "from-orange-500 to-red-600",
+    coverImage: "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=1200&q=80&auto=format&fit=crop",
     tags: ["Cost of Living", "India", "Budget", "INR"],
     body: [
       { type: "p", text: "Germany is famous for tuition-free university — but what does daily life actually cost? Here's a detailed breakdown for Indian students, with real prices in INR (₹) and tips to live well on a budget." },
@@ -889,8 +881,7 @@ export const blogPosts = [
     readTime: "9 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "📋",
-    coverGradient: "from-violet-500 to-purple-600",
+    coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&auto=format&fit=crop",
     tags: ["uni-assist", "Application", "Documents"],
     body: [
       { type: "p", text: "uni-assist is the central application portal that 180+ German universities use to process international applications. If you're applying from Pakistan, India, Bangladesh, or most other non-EU countries, you'll go through uni-assist. Here's exactly how it works." },
@@ -928,8 +919,7 @@ export const blogPosts = [
     readTime: "10 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "🎤",
-    coverGradient: "from-rose-500 to-pink-600",
+    coverImage: "/cities/berlin.jpg",
     tags: ["Visa Interview", "Embassy", "Questions"],
     body: [
       { type: "p", text: "The German embassy visa interview is usually 5-15 minutes. The officer is trying to assess: (1) are you a genuine student, (2) can you afford it, (3) will you return home after studies. Here are the 25 most asked questions with sample answers." },
@@ -1003,8 +993,7 @@ export const blogPosts = [
     readTime: "9 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "🗣️",
-    coverGradient: "from-yellow-500 to-amber-600",
+    coverImage: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1200&q=80&auto=format&fit=crop",
     tags: ["German Language", "Learning", "TestDaF"],
     body: [
       { type: "p", text: "If you're studying in Germany in English, you technically don't need German. But here's the truth — your life, friendships, jobs, and integration will be 10x better if you learn it. This is a practical roadmap from zero to C1." },
@@ -1042,8 +1031,7 @@ export const blogPosts = [
     readTime: "8 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "💼",
-    coverGradient: "from-blue-500 to-indigo-600",
+    coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&auto=format&fit=crop",
     tags: ["Werkstudent", "Jobs", "Income"],
     body: [
       { type: "p", text: "The 'Werkstudent' (working student) job is one of Germany's best-kept secrets for international students. You can earn €1,000-2,000+ per month while studying, get real industry experience, and often land full-time work after graduation. Here's how it works." },
@@ -1078,8 +1066,7 @@ export const blogPosts = [
     readTime: "7 min read",
     date: "2026-06-04",
     author: "Study in Germany Team",
-    coverEmoji: "🏠",
-    coverGradient: "from-teal-500 to-cyan-600",
+    coverImage: "https://images.unsplash.com/photo-1567521464027-f127ff144326?w=1200&q=80&auto=format&fit=crop",
     tags: ["Housing", "Dorm", "WG", "Studentenwerk"],
     body: [
       { type: "p", text: "Finding housing in Germany as an international student is the most stressful part of moving. The two main options: a Studentenwerk dorm (Wohnheim) or a shared flat (WG — Wohngemeinschaft). Here's an honest comparison." },
@@ -1122,8 +1109,7 @@ export const blogPosts = [
     readTime: "10 min read",
     date: "2026-06-07",
     author: "Study in Germany Team",
-    coverEmoji: "💳",
-    coverGradient: "from-emerald-500 to-teal-600",
+    coverImage: "https://images.unsplash.com/photo-1579621970795-f51ebb16cc21?w=1200&q=80&auto=format&fit=crop",
     tags: ["Blocked Account", "Expatrio", "Fintiba", "Coracle", "Visa"],
     body: [
       { type: "p", text: "Every international student applying for a German student visa needs a blocked account (Sperrkonto) — proof that you can support yourself in Germany. Three providers dominate the market: Expatrio, Fintiba, and Coracle. Which one should you choose? Honest answer: it depends on your country, your timeline, and what extras you actually need. Here's the breakdown that students actually need." },
@@ -1255,8 +1241,7 @@ export const blogPosts = [
     readTime: "11 min read",
     date: "2026-06-07",
     author: "Study in Germany Team",
-    coverEmoji: "⚠️",
-    coverGradient: "from-orange-500 to-red-600",
+    coverImage: "/cities/berlin.jpg",
     tags: ["Visa Rejection", "Student Visa", "Germany Embassy", "Application Tips"],
     body: [
       { type: "p", text: "German student visa rejection rates vary wildly by country — from 5% to over 35%. The good news: most rejections are preventable. The bad news: most applicants don't know why they were rejected until it's too late. Here are the 10 most common reasons embassies deny student visas, with real fixes for each." },
@@ -1422,8 +1407,7 @@ export const blogPosts = [
     readTime: "9 min read",
     date: "2026-06-07",
     author: "Study in Germany Team",
-    coverEmoji: "📅",
-    coverGradient: "from-indigo-500 to-blue-600",
+    coverImage: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80&auto=format&fit=crop",
     tags: ["Timeline", "Application", "2027", "Planning"],
     body: [
       { type: "p", text: "Most students underestimate how long the German university application process takes. The reality: you need to start 12-18 months before your intended start date. This month-by-month plan walks you through exactly what to do, when — based on the Winter 2027 intake (October 2027 start)." },
