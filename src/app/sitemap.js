@@ -23,6 +23,7 @@ export default function sitemap() {
     "/checklist",
     "/visa",
     "/blocked-account",
+    "/insurance",
     "/settle",
     "/blog",
     "/services",

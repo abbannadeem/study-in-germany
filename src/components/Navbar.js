@@ -38,6 +38,7 @@ const navGroups = [
     items: [
       { href: "/visa", label: "📋 Visa Process", desc: "Step-by-step guide" },
       { href: "/blocked-account", label: "💳 Blocked Account", desc: "Sperrkonto comparison" },
+      { href: "/insurance", label: "🩺 Health Insurance", desc: "TK, DAK, DR-WALTER + more" },
       { href: "/checklist", label: "✅ Application Checklist", desc: "Savable progress" },
       { href: "/settle", label: "🇩🇪 Settle In", desc: "After you arrive" },
     ],
