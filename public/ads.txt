@@ -1,0 +1,11 @@
+# Authorized digital sellers (ads.txt)
+# Required by Google AdSense and ad networks to authenticate
+# that we control this domain and that buyers can identify
+# the entities authorized to sell ads on our inventory.
+#
+# Once Google AdSense is approved, replace the placeholder below with:
+#   google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+# where pub-XXXX is your AdSense publisher ID.
+
+# (placeholder — replace once AdSense is approved)
+placeholder.example.com, pub-0000000000000000, DIRECT, 0000000000000000

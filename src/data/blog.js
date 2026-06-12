@@ -1537,6 +1537,358 @@ export const blogPosts = [
       { type: "callout", emoji: "📅", text: "Bottom line: Studying in Germany rewards planners. Start 12-15 months early, follow this timeline, and you'll have a smooth application. Rushing = mistakes = rejection = lost year." }
     ]
   },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // NEW: High-search SOP examples — long-tail SEO target
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {
+    slug: "sop-motivation-letter-examples-germany-2026",
+    title: "Motivation Letter Examples for German Universities (2026 Templates)",
+    excerpt:
+      "Real templates and structure breakdown for writing a winning motivation letter (Statement of Purpose) for German Master's programmes. With examples for engineering, business, and computer science.",
+    category: "Application Tips",
+    readTime: "13 min read",
+    date: "2026-06-12",
+    author: "Study in Germany Team",
+    coverEmoji: "✍️",
+    coverGradient: "from-violet-500 to-purple-600",
+    tags: ["SOP", "Motivation Letter", "Templates", "2026"],
+    body: [
+      { type: "p", text: "Your motivation letter is the single most decision-shaping document in your German university application. Grades get you in the door — the motivation letter convinces the committee you belong. This guide gives you the exact structure German admissions officers look for in 2026, with concrete templates for engineering, business, and computer science applicants." },
+
+      { type: "h2", text: "Why German universities care about motivation letters" },
+      { type: "p", text: "Unlike US universities (where the personal essay is about who you are), German admissions committees use the motivation letter to answer one question: Will this person finish the programme successfully and contribute to their field? They want substance, not storytelling." },
+      { type: "callout", emoji: "🎯", text: "Key insight: German motivation letters reward clarity over creativity. Your job is to prove your readiness — not your personality." },
+
+      { type: "h2", text: "The 5-part structure that works in 2026" },
+      { type: "h3", text: "Part 1: Specific motivation (1 paragraph)" },
+      { type: "p", text: "Open with what specifically drives your interest in this field — connected to a real moment or project, not a vague \"passion since childhood.\" Length: 80-120 words." },
+      { type: "quote", text: "Example opening: 'During my final-year project on real-time computer vision for autonomous drones, I encountered limitations in current SLAM algorithms that no commercially available solution addressed efficiently. This problem became the focus of my engineering capstone and has shaped my decision to pursue advanced research in autonomous systems at a leading German institution.'" },
+
+      { type: "h3", text: "Part 2: Academic foundation (1-2 paragraphs)" },
+      { type: "p", text: "Show how your bachelor's degree prepared you for this specific Master's. List 3-4 subject-relevant courses, your final-year project, and any research experience. Don't list every course you took — pick the ones that matter for THIS programme." },
+
+      { type: "h3", text: "Part 3: Why this programme + this university (1-2 paragraphs)" },
+      { type: "p", text: "This is the highest-impact section. Specifically mention:" },
+      { type: "ul", items: [
+        "2-3 specific courses from the programme's curriculum",
+        "1-2 professors whose research interests align with yours",
+        "Research labs or institutes connected to the programme",
+        "Industry partnerships (e.g., BMW for automotive, Siemens for energy)",
+        "Any unique features (mandatory thesis, industry placement, etc.)"
+      ]},
+      { type: "callout", emoji: "💡", text: "Pro tip: A 30-second skim of the university's programme page should give you 5-6 specific things to reference. If you don't reference anything specific, the committee thinks you're applying generically." },
+
+      { type: "h3", text: "Part 4: Career goals (1 paragraph)" },
+      { type: "p", text: "What will you do with this degree? Be honest and concrete. German programmes want to see a logical career path, not vague \"work in industry.\" Length: 80-120 words." },
+      { type: "quote", text: "Example: 'After completing the Master's, I plan to pursue a PhD in robotics with a focus on perception systems, ideally continuing within Germany's strong robotics research ecosystem. Long-term, I aim to lead R&D for autonomous systems in industrial automation — a sector where Germany leads globally.'" },
+
+      { type: "h3", text: "Part 5: Personal qualities + closing (1 paragraph)" },
+      { type: "p", text: "Briefly mention 2-3 personal qualities that suit graduate study (analytical thinking, persistence, teamwork) with one concrete example. Then a confident closing line. Length: 80-100 words." },
+
+      { type: "h2", text: "Example: Engineering applicant" },
+      { type: "callout", emoji: "📄", text: "Length: 800-900 words. Programme: Master's in Mechanical Engineering at TU Munich." },
+      { type: "p", text: "Opening hook: real engineering project (drone, robotic arm, energy system) connected to programme focus. → Academic foundation: list 3 subject-relevant undergrad courses + final-year project. → Why TUM: mention 2 specific modules (e.g., 'Robotics 1', 'Control Systems Engineering'), 1-2 professors (e.g., Prof. Albu-Schäffer at the Institute of Robotics), partnerships (BMW Group, MAN Truck & Bus). → Career: PhD path in robotics or industry R&D. → Closing: confident, specific, brief." },
+
+      { type: "h2", text: "Example: Computer Science applicant" },
+      { type: "callout", emoji: "📄", text: "Length: 800-900 words. Programme: Master's in Computer Science at RWTH Aachen." },
+      { type: "p", text: "Opening hook: real software project (open-source contribution, research paper, hackathon prize) connected to programme. → Academic foundation: list relevant courses (algorithms, ML, distributed systems), final-year project, internships. → Why RWTH: specific modules in machine learning + a professor whose research aligns (e.g., Prof. Stachniss on robot perception). Industry partnerships (Volkswagen Group, Bayer). → Career: research role in industry or academia. → Closing: brief, specific to RWTH." },
+
+      { type: "h2", text: "Example: Business applicant" },
+      { type: "callout", emoji: "📄", text: "Length: 800-900 words. Programme: Master's in Management at WHU Otto Beisheim or Mannheim." },
+      { type: "p", text: "Opening hook: business decision you made (start-up, role change, project pitch) that shapes your view of management. → Academic foundation: undergrad in business/economics + relevant skills (data analysis, finance). → Why this programme: specific concentrations (entrepreneurship, finance, tech management), career services, industry partnerships, alumni network. → Career: consulting/finance/start-up — be specific. → Closing: convincing, brief." },
+
+      { type: "h2", text: "What German admissions committees DON'T want" },
+      { type: "ul", items: [
+        "Empty phrases: 'Germany has world-class education' (everyone says this)",
+        "Generic 'passion since childhood' openings",
+        "Listing every course you've taken",
+        "Mentioning weather, food, or culture as a primary reason",
+        "Saying you want to 'work in Germany' if there's no field-specific reason",
+        "Translated text that reads awkwardly — get it proofread by a native English speaker",
+        "Stories about overcoming adversity that aren't directly relevant",
+        "Three pages of dense text — keep it 1-2 pages, single-spaced"
+      ]},
+
+      { type: "h2", text: "Formatting checklist" },
+      { type: "ul", items: [
+        "Length: 1-2 pages (800-1200 words)",
+        "Font: Arial or Calibri, 11-12pt",
+        "Single-spaced, with paragraph breaks",
+        "Address: Dear Admissions Committee (NOT 'Dear Sir/Madam')",
+        "Tone: confident but not arrogant; specific, not vague",
+        "Save and submit as PDF (Word docs sometimes corrupt during upload)"
+      ]},
+
+      { type: "h2", text: "Common mistakes to avoid" },
+      { type: "ul", items: [
+        "Copying templates word-for-word — committees see thousands per year, they spot template language instantly",
+        "Mentioning multiple universities — your letter should feel custom to ONE programme",
+        "Forgetting the 'why this programme + this university' section",
+        "Using more than 1 weakness mention — it's not a job interview",
+        "Talking about money or scholarships as primary motivation",
+        "Writing in passive voice throughout (active voice = confidence)"
+      ]},
+
+      { type: "h2", text: "Should you use ChatGPT or AI tools?" },
+      { type: "p", text: "Use AI for: brainstorming structure, fixing grammar, checking flow. Don't use AI for: writing the actual content. Admissions officers in 2026 are increasingly aware of AI-generated text — it lacks specific details, uses repetitive transitions, and feels generic. AI-written motivation letters are increasingly being flagged." },
+
+      { type: "callout", emoji: "✅", text: "Bottom line: The strongest motivation letter is the one only YOU could have written — specific projects, specific universities, specific people, specific career goals. Generic = rejected. Specific = admitted." }
+    ]
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // NEW: APS Certificate Pakistan complete guide
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {
+    slug: "aps-certificate-india-pakistan-china-2026",
+    title: "APS Certificate Guide: India, Pakistan, China (2026 Process)",
+    excerpt:
+      "The APS (Akademische Prüfstelle) certificate is mandatory for Indian and Chinese students applying to Germany — and optional but recommended for Pakistanis. Here's the exact process for 2026.",
+    category: "Application Tips",
+    readTime: "10 min read",
+    date: "2026-06-12",
+    author: "Study in Germany Team",
+    coverEmoji: "📜",
+    coverGradient: "from-cyan-500 to-blue-600",
+    tags: ["APS", "India", "Pakistan", "China", "Documents", "2026"],
+    body: [
+      { type: "p", text: "The Akademische Prüfstelle (APS) is a verification office run by the German Embassy that checks the authenticity of your academic credentials before you apply to a German university. For students from India and China, an APS certificate is mandatory; for Pakistani students, it's not required but recommended for premium universities. This guide explains the exact 2026 process." },
+
+      { type: "h2", text: "Who needs an APS certificate?" },
+      { type: "table", headers: ["Country", "APS Required?", "Notes"], rows: [
+        ["India", "YES", "Mandatory for all Indian degree holders applying to German universities"],
+        ["China", "YES", "Mandatory for all Chinese degree holders"],
+        ["Pakistan", "NO (mostly)", "Not required. Recommended for top universities like TUM"],
+        ["Bangladesh", "NO", "Not required currently (2026)"],
+        ["Nepal", "NO", "Not required currently"],
+        ["Vietnam", "YES", "Mandatory since 2023"],
+        ["Sri Lanka", "NO", "Not required currently"],
+        ["Iran", "NO", "Not required currently"],
+        ["UAE/Saudi Arabia", "NO", "Not required currently"],
+      ]},
+
+      { type: "h2", text: "What is the APS certificate exactly?" },
+      { type: "p", text: "The APS certificate is essentially a verification document that says: 'We have checked this person's academic credentials, and they are genuine and equivalent to a German degree.' German universities will not consider your application without it (if your country requires it)." },
+      { type: "callout", emoji: "⚠️", text: "Important: APS is NOT a translation service. It verifies your degrees and confirms they're legitimate. You still need separate document translations." },
+
+      { type: "h2", text: "APS for Indian students (the most complex)" },
+      { type: "h3", text: "Step 1: Online registration" },
+      { type: "p", text: "Visit aps-india.de and create an account. The portal works in English." },
+      { type: "h3", text: "Step 2: Document checklist (specific to India)" },
+      { type: "ul", items: [
+        "Class 10 + Class 12 transcripts (HSC/SSC) — original + certified copies",
+        "Bachelor's degree certificate (original + certified copy)",
+        "Complete bachelor's transcripts (all semesters)",
+        "Diploma (if applicable)",
+        "Master's degree (if applicable)",
+        "Passport copy",
+        "Medium of instruction certificate from your university",
+        "Application form + recent photo"
+      ]},
+      { type: "h3", text: "Step 3: Document collection in person" },
+      { type: "p", text: "After online application, you must visit an APS centre in person (Bangalore, Chennai, Hyderabad, Mumbai, New Delhi, Pune). Bring original documents, certified copies, and the application fee." },
+      { type: "h3", text: "Step 4: Online interview (now mandatory)" },
+      { type: "p", text: "After document verification, you'll have a 15-minute online interview with an APS examiner. Topics: your bachelor's coursework, your final-year project, the programme you want to study, why Germany. The interview is conducted in English." },
+      { type: "callout", emoji: "🎯", text: "Pro tip: Prepare for the interview by re-reading your degree certificate and your project. Common questions: 'Explain your final-year project' and 'Why Germany over UK/US?'" },
+      { type: "h3", text: "Step 5: Receive certificate" },
+      { type: "ul", items: [
+        "Processing time: 4-12 weeks (highly variable)",
+        "Fee: ~₹18,000-25,000 (~€200-280)",
+        "Certificate valid for: 3 years",
+        "Format: PDF + physical card sent to your address"
+      ]},
+
+      { type: "h2", text: "APS for Chinese students" },
+      { type: "p", text: "Similar to Indian APS but conducted via the APS office in Beijing (aps.org.cn). Step-by-step is parallel: online registration → document submission → in-person verification → interview → certificate. Processing time: 6-10 weeks. Fee: ~RMB 2,000 (~€250)." },
+
+      { type: "h2", text: "APS for Pakistani students (optional)" },
+      { type: "p", text: "Pakistani students don't need APS for most German universities. However, for top institutions like TUM, LMU Munich, and Heidelberg, having an APS certificate strengthens your application. The Pakistani APS is processed through the German Embassy in Islamabad." },
+      { type: "h3", text: "When to get it (Pakistani students)" },
+      { type: "ul", items: [
+        "Applying to TUM, LMU, Heidelberg, or other top-tier programmes",
+        "PhD applications (often required)",
+        "Programmes with explicit APS requirement in their admission page"
+      ]},
+      { type: "h3", text: "When you don't need it (Pakistani students)" },
+      { type: "ul", items: [
+        "Applying to most public universities",
+        "If your Pakistani degree has HEC attestation already (this is usually sufficient)",
+        "If you've checked the programme's admission page and APS is not mentioned"
+      ]},
+
+      { type: "h2", text: "Cost comparison" },
+      { type: "table", headers: ["Country", "Fee", "Processing time", "Validity"], rows: [
+        ["India", "₹18,000-25,000 (~€220)", "4-12 weeks", "3 years"],
+        ["China", "RMB 2,000 (~€250)", "6-10 weeks", "3 years"],
+        ["Vietnam", "VND ~5,000,000 (~€180)", "8-12 weeks", "3 years"],
+        ["Pakistan (if needed)", "~€100", "4-8 weeks", "3 years"],
+      ]},
+
+      { type: "h2", text: "Common APS mistakes" },
+      { type: "ul", items: [
+        "Starting the process less than 6 months before your application deadline (too late)",
+        "Forgetting medium of instruction certificate (common Indian mistake)",
+        "Not getting transcripts in their original sealed envelope from the university",
+        "Failing to prepare for the online interview",
+        "Submitting incomplete bachelor's transcripts (need ALL semesters, not just final)",
+        "Sending non-attested transcript copies"
+      ]},
+
+      { type: "h2", text: "APS timeline integration" },
+      { type: "p", text: "Plan your APS at least 6-8 months before you want to start applying to German universities. For a Winter 2027 intake (October 2027), start APS by January-February 2027 latest." },
+      { type: "callout", emoji: "📅", text: "Quick rule: APS processing time + university application processing time = 12-14 weeks total. Plan accordingly." },
+
+      { type: "h2", text: "After receiving APS certificate" },
+      { type: "ul", items: [
+        "Save digital PDF in multiple secure places",
+        "Take 5 certified photocopies of the physical card",
+        "Upload to uni-assist and direct university applications",
+        "Keep the original safe — you'll need it for visa application too",
+        "Mention APS validity date in your applications"
+      ]},
+
+      { type: "callout", emoji: "✅", text: "Bottom line: For Indian and Chinese students, APS is non-negotiable — start early. For Pakistani students, it's a nice-to-have for top universities. Budget 4-12 weeks for the process and treat the online interview seriously." }
+    ]
+  },
+
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // NEW: PhD in Germany guide
+  // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  {
+    slug: "phd-in-germany-guide-international-students-2026",
+    title: "PhD in Germany: Complete Guide for International Students (2026)",
+    excerpt:
+      "How to find, fund and apply for a PhD in Germany as an international student — from research positions and DAAD scholarships to industry-funded PhDs.",
+    category: "Universities",
+    readTime: "14 min read",
+    date: "2026-06-12",
+    author: "Study in Germany Team",
+    coverEmoji: "🎓",
+    coverGradient: "from-rose-500 to-pink-600",
+    tags: ["PhD", "Research", "Funding", "Doctorate", "2026"],
+    body: [
+      { type: "p", text: "Germany is one of the world's best destinations for doctoral studies — strong research culture, fully-funded positions, top universities, and an 18-month post-PhD work permit. But the path to a German PhD is different from the US or UK: most PhDs are individual research positions, not structured programmes. Here's how it actually works in 2026." },
+
+      { type: "h2", text: "How German PhDs actually work" },
+      { type: "p", text: "Unlike the US (where you apply to a programme), most German PhDs are individual research positions where you work directly with a professor (Doktorvater/-mutter) on their research. You're typically employed as a Wissenschaftliche Mitarbeiter (research associate) — a paid job, not a student status." },
+      { type: "callout", emoji: "💡", text: "Key difference: A German PhD is often a JOB. You earn a salary (€2,500-4,500/month gross), have benefits, and pay taxes. You're not just a student." },
+
+      { type: "h2", text: "Three main PhD paths" },
+      { type: "h3", text: "Path 1: Individual research position (most common)" },
+      { type: "p", text: "Find a professor whose research interests align with yours, contact them directly, and apply to their research group when a position opens. Funding comes from the professor's research grants." },
+      { type: "ul", items: [
+        "Duration: 3-5 years",
+        "Funding: Salary as research associate (Wissenschaftliche Mitarbeiter)",
+        "Work %: 50-100% of full-time (often 50-75% in humanities, 100% in STEM)",
+        "Application: Direct to professor, no formal programme"
+      ]},
+
+      { type: "h3", text: "Path 2: Structured doctoral programme" },
+      { type: "p", text: "Some universities (Heidelberg, MPI institutes, RWTH Graduate Schools) offer formal PhD programmes with coursework, milestones, and cohorts. More structured than the individual path." },
+      { type: "ul", items: [
+        "Duration: 3-4 years",
+        "Funding: Programme stipend or position",
+        "Application: Through a central PhD office",
+        "Cohort: You'll have peers in the same programme"
+      ]},
+
+      { type: "h3", text: "Path 3: Industry-funded PhD" },
+      { type: "p", text: "Companies (Siemens, BMW, Bosch, SAP) sometimes co-sponsor PhDs in collaboration with universities. You work for the company while doing your PhD." },
+      { type: "ul", items: [
+        "Duration: 3-4 years",
+        "Funding: Industry salary (often higher than academic — €4,000-6,000/month)",
+        "Application: Apply to the company first, then university second",
+        "Outcome: Strong industry connections, but less academic freedom"
+      ]},
+
+      { type: "h2", text: "How to find a PhD position in Germany" },
+      { type: "h3", text: "Step 1: Identify research areas" },
+      { type: "p", text: "Be specific. Don't search for 'PhD in Computer Science' — search for 'PhD in graph neural networks for drug discovery.' The more specific, the better matches you find." },
+
+      { type: "h3", text: "Step 2: Find potential supervisors" },
+      { type: "ul", items: [
+        "Search Google Scholar for recent papers in your area",
+        "Check researchgate.net and ORCID for German researchers",
+        "Look at Max Planck institutes (mpg.de)",
+        "Check Helmholtz Association (helmholtz.de) for applied research",
+        "Browse university research groups in your top 5 fields"
+      ]},
+
+      { type: "h3", text: "Step 3: Cold-email professors" },
+      { type: "p", text: "This is the most important step. Most German PhDs are filled through cold outreach, not formal applications." },
+      { type: "h3", text: "Cold email template" },
+      { type: "quote", text: "Subject: PhD enquiry — [your specific topic]\\n\\nDear Prof. [Name],\\n\\nI'm a [Master's degree in X] graduate of [university], with research experience in [specific topic — match their work]. Your recent paper on [specific paper title] resonated strongly with my research interests in [specific aspect].\\n\\nI'm exploring PhD opportunities and would be grateful for 15 minutes of your time to discuss whether your group has any openings or grant proposals where my background might be a fit.\\n\\nI've attached my CV, research statement (1 page), and writing sample. Happy to provide references if useful.\\n\\nThank you for considering my enquiry,\\n[Your name]" },
+
+      { type: "h2", text: "Funding options" },
+      { type: "h3", text: "DAAD scholarships" },
+      { type: "p", text: "DAAD offers multiple PhD scholarships for international students. Most common: Research Grants for Doctoral Programmes (€1,300/month + travel + insurance). Apply 12 months before your start date." },
+      { type: "h3", text: "Research positions (most common)" },
+      { type: "p", text: "Paid research associate position (50-100%) at €2,500-4,500/month gross. Funded by your supervisor's grants. Best path if you can secure one." },
+      { type: "h3", text: "Helmholtz / Max Planck stipends" },
+      { type: "p", text: "Both offer stipends at €1,400-2,000/month. Less than research positions but stress-free admin and no teaching duties." },
+      { type: "h3", text: "Industry-funded PhDs" },
+      { type: "p", text: "BMW, Siemens, Bosch all fund PhDs at €3,500-5,000/month. Apply through company career portals." },
+      { type: "h3", text: "Erasmus+ Joint Doctorate" },
+      { type: "p", text: "Joint PhD with 2-3 universities across Europe, generous funding. Highly competitive but excellent if you can get it." },
+
+      { type: "h2", text: "Admission requirements" },
+      { type: "ul", items: [
+        "Master's degree (or equivalent) in a relevant field",
+        "Strong academic record (GPA 3.0+ on US scale)",
+        "Research experience (final-year project, publications, internships)",
+        "Language: English programmes don't require German (yet); some require basic A2 German",
+        "Letters of recommendation (2-3 from professors)",
+        "Research proposal (1-5 pages, increasingly important)",
+        "Acceptance from a supervisor (this is the actual qualifier)"
+      ]},
+
+      { type: "h2", text: "Visa for PhD students" },
+      { type: "p", text: "PhD students typically get either: (1) Student visa (if funded by DAAD/stipend), or (2) Employee visa (if hired as research associate). The latter has more rights — full work permission, easier residence permit renewal, and faster path to permanent residence." },
+
+      { type: "h2", text: "PhD in Germany vs. UK vs. USA" },
+      { type: "table", headers: ["Aspect", "Germany", "UK", "USA"], rows: [
+        ["Duration", "3-5 years", "3-4 years", "4-7 years"],
+        ["Typical funding", "Research salary (€2.5-4.5K/mo)", "Stipend (£15-20K/year)", "Stipend + RA (varies)"],
+        ["Tuition", "€0 (most cases)", "£20-40K/year", "Often covered with assistantship"],
+        ["Coursework", "Minimal", "Minimal", "1-2 years of coursework"],
+        ["Defence", "Oral exam + thesis", "Viva + thesis", "Dissertation defence"],
+        ["Path to PR/work", "18-month job-search visa", "Skilled worker visa", "H1B lottery + Green Card"],
+      ]},
+
+      { type: "h2", text: "Honest pros and cons of a German PhD" },
+      { type: "h3", text: "Pros" },
+      { type: "ul", items: [
+        "Salary + benefits (paid position vs unpaid PhD elsewhere)",
+        "Tuition usually free",
+        "Strong research infrastructure (Max Planck, Helmholtz, Fraunhofer)",
+        "18-month post-PhD job search visa",
+        "Direct industry pipeline (BMW, Siemens, SAP, BASF)",
+        "International environment in major research cities"
+      ]},
+      { type: "h3", text: "Cons" },
+      { type: "ul", items: [
+        "Individual supervisor system = your success depends heavily on one person",
+        "No structured cohort in most programmes (can feel isolating)",
+        "Bureaucracy (German universities love forms)",
+        "Less coursework means less broad training than US PhDs",
+        "Outside major cities, English-only PhDs can be limited"
+      ]},
+
+      { type: "h2", text: "Timeline for a successful application" },
+      { type: "ul", items: [
+        "12-15 months before start: Identify research areas, professors, programmes",
+        "10-12 months: Start cold-emailing professors, building shortlist",
+        "8-10 months: Apply for DAAD or other scholarships",
+        "6-8 months: Secure supervisor confirmation",
+        "4-6 months: Formal university application + funding arrangements",
+        "2-3 months: Visa, accommodation, travel",
+        "Start: Begin your PhD"
+      ]},
+
+      { type: "callout", emoji: "🎯", text: "Bottom line: A German PhD is a JOB, not a programme. Find the right supervisor, send specific cold emails, and apply for DAAD funding 12+ months out. The 18-month post-PhD visa makes Germany one of the strongest research destinations in the world." }
+    ]
+  },
 ];
 
 export const blogCategories = [
