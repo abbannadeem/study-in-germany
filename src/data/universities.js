@@ -40,6 +40,22 @@ export const universities = [
     ],
     description:
       "Germany's top-ranked technical university and a global leader in engineering and computer science. TUM offers many English-taught master's programmes and has strong links with BMW, Siemens and Google.",
+    admission: {
+      gpa: "Bachelor's with ~70–75% (German 2.5 or higher). Top programmes (Informatics, Management & Technology) often expect 80%+.",
+      languageEnglish: "IELTS 6.5 (5.5 per band) or TOEFL iBT 88+",
+      germanLevel: "Not required for English-taught Master's. German-taught Bachelor's need TestDaF 4×4 or DSH 2.",
+      otherRequirements: [
+        "Subject-related Bachelor's (engineering / CS / sciences)",
+        "Strong CV and Letter of Motivation",
+        "GRE recommended (not mandatory) for competitive Master's",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 January – 31 May (varies by programme). Bachelor's: 15 July.",
+      summerIntake: "Limited — most Master's programmes accept summer applications until 15 November.",
+      notes: "Each programme has its own page on tum.de — always confirm the exact deadline before applying.",
+    },
+    applyVia: "direct",
   },
   {
     slug: "lmu-munich",
@@ -65,6 +81,22 @@ export const universities = [
     ],
     description:
       "One of Europe's oldest and most prestigious universities, LMU is a research powerhouse especially strong in medicine, the humanities and natural sciences.",
+    admission: {
+      gpa: "Bachelor's with ~70–75% (German 2.5 or higher). Programme-specific minimums vary.",
+      languageEnglish: "IELTS 6.5 or TOEFL iBT 88+ for English-taught programmes",
+      germanLevel: "DSH 2 / TestDaF 4×4 / Goethe C2 for German-taught programmes (most LMU Bachelor's are in German).",
+      otherRequirements: [
+        "Subject-relevant Bachelor's degree",
+        "Letter of Motivation + CV",
+        "Some humanities programmes require a writing sample",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 1 April – 15 July. Bachelor's (German programmes): 15 July.",
+      summerIntake: "15 January for most programmes (limited intake).",
+      notes: "International applicants for German-language programmes should apply 6+ weeks earlier than EU students to allow time for credential checks.",
+    },
+    applyVia: "both",
   },
   {
     slug: "heidelberg",
@@ -90,6 +122,22 @@ export const universities = [
     ],
     description:
       "Germany's oldest university (1386) and a world leader in research, especially the life sciences and medicine. As it is in Baden-Württemberg, non-EU students pay €1,500 per semester.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher). Top life-sciences programmes require 80%+.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 95 for English-taught programmes",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-matched Bachelor's required for most Master's",
+        "Letter of Motivation outlining research interests",
+        "2 letters of recommendation for many programmes",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 January – 15 July (programme-specific). Bachelor's: 15 July.",
+      summerIntake: "15 January (limited intake).",
+      notes: "Non-EU students must factor in €1,500/semester tuition under Baden-Württemberg's policy.",
+    },
+    applyVia: "both",
   },
   {
     slug: "hu-berlin",
@@ -115,6 +163,22 @@ export const universities = [
     ],
     description:
       "A historic Berlin institution associated with 57 Nobel laureates including Einstein and Planck. Its semester fee includes a Berlin public-transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 92 for English-taught programmes",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes (most HU Bachelor's are in German).",
+      otherRequirements: [
+        "Subject-matched undergraduate degree",
+        "Motivation letter (1–2 pages)",
+        "Some programmes require a writing sample or portfolio",
+      ],
+    },
+    deadlines: {
+      winterIntake: "15 July for most Master's and Bachelor's. Some research Master's: 15 May.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Berlin semester fee (€315) includes the AB-zone public-transport ticket — solid value.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "fu-berlin",
@@ -140,6 +204,22 @@ export const universities = [
     ],
     description:
       "A leading research university and one of Germany's 'Universities of Excellence', renowned for political science, the humanities and the natural sciences.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 (5.5 per band) / TOEFL iBT 88+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Letter of Motivation",
+        "Research-oriented Master's may ask for a thesis abstract",
+      ],
+    },
+    deadlines: {
+      winterIntake: "15 July for most Master's. Bachelor's: 15 July via uni-assist.",
+      summerIntake: "15 January for selected Master's.",
+      notes: "Semester fee includes the AB-zone Semesterticket for Berlin public transport.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "rwth-aachen",
@@ -165,6 +245,22 @@ export const universities = [
     ],
     description:
       "Germany's largest and one of its most prestigious technical universities, with an outstanding reputation in mechanical, electrical and automotive engineering. The semester fee includes an NRW-wide transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher). Competitive programmes (CS, Automotive) expect 80%+.",
+      languageEnglish: "IELTS 6.0–6.5 / TOEFL iBT 87 (programme-specific)",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes; A1 minimum recommended for daily life.",
+      otherRequirements: [
+        "Engineering / CS / sciences background expected",
+        "Detailed Letter of Motivation",
+        "Some Master's require a coding sample or short proposal",
+      ],
+    },
+    deadlines: {
+      winterIntake: "1 March for most international Master's. Bachelor's: 15 July.",
+      summerIntake: "1 September for selected Master's.",
+      notes: "RWTH applications go through its own portal RWTHonline — confirm the right route per programme.",
+    },
+    applyVia: "direct",
   },
   {
     slug: "tu-berlin",
@@ -190,6 +286,22 @@ export const universities = [
     ],
     description:
       "A top technical university in the startup capital of Germany, combining strong engineering programmes with the energy of Berlin's booming tech scene.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 5.5–6.5 (programme-specific) / TOEFL iBT 72+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's with engineering / CS / sciences emphasis",
+        "Letter of Motivation",
+        "Some programmes ask for a short research statement",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 30 April. Bachelor's: 15 July.",
+      summerIntake: "31 October for selected programmes.",
+      notes: "Semester fee includes the AB Berlin Semesterticket.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "kit",
@@ -215,6 +327,22 @@ export const universities = [
     ],
     description:
       "A merger of a university and a national research centre, KIT is one of Europe's leading institutions for engineering and the natural sciences. Non-EU students pay €1,500 per semester.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher); engineering programmes prefer 75%+.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 88+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Engineering / CS / sciences Bachelor's",
+        "Letter of Motivation",
+        "GRE recommended for some Master's (not mandatory)",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July (most programmes). Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Non-EU students pay €1,500/semester tuition (Baden-Württemberg policy).",
+    },
+    applyVia: "direct",
   },
   {
     slug: "tu-darmstadt",
@@ -240,6 +368,22 @@ export const universities = [
     ],
     description:
       "Near Frankfurt, TU Darmstadt is one of Germany's best technical universities for computer science and electrical engineering. The semester fee includes a regional transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 88+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's (CS, EE, Mechanical, Mechatronics)",
+        "Letter of Motivation",
+        "CV detailing relevant projects / internships",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Many international Master's are taught fully in English at TU Darmstadt — confirm language per programme.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-stuttgart",
@@ -265,6 +409,22 @@ export const universities = [
     ],
     description:
       "In Germany's automotive heartland (Mercedes-Benz, Porsche), Stuttgart excels in mechanical, automotive and aerospace engineering. Non-EU students pay €1,500 per semester.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher); INFOTECH and Aerospace expect 75%+.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 88+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Engineering / CS / sciences Bachelor's",
+        "Letter of Motivation focusing on programme fit",
+        "Some Master's require an internship or industry project",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for limited programmes.",
+      notes: "Non-EU students pay €1,500/semester (Baden-Württemberg policy).",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-freiburg",
@@ -290,6 +450,22 @@ export const universities = [
     ],
     description:
       "A historic research university in the scenic Black Forest, known for medicine, environmental sciences and the humanities. Non-EU students pay €1,500 per semester.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 92+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes (most Freiburg Bachelor's are in German).",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Letter of Motivation",
+        "Some humanities programmes require a writing sample",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Non-EU students pay €1,500/semester (Baden-Württemberg policy).",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-bonn",
@@ -315,6 +491,22 @@ export const universities = [
     ],
     description:
       "A 'University of Excellence' with a world-class reputation in mathematics and economics. The semester fee includes an NRW-wide transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher); Economics Master's expects 75%+.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 95+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Strong Letter of Motivation",
+        "GRE recommended for top Economics / Maths programmes",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Semester fee includes the NRW Semesterticket (regional public transport).",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-goettingen",
@@ -340,6 +532,22 @@ export const universities = [
     ],
     description:
       "A classic German research university linked to more than 40 Nobel laureates. The higher semester fee includes a wide-area transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 92+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Letter of Motivation",
+        "Some sciences programmes ask for a research statement",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 1 May for many international programmes. Bachelor's: 15 July.",
+      summerIntake: "1 November for selected programmes.",
+      notes: "Semester fee (€389) is on the higher side because it includes a regional Semesterticket.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-hamburg",
@@ -365,6 +573,22 @@ export const universities = [
     ],
     description:
       "A large 'University of Excellence' in Germany's wealthy port city, strong in climate research, economics and the natural sciences. The semester fee includes a transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 95+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Letter of Motivation",
+        "Some Master's require an interview or aptitude test",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Hamburg semester fee (€335) includes the city Semesterticket.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-cologne",
@@ -390,6 +614,22 @@ export const universities = [
     ],
     description:
       "One of Germany's largest universities and a top choice for economics and business, in the lively city of Cologne. The semester fee includes an NRW transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher); Economics and Business Master's expect 75%+.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 92+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Letter of Motivation",
+        "GMAT/GRE optional for some Business Master's",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July (most). Bachelor's: 15 July.",
+      summerIntake: "15 January for limited programmes.",
+      notes: "Semester fee includes the NRW Semesterticket.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "goethe-frankfurt",
@@ -415,6 +655,22 @@ export const universities = [
     ],
     description:
       "A major research university in Germany's financial capital, especially strong in economics, finance and law. The semester fee includes a regional transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher); Money & Finance Master's expects 75%+ plus quantitative background.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 95+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's (economics / finance / quantitative)",
+        "Letter of Motivation",
+        "GMAT/GRE for top finance Master's",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 30 April (most international programmes). Bachelor's: 15 July.",
+      summerIntake: "15 October for selected programmes.",
+      notes: "Frankfurt is one of Europe's financial centres — strong industry pipeline for finance graduates.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "tu-dresden",
@@ -440,6 +696,22 @@ export const universities = [
     ],
     description:
       "A 'University of Excellence' at the heart of 'Silicon Saxony', excellent for microelectronics and engineering, with affordable living and a transport ticket in the semester fee.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 5.5–6.5 (programme-specific) / TOEFL iBT 72+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Engineering / CS / sciences Bachelor's",
+        "Letter of Motivation",
+        "Some programmes ask for a coding sample or research outline",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Dresden has notably lower living costs than Munich/Frankfurt — strong value-for-money option.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "leibniz-hannover",
@@ -465,6 +737,21 @@ export const universities = [
     ],
     description:
       "A large technical university strong in engineering and optics. The relatively high semester fee includes a generous regional transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~65%+ (German 2.7 or higher)",
+      languageEnglish: "IELTS 6.0 / TOEFL iBT 80+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Engineering / CS / sciences Bachelor's",
+        "Letter of Motivation",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Higher semester fee (€430) includes a state-wide Niedersachsen Semesterticket.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-muenster",
@@ -490,6 +777,22 @@ export const universities = [
     ],
     description:
       "A large, traditional university in one of Germany's nicest student cities, strong across the sciences, law and economics. The semester fee includes an NRW transport ticket.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher)",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 92+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's",
+        "Letter of Motivation",
+        "Some Master's expect a research statement",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Münster is consistently ranked one of Germany's best student cities for quality of life.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-tuebingen",
@@ -515,6 +818,22 @@ export const universities = [
     ],
     description:
       "A 'University of Excellence' and a leading European centre for AI and neuroscience research. Non-EU students pay €1,500 per semester.",
+    admission: {
+      gpa: "Bachelor's with ~70%+ (German 2.5 or higher); Machine Learning Master's expects 75%+ with strong maths/CS background.",
+      languageEnglish: "IELTS 6.5 / TOEFL iBT 95+",
+      germanLevel: "DSH 2 / TestDaF 4×4 for German-taught programmes",
+      otherRequirements: [
+        "Subject-relevant Bachelor's (Maths/CS for ML; Biology/Neuroscience for Brain programmes)",
+        "Letter of Motivation",
+        "GRE recommended for top AI/ML Master's",
+      ],
+    },
+    deadlines: {
+      winterIntake: "Master's: 15 July. Bachelor's: 15 July.",
+      summerIntake: "15 January for selected programmes.",
+      notes: "Non-EU students pay €1,500/semester (Baden-Württemberg policy). Tübingen is a premier European AI hub.",
+    },
+    applyVia: "uni-assist",
   },
   {
     slug: "uni-wuerzburg",
@@ -2099,4 +2418,49 @@ export const universities = [
 
 export function getUniversity(slug) {
   return universities.find((u) => u.slug === slug);
+}
+
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// Graceful detection helpers for new optional fields.
+// admission / deadlines / applyVia are added to top universities first;
+// the rest stay null and the UI hides those sections for them.
+// ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+export function hasAdmissionData(uni) {
+  if (!uni || !uni.admission) return false;
+  const a = uni.admission;
+  return Boolean(a.gpa || a.languageEnglish || a.germanLevel || (a.otherRequirements && a.otherRequirements.length));
+}
+
+export function hasDeadlinesData(uni) {
+  if (!uni || !uni.deadlines) return false;
+  const d = uni.deadlines;
+  return Boolean(d.winterIntake || d.summerIntake || d.notes);
+}
+
+export function applyVenue(uni) {
+  // Returns a label/description for how to apply. Falls back to null if unknown.
+  if (!uni || !uni.applyVia) return null;
+  switch (uni.applyVia) {
+    case "uni-assist":
+      return {
+        label: "Apply via uni-assist",
+        url: "https://www.uni-assist.de/en/",
+        note: "Centralised application service for international applicants. Pay ~€75 for first application, €30 each additional.",
+      };
+    case "direct":
+      return {
+        label: "Apply directly to the university",
+        url: uni.website,
+        note: "This university accepts applications directly on its own portal. Check the programme page for the exact link.",
+      };
+    case "both":
+      return {
+        label: "Both uni-assist and direct (depends on programme)",
+        url: uni.website,
+        note: "Some programmes go through uni-assist, others accept direct applications. Check the programme page to confirm.",
+      };
+    default:
+      return null;
+  }
 }

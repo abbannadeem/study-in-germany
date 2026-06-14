@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { universities, getUniversity } from "@/data/universities";
+import {
+  universities,
+  getUniversity,
+  hasAdmissionData,
+  hasDeadlinesData,
+  applyVenue,
+} from "@/data/universities";
 import PageHero from "@/components/PageHero";
 import { euro, number } from "@/lib/format";
 
@@ -22,6 +28,10 @@ export default async function UniversityDetail({ params }) {
   const { slug } = await params;
   const uni = getUniversity(slug);
   if (!uni) notFound();
+
+  const showAdmission = hasAdmissionData(uni);
+  const showDeadlines = hasDeadlinesData(uni);
+  const apply = applyVenue(uni);
 
   const facts = [
     { label: "Location", value: `${uni.city}, ${uni.state}` },
@@ -115,6 +125,136 @@ export default async function UniversityDetail({ params }) {
             )}
           </div>
         </div>
+
+        {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            ADMISSION REQUIREMENTS — only renders when data exists
+            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+        {showAdmission && (
+          <section className="mt-2 mb-10 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <h2 className="text-2xl font-bold text-ink-900">
+              Admission requirements
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Programme-specific minimums vary — confirm on the official
+              programme page before applying.
+            </p>
+
+            <dl className="mt-6 grid gap-4 sm:grid-cols-2">
+              {uni.admission.gpa && (
+                <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                  <dt className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                    Academic / GPA
+                  </dt>
+                  <dd className="mt-1 text-sm text-ink-900">{uni.admission.gpa}</dd>
+                </div>
+              )}
+              {uni.admission.languageEnglish && (
+                <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                  <dt className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                    English (IELTS / TOEFL)
+                  </dt>
+                  <dd className="mt-1 text-sm text-ink-900">
+                    {uni.admission.languageEnglish}
+                  </dd>
+                </div>
+              )}
+              {uni.admission.germanLevel && (
+                <div className="rounded-lg border border-slate-100 bg-slate-50 p-4">
+                  <dt className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                    German language
+                  </dt>
+                  <dd className="mt-1 text-sm text-ink-900">
+                    {uni.admission.germanLevel}
+                  </dd>
+                </div>
+              )}
+              {uni.admission.otherRequirements &&
+                uni.admission.otherRequirements.length > 0 && (
+                  <div className="rounded-lg border border-slate-100 bg-slate-50 p-4 sm:col-span-2">
+                    <dt className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                      Other documents &amp; expectations
+                    </dt>
+                    <dd className="mt-2">
+                      <ul className="space-y-1.5 text-sm text-ink-900">
+                        {uni.admission.otherRequirements.map((r) => (
+                          <li key={r} className="flex items-start gap-2">
+                            <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                            <span>{r}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </dd>
+                  </div>
+                )}
+            </dl>
+          </section>
+        )}
+
+        {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            APPLICATION DEADLINES — only renders when data exists
+            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+        {showDeadlines && (
+          <section className="mb-10 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <h2 className="text-2xl font-bold text-ink-900">
+              Application deadlines
+            </h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Deadlines change yearly — always verify on the official programme
+              page.
+            </p>
+
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              {uni.deadlines.winterIntake && (
+                <div className="rounded-lg border border-emerald-200 bg-emerald-50 p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-emerald-700">
+                    🍂 Winter intake (starts October)
+                  </p>
+                  <p className="mt-1 text-sm text-ink-900">
+                    {uni.deadlines.winterIntake}
+                  </p>
+                </div>
+              )}
+              {uni.deadlines.summerIntake && (
+                <div className="rounded-lg border border-amber-200 bg-amber-50 p-4">
+                  <p className="text-xs font-bold uppercase tracking-wide text-amber-700">
+                    🌸 Summer intake (starts April)
+                  </p>
+                  <p className="mt-1 text-sm text-ink-900">
+                    {uni.deadlines.summerIntake}
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {uni.deadlines.notes && (
+              <p className="mt-4 rounded-lg border border-slate-100 bg-slate-50 p-3 text-xs text-slate-600">
+                ℹ️ {uni.deadlines.notes}
+              </p>
+            )}
+
+            {apply && (
+              <div className="mt-5 rounded-lg border border-brand-200 bg-brand-50 p-4">
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-700">
+                  How to apply
+                </p>
+                <p className="mt-1 text-sm font-semibold text-ink-900">
+                  {apply.label}
+                </p>
+                <p className="mt-1 text-sm text-slate-700">{apply.note}</p>
+                {apply.url && (
+                  <a
+                    href={apply.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-3 inline-block text-sm font-bold text-brand-700 hover:underline"
+                  >
+                    Open the application portal →
+                  </a>
+                )}
+              </div>
+            )}
+          </section>
+        )}
       </div>
     </article>
   );
