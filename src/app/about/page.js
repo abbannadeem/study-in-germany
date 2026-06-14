@@ -107,49 +107,66 @@ export default function AboutPage() {
                 The honest story
               </p>
               <h2 className="mt-1 text-2xl font-bold text-ink-900">
-                Hi, I'm Talha 👋
+                Hi, I&apos;m Abban 👋
               </h2>
 
               <div className="mt-4 space-y-4 leading-relaxed text-slate-700">
                 <p>
-                  I'm a Pakistani student. I came to Germany to study, like maybe
-                  you're planning to. And honestly? The process almost broke me
-                  before it began.
+                  I&apos;m from Lahore. Before Germany, I was working as a data
+                  analyst — comfortable job, predictable life. But I knew I
+                  wanted to do a Master&apos;s in something more technical, and
+                  Germany kept coming up: tuition-free, world-class engineering,
+                  18-month work visa after graduation. The math made sense.
                 </p>
 
                 <p>
-                  Six different blog posts told me six different things about the
-                  blocked account amount. Uni-assist's portal looked like it was
-                  designed in 2008. The German embassy in Islamabad gave one
-                  answer over the phone, a different one in person. Every
-                  "consultant" wanted Rs 50,000 to tell me things that should
-                  have been free.
+                  The application process almost broke me before it began.
                 </p>
 
                 <p>
-                  I started keeping notes — what really happens at each step, the
-                  actual numbers, the real deadlines, what the embassy actually
-                  asks. Just for me. Then a friend asked if she could read them.
-                  Then her friend. Then a cousin in India who was applying too.
+                  Six different blog posts told me six different things about
+                  the blocked account amount. Uni-assist&apos;s portal looked
+                  like it was designed in 2008. The German embassy in Islamabad
+                  gave one answer over the phone and a different one in person.
+                  Every &quot;consultant&quot; in Lahore wanted Rs 50,000 to
+                  tell me things that should have been free.
                 </p>
 
                 <p>
-                  So I built this. It started as a Google Doc. Now it's{" "}
+                  I started keeping notes — what really happens at each step,
+                  the actual numbers, the real deadlines, what the embassy
+                  actually asks. Just for me. Then a friend asked if she could
+                  read them. Then her friend. Then a cousin in India who was
+                  applying too.
+                </p>
+
+                <p>
+                  In 2025 I landed in Ilmenau — a small university town in
+                  Thuringia — to start the{" "}
+                  <strong>Research in Computer &amp; Systems Engineering (RCSE)</strong>{" "}
+                  Master&apos;s programme at{" "}
+                  <strong>TU Ilmenau</strong>. The notes I had been keeping for
+                  myself turned out to be more useful than I&apos;d expected. So
+                  I rebuilt them as this website.
+                </p>
+
+                <p>
+                  Today it&apos;s{" "}
                   <strong>{universities.length} universities</strong>,{" "}
                   <strong>{ALL_PROGRAMS.length}+ English programmes</strong>,{" "}
                   <strong>12 country-specific guides</strong>, a cost calculator
-                  in your own currency, step-by-step visa walkthroughs, and a
-                  blocked-account comparison so you don't get scammed by your
-                  provider.
+                  in your own currency, step-by-step visa walkthroughs, an
+                  insurance comparison, and a blocked-account comparison so you
+                  don&apos;t get scammed by your provider.
                 </p>
 
                 <p>
-                  It's free. It will stay free. If I figure out how to make
+                  It&apos;s free. It will stay free. If I figure out how to make
                   enough from affiliates and small ads to pay for hosting and
-                  my time — that's enough. I'm not building a startup to exit.
-                  I'm building a resource so the next Pakistani, Indian, Syrian,
-                  Vietnamese, Nigerian student doesn't have to learn this the
-                  hard way.
+                  my time — that&apos;s enough. I&apos;m not building a startup
+                  to exit. I&apos;m building a resource so the next Pakistani,
+                  Indian, Syrian, Vietnamese, Nigerian student doesn&apos;t
+                  have to learn this the hard way.
                 </p>
 
                 <p className="font-medium text-ink-900">
