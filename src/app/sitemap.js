@@ -31,6 +31,7 @@ export default function sitemap() {
     "/contact",
     "/privacy",
     "/terms",
+    "/disclaimer",
   ].map((path) => ({
     url: `${SITE}${path}`,
     lastModified: new Date(),

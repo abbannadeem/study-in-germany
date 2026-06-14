@@ -83,14 +83,18 @@ export default function AboutPage() {
           <div className="grid sm:grid-cols-[180px_1fr]">
             {/* Photo block */}
             <div className="bg-gradient-to-br from-brand-500 to-amber-600 p-6 sm:p-8">
-              <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-full bg-white text-4xl font-bold text-ink-900 shadow-xl sm:mx-0">
-                TA
+              <div className="mx-auto h-28 w-28 overflow-hidden rounded-full bg-white shadow-xl ring-4 ring-white/40 sm:mx-0">
+                <img
+                  src="/founder/abban.jpg"
+                  alt="Abban Nadeem, founder"
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="mt-4 text-center sm:text-left">
                 <p className="text-xs font-bold uppercase tracking-wide text-white/80">
                   Founder
                 </p>
-                <p className="text-xl font-bold text-white">Talha Atariq</p>
+                <p className="text-xl font-bold text-white">Abban Nadeem</p>
                 <p className="text-sm text-white/85">
                   🇵🇰 Pakistan → 🇩🇪 Germany
                 </p>

@@ -128,6 +128,7 @@ export default function Footer() {
           <Link href="/terms" className="hover:text-brand-400">Terms of Service</Link>
           <Link href="/about" className="hover:text-brand-400">About</Link>
           <Link href="/contact" className="hover:text-brand-400">Contact</Link>
+          <Link href="/disclaimer" className="hover:text-brand-400">Disclaimer</Link>
         </div>
         <p className="mx-auto mt-2 max-w-6xl text-center text-xs text-slate-600">
           Figures and rules change — always verify with official sources before making decisions.
