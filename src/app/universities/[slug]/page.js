@@ -8,6 +8,8 @@ import {
   applyVenue,
 } from "@/data/universities";
 import PageHero from "@/components/PageHero";
+import UniversityNextSteps from "@/components/UniversityNextSteps";
+import UniversityFAQ, { generateFAQs } from "@/components/UniversityFAQ";
 import { euro, number } from "@/lib/format";
 
 export function generateStaticParams() {
@@ -32,6 +34,37 @@ export default async function UniversityDetail({ params }) {
   const showAdmission = hasAdmissionData(uni);
   const showDeadlines = hasDeadlinesData(uni);
   const apply = applyVenue(uni);
+  const faqs = generateFAQs(uni);
+
+  // JSON-LD: CollegeOrUniversity + FAQPage when applicable. Helps Google
+  // surface this page as a rich result for queries like "TUM FAQ".
+  const ldUniversity = {
+    "@context": "https://schema.org",
+    "@type": "CollegeOrUniversity",
+    name: uni.name,
+    alternateName: uni.shortName,
+    foundingDate: String(uni.founded),
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: uni.city,
+      addressRegion: uni.state,
+      addressCountry: "DE",
+    },
+    url: uni.website,
+    numberOfStudents: uni.students,
+    sameAs: uni.wiki ? `https://en.wikipedia.org/wiki/${encodeURIComponent(uni.wiki.replace(/ /g, "_"))}` : undefined,
+  };
+  const ldFAQ = faqs.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
 
   const facts = [
     { label: "Location", value: `${uni.city}, ${uni.state}` },
@@ -49,6 +82,18 @@ export default async function UniversityDetail({ params }) {
 
   return (
     <article>
+      {/* SEO structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ldUniversity) }}
+      />
+      {ldFAQ && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ldFAQ) }}
+        />
+      )}
+
       <PageHero
         eyebrow={`🎓 World rank #${uni.worldRanking}`}
         title={uni.name}
@@ -255,6 +300,19 @@ export default async function UniversityDetail({ params }) {
             )}
           </section>
         )}
+
+        {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            NEXT STEPS: VISA + BLOCKED ACCOUNT + INSURANCE
+            Rendered on EVERY uni detail page (regardless of whether
+            admission data is filled in). This is the affiliate hook.
+            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+        <UniversityNextSteps uni={uni} />
+
+        {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            FAQ + INTERNAL LINKS
+            FAQs generate from data so they stay accurate.
+            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+        <UniversityFAQ uni={uni} />
       </div>
     </article>
   );

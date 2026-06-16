@@ -37,16 +37,23 @@ export default function UniversityExplorer() {
   }, [query, state, freeOnly, sort]);
 
   return (
-    <div>
-      {/* Controls */}
-      <div className="mb-6 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+    <div id="university-search">
+      {/* Controls — search box is the primary control, made prominent */}
+      <div className="mb-6 rounded-2xl border-2 border-brand-200 bg-white p-5 shadow-sm">
+        <label
+          htmlFor="uni-search-input"
+          className="mb-2 block text-xs font-bold uppercase tracking-wide text-brand-700"
+        >
+          🔍 Search the directory
+        </label>
         <div className="grid gap-3 md:grid-cols-[1fr_auto_auto]">
           <input
+            id="uni-search-input"
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by name, city or field…"
-            className="w-full rounded-lg border border-slate-300 px-4 py-2 text-sm outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+            placeholder="Search by name, city or field (e.g., 'Munich' or 'computer science')…"
+            className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 text-base outline-none focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
           />
           <select
             value={state}

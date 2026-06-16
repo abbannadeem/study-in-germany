@@ -10,9 +10,11 @@ export const metadata = {
 };
 
 const QUICK_FILTERS = [
-  { label: "Top 10 ranked", icon: "🏆", href: "/universities?sort=ranking" },
-  { label: "Tuition-free only", icon: "💶", href: "/universities?free=1" },
-  { label: "English programmes", icon: "🇬🇧", href: "/programs" },
+  { label: "Cheapest", icon: "💶", href: "/universities/cheapest" },
+  { label: "Top 10 English-taught", icon: "🇬🇧", href: "/universities/top-english" },
+  { label: "Best for Computer Science", icon: "💻", href: "/universities/best-for/computer-science" },
+  { label: "Best for Engineering", icon: "⚙️", href: "/universities/best-for/engineering" },
+  { label: "Best for Business", icon: "📈", href: "/universities/best-for/business" },
   { label: "Compare 3", icon: "⚖️", href: "/compare" },
 ];
 
@@ -60,9 +62,15 @@ export default function UniversitiesPage() {
 
           {/* Hero CTAs */}
           <div className="mt-7 flex flex-wrap gap-3">
+            <a
+              href="#university-search"
+              className="rounded-lg bg-brand-500 px-6 py-3 text-base font-bold text-ink-900 shadow-lg transition hover:scale-105 hover:bg-brand-400"
+            >
+              🔍 Search the directory
+            </a>
             <Link
               href="/start"
-              className="rounded-lg bg-brand-500 px-6 py-3 text-base font-bold text-ink-900 shadow-lg transition hover:scale-105 hover:bg-brand-400"
+              className="rounded-lg bg-white/15 px-6 py-3 font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/25"
             >
               🚀 Start with the 9-step guide
             </Link>
@@ -70,7 +78,7 @@ export default function UniversitiesPage() {
               href="/compare"
               className="rounded-lg bg-white/15 px-6 py-3 font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/25"
             >
-              ⚖️ Compare 3 universities →
+              ⚖️ Compare 3
             </Link>
           </div>
 
