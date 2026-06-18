@@ -40,9 +40,13 @@ export default function FooterNewsletter() {
         </div>
 
         {status === "success" ? (
-          <p className="rounded-lg bg-emerald-500/20 px-4 py-3 text-sm font-semibold text-emerald-300">
-            ✅ Subscribed! Check your inbox.
-          </p>
+          <a
+            href="/checklist.pdf"
+            download="Germany-Application-Checklist-2026.pdf"
+            className="rounded-lg bg-emerald-500 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-emerald-600"
+          >
+            ✅ Subscribed — ⬇️ download your PDF
+          </a>
         ) : (
           <form
             onSubmit={handleSubmit}
