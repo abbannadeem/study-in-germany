@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, getBlogPost, getRelatedPosts } from "@/data/blog";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import AuthorByline, { AUTHOR, AUTHOR_JSONLD } from "@/components/AuthorByline";
 
 export function generateStaticParams() {
   return blogPosts.map((p) => ({ slug: p.slug }));
@@ -100,7 +101,9 @@ export default async function BlogDetailPage({ params }) {
   if (!post) notFound();
   const related = getRelatedPosts(slug, 3);
 
-  // JSON-LD Article schema for richer Google search results
+  // JSON-LD Article schema for Google rich results.
+  // Author = real Person (Abban Nadeem). This is the E-E-A-T credibility
+  // signal Google rewards over generic "Organization" authorship.
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -108,15 +111,15 @@ export default async function BlogDetailPage({ params }) {
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,
-    author: {
-      "@type": "Organization",
-      name: post.author,
-      url: "https://studyingermanyguide.com",
-    },
+    author: AUTHOR_JSONLD,
     publisher: {
       "@type": "Organization",
       name: "Study in Germany Guide",
       url: "https://studyingermanyguide.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://studyingermanyguide.com/founder/abban.jpg",
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -155,11 +158,8 @@ export default async function BlogDetailPage({ params }) {
           <p className="mt-4 text-lg leading-relaxed text-white/90">
             {post.excerpt}
           </p>
-          <div className="mt-5 flex items-center gap-3 text-sm">
-            <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white/15 text-lg">
-              {post.coverEmoji}
-            </div>
-            <span className="text-white/80">By {post.author}</span>
+          <div className="mt-5 text-sm text-white/85">
+            <AuthorByline date={post.date} readTime={post.readTime} compact />
           </div>
         </div>
       </section>
@@ -182,6 +182,9 @@ export default async function BlogDetailPage({ params }) {
             </span>
           ))}
         </div>
+
+        {/* Author bio card — E-E-A-T credibility signal */}
+        <AuthorByline />
 
         {/* Newsletter signup */}
         <div className="mt-8">

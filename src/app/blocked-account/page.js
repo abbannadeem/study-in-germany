@@ -35,6 +35,189 @@ export default function BlockedAccountPage() {
           </p>
         </div>
 
+        {/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+            HOW TO OPEN A BLOCKED ACCOUNT (free step-by-step)
+            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */}
+        <div className="mb-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-xs font-bold uppercase tracking-wide text-brand-700">
+            Free step-by-step
+          </p>
+          <h2 className="mt-1 text-2xl font-bold text-ink-900 sm:text-3xl">
+            How to open a blocked account
+          </h2>
+          <p className="mt-2 text-slate-600">
+            The whole process takes 1–3 weeks if you have the basics ready. The
+            provider you choose handles the German banking side; your job is to
+            send the funds and keep the confirmation letter for your visa
+            interview.
+          </p>
+
+          {/* Documents you need */}
+          <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-5">
+            <h3 className="text-base font-bold text-ink-900">
+              📄 Documents you need (have these ready BEFORE you apply)
+            </h3>
+            <ul className="mt-3 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                <span>Passport — colour scan of the photo page (valid for at least 1 year)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                <span>University admission letter (Zulassungsbescheid) — PDF</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                <span>Your address (home country and any current German address you may have)</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                <span>A working international debit/credit card for the setup fee</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                <span>A second photo ID is usually requested during KYC</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
+                <span>SMS-capable phone for the OTP / verification step</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Step-by-step */}
+          <ol className="mt-6 space-y-4">
+            <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-sm font-bold text-ink-900">
+                1
+              </span>
+              <div>
+                <p className="font-bold text-ink-900">Pick a provider and apply online</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Open the provider&apos;s application form (Expatrio, Fintiba
+                  and Coracle all work fully in English). Fill in your personal
+                  details, upload your passport and admission letter, and pay
+                  the one-off setup fee with your home-country card.{" "}
+                  <strong>Time: 15–20 minutes.</strong>
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-sm font-bold text-ink-900">
+                2
+              </span>
+              <div>
+                <p className="font-bold text-ink-900">Pass identity verification (video KYC)</p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Within 24–72 hours you&apos;ll be invited to a short video
+                  KYC call (or sometimes an automated identity check). Have
+                  your passport ready, find decent lighting, and answer
+                  honestly. <strong>Time: 10–15 minutes.</strong>
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-sm font-bold text-ink-900">
+                3
+              </span>
+              <div>
+                <p className="font-bold text-ink-900">
+                  Receive your German IBAN and transfer instructions
+                </p>
+                <p className="mt-1 text-sm text-slate-700">
+                  After approval you get an email with the German IBAN, BIC,
+                  and the recipient name to send funds to. Save this email —
+                  you&apos;ll need it for the embassy.{" "}
+                  <strong>Time: usually next business day.</strong>
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-sm font-bold text-ink-900">
+                4
+              </span>
+              <div>
+                <p className="font-bold text-ink-900">
+                  Send €11,904 (or current minimum) into the blocked account
+                </p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Use a SEPA transfer, SWIFT wire from your bank, or a service
+                  like Wise. Send a little buffer (≈ €100–€200 more) so currency
+                  fluctuation doesn&apos;t leave you short. In the reference
+                  line, put your full name and date of birth so the provider
+                  can match the transfer to your account.{" "}
+                  <strong>Time: 1–7 business days depending on route.</strong>
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-sm font-bold text-ink-900">
+                5
+              </span>
+              <div>
+                <p className="font-bold text-ink-900">
+                  Get the blocked-account confirmation letter
+                </p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Once the funds land, the provider issues a PDF confirmation
+                  (&quot;Sperrkontobestätigung&quot;) within 1–2 business days.
+                  This is the document the German embassy asks for.{" "}
+                  <strong>Print 2 copies — one for the embassy, one for you.</strong>
+                </p>
+              </div>
+            </li>
+
+            <li className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-500 text-sm font-bold text-ink-900">
+                6
+              </span>
+              <div>
+                <p className="font-bold text-ink-900">
+                  Use it at the visa interview, then activate on arrival
+                </p>
+                <p className="mt-1 text-sm text-slate-700">
+                  Hand the confirmation letter to the embassy with the rest of
+                  your visa paperwork. After you land in Germany and register
+                  your address (Anmeldung), the provider unlocks your monthly
+                  ≈ €992 payouts. Most providers also convert the blocked
+                  account into a normal current account at this stage.
+                </p>
+              </div>
+            </li>
+          </ol>
+
+          {/* Total timeline summary */}
+          <div className="mt-6 rounded-xl border border-emerald-200 bg-emerald-50 p-5">
+            <p className="text-xs font-bold uppercase tracking-wide text-emerald-800">
+              ⏱️ Realistic total timeline
+            </p>
+            <p className="mt-2 text-sm text-emerald-900">
+              <strong>10–21 days</strong> from starting the application to
+              having the confirmation letter in hand. Apply at least{" "}
+              <strong>4–5 weeks before your visa interview</strong> so a slow
+              bank transfer doesn&apos;t derail your timeline.
+            </p>
+          </div>
+
+          {/* Common mistakes */}
+          <div className="mt-5 rounded-xl border border-rose-200 bg-rose-50 p-5">
+            <p className="text-xs font-bold uppercase tracking-wide text-rose-800">
+              ⚠️ Common mistakes that cost time and money
+            </p>
+            <ul className="mt-2 space-y-1.5 text-sm text-rose-900">
+              <li>• Transferring exactly €11,904 — small currency drops can put you below the minimum. Always overshoot by €100–€200.</li>
+              <li>• Using a non-bank money-exchange service that the provider doesn&apos;t recognise — stick to a regulated bank or Wise.</li>
+              <li>• Forgetting to put your full name in the transfer reference — the provider may not match the funds to your account.</li>
+              <li>• Waiting until 1–2 weeks before the visa interview — slow transfers can take a full week.</li>
+              <li>• Choosing a provider not accepted by your local German embassy — verify on the embassy website first.</li>
+            </ul>
+          </div>
+        </div>
+
         {/* Quick summary table */}
         <div className="mb-8 overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
           <div className="overflow-x-auto">
