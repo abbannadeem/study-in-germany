@@ -93,9 +93,7 @@ export default function Footer() {
             <li><Link href="/visa" className="hover:text-brand-400">Visa & Process</Link></li>
             <li><Link href="/blocked-account" className="hover:text-brand-400">Blocked Account</Link></li>
             <li><Link href="/settle" className="hover:text-brand-400">Settle In</Link></li>
-            <li><Link href="/guides/pakistan" className="hover:text-brand-400">🇵🇰 Pakistan guide</Link></li>
-            <li><Link href="/guides/india" className="hover:text-brand-400">🇮🇳 India guide</Link></li>
-            <li><Link href="/guides/syria" className="hover:text-brand-400">🇸🇾 Syria guide</Link></li>
+            <li><Link href="/guides" className="hover:text-brand-400">Country Guides</Link></li>
             <li><Link href="/about" className="hover:text-brand-400">About Us</Link></li>
           </ul>
         </div>
