@@ -135,7 +135,7 @@ export default function GuidesHubPage() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             <a
-              href="https://wa.me/491706963809?text=Hi%21%20Please%20add%20a%20country%20guide%20for%20"
+              href="https://wa.me/923021045296?text=Hi%21%20Please%20add%20a%20country%20guide%20for%20"
               target="_blank"
               rel="noreferrer"
               className="rounded-lg bg-emerald-500 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-emerald-600"

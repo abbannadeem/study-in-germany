@@ -8,7 +8,7 @@ export const metadata = {
     "Get personalized 1-on-1 help applying to German universities — university shortlist, SOP review, full application review, visa interview prep, and end-to-end mentorship. Honest pricing, no agent commissions.",
 };
 
-const WHATSAPP_NUMBER = "491706963809";
+const WHATSAPP_NUMBER = "923021045296";
 
 function whatsappLink(service) {
   const message = `Hi! I'm interested in your "${service.title}" service. Can we discuss pricing and timing?`;

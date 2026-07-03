@@ -177,7 +177,7 @@ export default function AboutPage() {
 
               <div className="mt-6 flex flex-wrap gap-2 text-sm">
                 <a
-                  href="https://wa.me/491706963809?text=Hi%20Talha!%20Saw%20your%20site."
+                  href="https://wa.me/923021045296?text=Hi%20Talha!%20Saw%20your%20site."
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-lg bg-emerald-500 px-4 py-2 font-semibold text-white transition hover:bg-emerald-600"
@@ -374,7 +374,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
             <a
-              href="https://wa.me/491706963809"
+              href="https://wa.me/923021045296"
               target="_blank"
               rel="noreferrer"
               className="rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:bg-emerald-600"

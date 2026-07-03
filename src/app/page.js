@@ -268,7 +268,7 @@ export default function Home() {
                   See all services
                 </Link>
                 <a
-                  href="https://wa.me/491706963809?text=Hi! I want to discuss services."
+                  href="https://wa.me/923021045296?text=Hi! I want to discuss services."
                   target="_blank"
                   rel="noreferrer"
                   className="rounded-lg bg-emerald-500 px-6 py-2.5 text-base font-semibold text-white transition-all duration-200 hover:bg-emerald-600"

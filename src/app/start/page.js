@@ -172,7 +172,7 @@ export default function StartPage() {
               Browse universities
             </Link>
             <a
-              href="https://wa.me/491706963809?text=Hi! I'm starting my Germany application and have questions."
+              href="https://wa.me/923021045296?text=Hi! I'm starting my Germany application and have questions."
               target="_blank"
               rel="noreferrer"
               className="rounded-lg border border-slate-200 px-5 py-2.5 text-sm font-semibold text-ink-900 transition-all duration-200 hover:border-brand-400"

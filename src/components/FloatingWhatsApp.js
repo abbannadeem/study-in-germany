@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 // big conversion-friendly UX detail.
 //
 // Replace the phone number below with your real WhatsApp number.
-const WHATSAPP_NUMBER = "491706963809"; // format: country code + number, no +
+const WHATSAPP_NUMBER = "923021045296"; // format: country code + number, no +
 const DEFAULT_MESSAGE = "Hi! I have a question about studying in Germany.";
 
 export default function FloatingWhatsApp() {

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
-import AuthorByline, { AUTHOR_JSONLD } from "@/components/AuthorByline";
 import { countries, getCountry } from "@/data/countries";
 
 export function generateStaticParams() {
@@ -23,48 +22,13 @@ export default async function CountryGuidePage({ params }) {
   const c = getCountry(country);
   if (!c) notFound();
 
-  // Article + author JSON-LD: surfaces real authorship to Google so the
-  // country guides earn E-E-A-T credit.
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: `Study in Germany from ${c.name} — Country Guide`,
-    description: `A step-by-step guide for students applying to German universities from ${c.name}: APS, embassy, documents and timeline.`,
-    datePublished: "2026-06-01",
-    dateModified: "2026-06-16",
-    author: AUTHOR_JSONLD,
-    publisher: {
-      "@type": "Organization",
-      name: "Study in Germany Guide",
-      url: "https://studyingermanyguide.com",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://studyingermanyguide.com/founder/abban.jpg",
-      },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://studyingermanyguide.com/guides/${c.slug}`,
-    },
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <PageHero
         eyebrow={`${c.flag} Country guide`}
         title={`Study in Germany from ${c.name}`}
         subtitle={`A step-by-step guide tailored for students applying from ${c.name} — APS, embassy, documents and timeline.`}
       />
-
-      <section className="mx-auto max-w-4xl px-4 pt-6">
-        <div className="text-sm text-slate-600">
-          <AuthorByline date="Updated 16 June 2026" compact />
-        </div>
-      </section>
 
       <section className="mx-auto max-w-4xl px-4 py-10">
         {/* Other countries */}
@@ -178,9 +142,6 @@ export default async function CountryGuidePage({ params }) {
           </Link>
           .
         </div>
-
-        {/* Author bio card — E-E-A-T credibility signal */}
-        <AuthorByline />
       </section>
     </>
   );

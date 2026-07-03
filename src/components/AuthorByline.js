@@ -81,7 +81,7 @@ export default function AuthorByline({ date, readTime, compact = false }) {
               Full bio →
             </Link>
             <a
-              href="https://wa.me/491706963809"
+              href="https://wa.me/923021045296"
               target="_blank"
               rel="noreferrer"
               className="font-semibold text-emerald-700 hover:underline"

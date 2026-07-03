@@ -14,10 +14,10 @@ const FORM_URL = "https://formspree.io/f/xaqzqway";
 
 export default function NewsletterSignup({
   variant = "default", // "default" | "compact" | "inline"
-  title = "Get the free 10-page Germany application checklist",
-  description = "Instant PDF download + weekly tips, deadlines and scholarship updates. No spam, unsubscribe any time.",
-  cta = "Get the free PDF",
-  highlight = "Free PDF · 10 pages · Updated June 2026",
+  title = "Weekly Germany tips — in your inbox",
+  description = "Deadlines, scholarship news and visa tips every week. No spam, unsubscribe any time.",
+  cta = "Get the free guide",
+  highlight = "Free guide: Application Checklist",
 }) {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState("idle"); // idle | submitting | success | error
@@ -56,26 +56,14 @@ export default function NewsletterSignup({
     }
   }
 
-  // Success state — works for all variants. Shows the immediate-download
-  // link so subscribers get the PDF instantly (no waiting for an email).
+  // Success state — works for all variants
   if (status === "success") {
     return (
-      <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-6 text-center">
-        <p className="text-3xl">📚</p>
-        <p className="mt-2 text-lg font-bold text-ink-900">You&apos;re in!</p>
-        <p className="mt-1 text-sm text-emerald-800">
-          Your Germany Application Checklist is ready below — and we&apos;ll
-          also email you weekly tips, deadlines, and scholarship updates.
-        </p>
-        <a
-          href="/checklist.pdf"
-          download="Germany-Application-Checklist-2026.pdf"
-          className="mt-4 inline-block rounded-lg bg-emerald-600 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-emerald-700"
-        >
-          ⬇️ Download the checklist (PDF)
-        </a>
-        <p className="mt-3 text-xs text-emerald-700/80">
-          Free, 10 pages, updated June 2026.
+      <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-5 text-center">
+        <p className="text-3xl">✅</p>
+        <p className="mt-2 text-lg font-bold text-ink-900">Subscribed!</p>
+        <p className="mt-1 text-sm text-emerald-700">
+          Check your inbox — your free PDF is on the way.
         </p>
       </div>
     );

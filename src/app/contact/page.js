@@ -13,7 +13,7 @@ const contactMethods = [
     title: "WhatsApp",
     text: "Fastest reply — usually within a few hours.",
     action: "Open WhatsApp",
-    href: "https://wa.me/491706963809",
+    href: "https://wa.me/923021045296",
     color: "bg-emerald-50 text-emerald-700 border-emerald-200",
   },
   {

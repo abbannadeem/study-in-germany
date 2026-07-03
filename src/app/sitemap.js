@@ -32,7 +32,6 @@ export default function sitemap() {
     "/insurance",
     "/settle",
     "/blog",
-    "/guides",
     "/services",
     "/about",
     "/contact",
