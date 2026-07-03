@@ -26,14 +26,24 @@ export default function CountryPicker() {
   const [open, setOpen] = useState(false);
   const [picked, setPicked] = useState(null);
 
-  // Show only on first visit — gentle delay so hero loads first.
+  // Show only when the user has no country stored.
+  // Two modes:
+  //   • Explicit user request (navbar "Change country" sets a session flag) →
+  //     open INSTANTLY, no delay.
+  //   • First-time visitor → gentle 4s delay so the hero loads first.
   useEffect(() => {
     const stored = localStorage.getItem("student_country");
-    if (!stored) {
-      // 4 seconds — enough for hero to render, not so long users miss the ask.
-      const t = setTimeout(() => setOpen(true), 4000);
-      return () => clearTimeout(t);
+    if (stored) return;
+
+    const explicit = sessionStorage.getItem("country_picker_instant") === "1";
+    if (explicit) {
+      sessionStorage.removeItem("country_picker_instant");
+      setOpen(true);
+      return;
     }
+
+    const t = setTimeout(() => setOpen(true), 4000);
+    return () => clearTimeout(t);
   }, []);
 
   function choose(country) {

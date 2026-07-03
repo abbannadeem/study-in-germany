@@ -165,6 +165,9 @@ export default function Navbar() {
           <button
             onClick={() => {
               localStorage.removeItem("student_country");
+              // Tell CountryPicker this is an explicit user request — skip the
+              // 4s delay meant for first-time visitors.
+              sessionStorage.setItem("country_picker_instant", "1");
               window.location.reload();
             }}
             title="Change country"
@@ -238,6 +241,8 @@ export default function Navbar() {
               <button
                 onClick={() => {
                   localStorage.removeItem("student_country");
+                  // Skip the 4s delay — user explicitly asked for the picker.
+                  sessionStorage.setItem("country_picker_instant", "1");
                   window.location.reload();
                 }}
                 className="flex w-full items-center gap-2 rounded-md border border-slate-200 px-3 py-2.5 text-sm font-medium text-slate-700 hover:bg-brand-50"
