@@ -77,7 +77,7 @@ export default function BlockedAccountPage() {
                 <a
                   href={p.website}
                   target="_blank"
-                  rel="noreferrer"
+                  rel={p.sponsored ? "sponsored noopener" : "noopener noreferrer"}
                   className="rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-ink-900 transition hover:bg-brand-400"
                 >
                   Open account

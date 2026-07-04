@@ -19,7 +19,8 @@ export const blockedAccountProviders = [
       "Fastest setup",
     ],
     cons: ["Bundle can feel like upsell", "Customer service quality varies"],
-    website: "https://www.expatrio.com/",
+    website: "https://www.expatrio.com?p=SGGUIDE",
+    sponsored: true,
     description:
       "Berlin-based fintech designed for international students — quick, English-friendly, popular bundle option.",
   },
