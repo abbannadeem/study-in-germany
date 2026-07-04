@@ -27,10 +27,12 @@ export default function CountryPicker() {
   const [picked, setPicked] = useState(null);
 
   // Show only when the user has no country stored.
-  // Two modes:
+  // Three cases:
   //   • Explicit user request (navbar "Change country" sets a session flag) →
-  //     open INSTANTLY, no delay.
-  //   • First-time visitor → gentle 4s delay so the hero loads first.
+  //     open INSTANTLY, no delay, on ANY page.
+  //   • Deep-link landing (e.g. /blocked-account from Google) → do NOT
+  //     auto-open. The visitor came for a specific page; interrupting is rude.
+  //   • First-time visitor on the homepage → gentle 4s delay so the hero loads.
   useEffect(() => {
     const stored = localStorage.getItem("student_country");
     if (stored) return;
@@ -41,6 +43,11 @@ export default function CountryPicker() {
       setOpen(true);
       return;
     }
+
+    // Only auto-show on the homepage. Deep links land people on the exact
+    // page they wanted — don't cover it with a modal.
+    if (typeof window === "undefined") return;
+    if (window.location.pathname !== "/") return;
 
     const t = setTimeout(() => setOpen(true), 4000);
     return () => clearTimeout(t);
