@@ -2,9 +2,9 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 
 export const metadata = {
-  title: "Disclaimer — Educational Resource, Not Official Consultancy",
+  title: "Disclaimer",
   description:
-    "Study in Germany Guide is an independent educational website. We are not an official visa consultancy, government agency, or accredited admissions service. All information is for educational purposes only.",
+    "Independent educational website. Not an official visa consultancy or government agency. All information is for educational purposes only.",
 };
 
 export default function DisclaimerPage() {
@@ -244,10 +244,10 @@ export default function DisclaimerPage() {
               <a
                 href="https://wa.me/923021045296"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="font-medium text-brand-700 hover:underline"
               >
-                +49 170 6963809 on WhatsApp
+                +92 302 1045296 on WhatsApp
               </a>
               . We fix accurate reports within 24-48 hours.
             </p>

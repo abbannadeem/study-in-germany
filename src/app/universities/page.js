@@ -4,7 +4,7 @@ import UniversityExplorer from "@/components/UniversityExplorer";
 import JourneyNav from "@/components/JourneyNav";
 
 export const metadata = {
-  title: "All Public Universities in Germany — Tuition-Free Directory (2026)",
+  title: "Public Universities in Germany",
   description:
     "The full directory of public universities in Germany — tuition-free, English programmes available. Search by city, state or field. All data updated June 2026.",
 };

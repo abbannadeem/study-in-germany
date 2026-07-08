@@ -89,7 +89,7 @@ export default function ChatWidget() {
                             key={l.href}
                             href={l.href}
                             target="_blank"
-                            rel="noreferrer"
+                            rel="noopener noreferrer"
                             className="rounded-full bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-700 hover:bg-brand-100"
                           >
                             {l.label} ↗

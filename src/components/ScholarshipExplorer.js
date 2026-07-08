@@ -166,7 +166,7 @@ export default function ScholarshipExplorer() {
               <a
                 href={s.website}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="mt-4 inline-block rounded-lg bg-brand-500 px-4 py-2 text-sm font-semibold text-ink-900 transition hover:bg-brand-400"
               >
                 Official site & apply ↗

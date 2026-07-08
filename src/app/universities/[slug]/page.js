@@ -20,9 +20,17 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const uni = getUniversity(slug);
   if (!uni) return {};
+  const url = `https://studyingermanyguide.com/universities/${uni.slug}`;
   return {
     title: uni.name,
     description: uni.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: uni.name,
+      description: uni.description,
+      url,
+      type: "website",
+    },
   };
 }
 
@@ -128,7 +136,7 @@ export default async function UniversityDetail({ params }) {
             <a
               href={uni.website}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="mt-4 block rounded-lg bg-brand-500 px-4 py-2.5 text-center font-semibold text-ink-900 transition hover:bg-brand-400"
             >
               Visit official website ↗
@@ -290,7 +298,7 @@ export default async function UniversityDetail({ params }) {
                   <a
                     href={apply.url}
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     className="mt-3 inline-block text-sm font-bold text-brand-700 hover:underline"
                   >
                     Open the application portal →

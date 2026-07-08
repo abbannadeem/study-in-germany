@@ -9,9 +9,9 @@ import {
 } from "@/data/insurance";
 
 export const metadata = {
-  title: "Health Insurance for International Students in Germany",
+  title: "Health Insurance for Students in Germany",
   description:
-    "Compare student health insurance in Germany — pre-arrival travel insurance for the visa (DR-WALTER, Mawista, Care Concept) and long-term public insurance after enrolment (TK, DAK, AOK). Honest 2026 comparison.",
+    "Student health insurance for Germany — pre-arrival travel cover for the visa (DR-WALTER, Mawista) and public insurance after enrolment (TK, DAK, AOK).",
 };
 
 const CATEGORY_COLORS = {

@@ -11,9 +11,13 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const item = getIndustry(slug);
   if (!item) return {};
+  const url = `https://studyingermanyguide.com/industries/${item.slug}`;
+  const title = `Industries in ${item.state}`;
   return {
-    title: `Industries in ${item.state}`,
+    title,
     description: item.description,
+    alternates: { canonical: url },
+    openGraph: { title, description: item.description, url, type: "website" },
   };
 }
 

@@ -174,7 +174,7 @@ export default function StartPage() {
             <a
               href="https://wa.me/923021045296?text=Hi! I'm starting my Germany application and have questions."
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-lg border border-slate-200 px-5 py-2.5 text-sm font-semibold text-ink-900 transition-all duration-200 hover:border-brand-400"
             >
               Message on WhatsApp

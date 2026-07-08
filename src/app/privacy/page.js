@@ -127,7 +127,7 @@ export default function PrivacyPage() {
               <a
                 href="https://www.google.com/settings/ads"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="font-medium text-brand-600 hover:underline"
               >
                 Google Ads Settings
@@ -161,7 +161,7 @@ export default function PrivacyPage() {
             <a
               href="https://tools.google.com/dlpage/gaoptout"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="font-medium text-brand-600 hover:underline"
             >
               official Google Analytics opt-out browser add-on
@@ -186,7 +186,7 @@ export default function PrivacyPage() {
               <a
                 href="https://www.google.com/settings/ads"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="font-medium text-brand-600 hover:underline"
               >
                 google.com/settings/ads
@@ -198,7 +198,7 @@ export default function PrivacyPage() {
               <a
                 href="https://policies.google.com/technologies/partner-sites"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="font-medium text-brand-600 hover:underline"
               >
                 Google&apos;s policies

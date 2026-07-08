@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { universities } from "@/data/universities";
 import { cities } from "@/data/cities";
+import { countries } from "@/data/countries";
 import { ALL_PROGRAMS } from "@/lib/programs";
 
 export const metadata = {
-  title: "About Us — A Pakistani Student's Honest Guide to Germany",
+  title: "About — Honest Guide by a Pakistani Student in Germany",
   description:
-    "Study in Germany Guide was built by a Pakistani student in Germany — a free, independent platform to help international students navigate German university applications, visas, and life in Germany. No agents. No fees. Honest information.",
+    "Built by a Pakistani student now in Germany: a free, independent guide for international students. No agents. No fees. Honest information.",
 };
 
 const values = [
@@ -37,7 +38,7 @@ export default function AboutPage() {
     { value: `${universities.length}`, label: "Universities covered" },
     { value: `${ALL_PROGRAMS.length}+`, label: "English programmes" },
     { value: `${cities.length}`, label: "Student cities" },
-    { value: "12", label: "Country guides" },
+    { value: `${countries.length}`, label: "Country guides" },
   ];
 
   return (
@@ -154,7 +155,7 @@ export default function AboutPage() {
                   Today it&apos;s{" "}
                   <strong>{universities.length} universities</strong>,{" "}
                   <strong>{ALL_PROGRAMS.length}+ English programmes</strong>,{" "}
-                  <strong>12 country-specific guides</strong>, a cost calculator
+                  <strong>{countries.length} country-specific guides</strong>, a cost calculator
                   in your own currency, step-by-step visa walkthroughs, an
                   insurance comparison, and a blocked-account comparison so you
                   don&apos;t get scammed by your provider.
@@ -179,7 +180,7 @@ export default function AboutPage() {
                 <a
                   href="https://wa.me/923021045296?text=Hi%20Talha!%20Saw%20your%20site."
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="rounded-lg bg-emerald-500 px-4 py-2 font-semibold text-white transition hover:bg-emerald-600"
                 >
                   💬 WhatsApp me
@@ -193,7 +194,7 @@ export default function AboutPage() {
                 <a
                   href="https://instagram.com/studyingermanyguide_"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="rounded-lg border border-slate-200 px-4 py-2 font-semibold text-slate-700 transition hover:bg-slate-50"
                 >
                   📸 Instagram
@@ -376,7 +377,7 @@ export default function AboutPage() {
             <a
               href="https://wa.me/923021045296"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:bg-emerald-600"
             >
               💬 WhatsApp

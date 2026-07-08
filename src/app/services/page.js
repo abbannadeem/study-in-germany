@@ -3,9 +3,9 @@ import PageHero from "@/components/PageHero";
 import { services, faqs } from "@/data/services";
 
 export const metadata = {
-  title: "1-on-1 Services — Personalized Help for Your Germany Application",
+  title: "1-on-1 Services",
   description:
-    "Get personalized 1-on-1 help applying to German universities — university shortlist, SOP review, full application review, visa interview prep, and end-to-end mentorship. Honest pricing, no agent commissions.",
+    "Personalized help applying to German universities — shortlist, SOP review, full application review, visa prep and mentorship. Honest pricing, no agents.",
 };
 
 const WHATSAPP_NUMBER = "923021045296";
@@ -115,7 +115,7 @@ export default function ServicesPage() {
                 <a
                   href={whatsappLink(s)}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="block rounded-lg bg-emerald-500 px-4 py-2.5 text-center text-sm font-bold text-white transition-all duration-200 hover:bg-emerald-600"
                 >
                   Book on WhatsApp
@@ -190,7 +190,7 @@ export default function ServicesPage() {
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi! I want to discuss which service is right for me.")}`}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="mt-6 inline-block rounded-lg bg-emerald-500 px-6 py-3 font-bold text-white transition-all duration-200 hover:bg-emerald-600"
           >
             Start a free WhatsApp consultation

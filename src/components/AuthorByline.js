@@ -83,7 +83,7 @@ export default function AuthorByline({ date, readTime, compact = false }) {
             <a
               href="https://wa.me/923021045296"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="font-semibold text-emerald-700 hover:underline"
             >
               WhatsApp Abban →

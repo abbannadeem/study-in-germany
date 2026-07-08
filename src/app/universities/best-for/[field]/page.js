@@ -44,9 +44,14 @@ export async function generateMetadata({ params }) {
   const { field } = await params;
   const info = FIELDS[field];
   if (!info) return {};
+  const url = `https://studyingermanyguide.com/universities/best-for/${field}`;
+  const title = `Best German Universities for ${info.label}`;
+  const description = `Top public universities in Germany for ${info.label} — fees, ranking, English programmes, application route.`;
   return {
-    title: `Best German Universities for ${info.label} (2026)`,
-    description: `The top public universities in Germany for ${info.label} — fees, ranking, English programmes, application route. Updated June 2026.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, type: "website" },
   };
 }
 

@@ -31,7 +31,7 @@ export default function Footer() {
               <a
                 href="https://www.instagram.com/studyingermanyguide_"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/15 text-white transition-all duration-200 hover:bg-white/25 hover:shadow-lg"
               >
@@ -43,7 +43,7 @@ export default function Footer() {
               <a
                 href="https://www.tiktok.com/@studyingermanyguide_"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="TikTok"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-black"
               >
@@ -55,7 +55,7 @@ export default function Footer() {
               <a
                 href="https://wa.me/923021045296"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#25D366]"
               >
@@ -101,10 +101,10 @@ export default function Footer() {
         <div>
           <h4 className="mb-3 text-sm font-semibold text-white">Official resources</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="https://www.daad.de/en/" target="_blank" rel="noreferrer" className="hover:text-brand-400">DAAD</a></li>
-            <li><a href="https://www.make-it-in-germany.com/en/" target="_blank" rel="noreferrer" className="hover:text-brand-400">Make it in Germany</a></li>
-            <li><a href="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/" target="_blank" rel="noreferrer" className="hover:text-brand-400">English programmes</a></li>
-            <li><a href="https://www.study-in-germany.de/en/" target="_blank" rel="noreferrer" className="hover:text-brand-400">Study in Germany (gov)</a></li>
+            <li><a href="https://www.daad.de/en/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400">DAAD</a></li>
+            <li><a href="https://www.make-it-in-germany.com/en/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400">Make it in Germany</a></li>
+            <li><a href="https://www2.daad.de/deutschland/studienangebote/international-programmes/en/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400">English programmes</a></li>
+            <li><a href="https://www.study-in-germany.de/en/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400">Study in Germany (gov)</a></li>
           </ul>
         </div>
 

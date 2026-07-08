@@ -78,7 +78,7 @@ export default function ContactPage() {
               key={m.title}
               href={m.href}
               target={m.href.startsWith("http") ? "_blank" : undefined}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className={`group flex flex-col rounded-2xl border p-6 transition-all duration-200 hover:shadow-md ${m.color}`}
             >
               <h3 className="text-lg font-bold">{m.title}</h3>

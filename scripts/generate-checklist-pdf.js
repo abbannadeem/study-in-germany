@@ -321,7 +321,7 @@ function build() {
   doc.text("STUCK SOMEWHERE? JUST ASK.", 65, ny + 35, { characterSpacing: 2 });
   doc.fillColor(BRAND.ink).font("Helvetica").fontSize(10);
   doc.text(
-    "I read every message personally. WhatsApp +49 170 6963809, or email studyingermanyguide@gmail.com. Mention which step you are on and what is unclear - I will reply within 24 hours.",
+    "I read every message personally. WhatsApp +92 302 1045296, or email studyingermanyguide@gmail.com. Mention which step you are on and what is unclear - I will reply within 24 hours.",
     65,
     ny + 55,
     { width: doc.page.width - 130 }

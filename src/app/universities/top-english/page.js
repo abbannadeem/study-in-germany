@@ -5,7 +5,7 @@ import UniversityNextSteps from "@/components/UniversityNextSteps";
 import { euro } from "@/lib/format";
 
 export const metadata = {
-  title: "Top 10 English-Taught Universities in Germany (2026)",
+  title: "Top English-Taught Universities in Germany",
   description:
     "The best German universities offering English-taught Bachelor's and Master's programmes. Real comparison of fees, ranking and admission requirements.",
 };

@@ -11,9 +11,14 @@ export async function generateMetadata({ params }) {
   const { country } = await params;
   const c = getCountry(country);
   if (!c) return {};
+  const url = `https://studyingermanyguide.com/guides/${c.slug}`;
+  const title = `Study in Germany from ${c.name}`;
+  const description = `A guide for students from ${c.name}: APS, embassy, documents, timeline and tips.`;
   return {
-    title: `Study in Germany from ${c.name}`,
-    description: `A guide for students from ${c.name}: APS, embassy, documents, timeline and tips.`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: { title, description, url, type: "website" },
   };
 }
 

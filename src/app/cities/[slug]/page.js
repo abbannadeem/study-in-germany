@@ -12,7 +12,18 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const city = getCity(slug);
   if (!city) return {};
-  return { title: city.name, description: city.description };
+  const url = `https://studyingermanyguide.com/cities/${city.slug}`;
+  return {
+    title: city.name,
+    description: city.description,
+    alternates: { canonical: url },
+    openGraph: {
+      title: city.name,
+      description: city.description,
+      url,
+      type: "website",
+    },
+  };
 }
 
 export default async function CityDetail({ params }) {

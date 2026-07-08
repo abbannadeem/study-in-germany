@@ -6,6 +6,7 @@ import {
   jobPortals,
   cityJobComparison,
 } from "@/data/jobs";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import JourneyNav from "@/components/JourneyNav";
 
@@ -111,7 +112,7 @@ export default function JobsPage() {
           working-student role and toward your <strong className="text-ink-900">140 full
           days / 280 half days</strong> per year limit. You'll need your tax ID and a
           German bank account first — see{" "}
-          <a href="/settle" className="font-medium text-brand-600 hover:underline">Settle In</a>.
+          <Link href="/settle" className="font-medium text-brand-600 hover:underline">Settle In</Link>.
         </div>
       </section>
 
@@ -193,7 +194,7 @@ export default function JobsPage() {
                 key={p.name}
                 href={p.url}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="flex items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-ink-900 shadow-sm transition hover:border-brand-300 hover:text-brand-700"
               >
                 {p.name}
@@ -212,7 +213,7 @@ export default function JobsPage() {
           <a
             href="https://www.make-it-in-germany.com/en/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="font-semibold underline"
           >
             Make it in Germany

@@ -27,7 +27,7 @@ export const metadata = {
     template: "%s | Study in Germany",
   },
   description:
-    "A complete guide to studying in Germany: tuition-free public universities, student cities, part-time jobs, careers and the full student visa process. Built for international students from Pakistan, India, Bangladesh, UAE and more.",
+    "Free guide for international students: tuition-free universities, student cities, jobs, visa, blocked account, scholarships and country-specific routes.",
   keywords: [
     "study in Germany",
     "German universities",
@@ -38,8 +38,10 @@ export const metadata = {
     "DAAD",
     "Pakistan Germany visa",
     "India Germany student",
+    "Nigeria Germany student",
     "uni-assist",
     "Germany scholarships",
+    "APS certificate",
   ],
   authors: [{ name: "Study in Germany Guide" }],
   openGraph: {

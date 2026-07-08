@@ -3,9 +3,9 @@ import PageHero from "@/components/PageHero";
 import { countries } from "@/data/countries";
 
 export const metadata = {
-  title: "Country Guides for Studying in Germany — APS, Embassy & Documents",
+  title: "Country Guides: Study in Germany",
   description:
-    "Country-by-country guides for studying in Germany — Pakistan, India, Bangladesh, Nepal, Sri Lanka, Vietnam, UAE, Saudi Arabia, Iran, Turkey, Egypt and Syria. APS, embassy details, attestation chains and timelines. Updated June 2026.",
+    "Country-by-country guides for studying in Germany — APS, embassy, attestation and timeline for Pakistan, India, Nigeria, Bangladesh, Nepal and more.",
 };
 
 export default function GuidesHubPage() {
@@ -137,7 +137,7 @@ export default function GuidesHubPage() {
             <a
               href="https://wa.me/923021045296?text=Hi%21%20Please%20add%20a%20country%20guide%20for%20"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-lg bg-emerald-500 px-5 py-2.5 text-sm font-bold text-white transition hover:bg-emerald-600"
             >
               💬 Request via WhatsApp

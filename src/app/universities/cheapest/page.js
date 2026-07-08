@@ -5,7 +5,7 @@ import UniversityNextSteps from "@/components/UniversityNextSteps";
 import { euro } from "@/lib/format";
 
 export const metadata = {
-  title: "Cheapest Universities in Germany for International Students (2026)",
+  title: "Cheapest Universities in Germany",
   description:
     "Tuition-free public universities in Germany with the lowest total semester costs for international students. Compare semester fee, tuition and total annual cost.",
 };

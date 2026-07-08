@@ -270,7 +270,7 @@ export default function Home() {
                 <a
                   href="https://wa.me/923021045296?text=Hi! I want to discuss services."
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="rounded-lg bg-emerald-500 px-6 py-2.5 text-base font-semibold text-white transition-all duration-200 hover:bg-emerald-600"
                 >
                   Message on WhatsApp

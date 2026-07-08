@@ -11,9 +11,24 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) return {};
+  const url = `https://studyingermanyguide.com/blog/${post.slug}`;
   return {
     title: post.title,
     description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: "article",
+      publishedTime: post.date,
+      authors: [post.author],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+    },
   };
 }
 
@@ -108,15 +123,20 @@ export default async function BlogDetailPage({ params }) {
     description: post.excerpt,
     datePublished: post.date,
     dateModified: post.date,
+    image: "https://studyingermanyguide.com/logo.svg",
     author: {
-      "@type": "Organization",
-      name: post.author,
-      url: "https://studyingermanyguide.com",
+      "@type": "Person",
+      name: post.author || "Abban Nadeem",
+      url: "https://studyingermanyguide.com/about",
     },
     publisher: {
       "@type": "Organization",
       name: "Study in Germany Guide",
       url: "https://studyingermanyguide.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://studyingermanyguide.com/logo.svg",
+      },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
@@ -207,7 +227,7 @@ export default async function BlogDetailPage({ params }) {
             <a
               href={`https://wa.me/?text=${encodeURIComponent(`Check out: ${post.title} https://studyingermanyguide.com/blog/${post.slug}`)}`}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600"
             >
               Share on WhatsApp
@@ -215,7 +235,7 @@ export default async function BlogDetailPage({ params }) {
             <a
               href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://studyingermanyguide.com/blog/${slug}`)}`}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700"
             >
               Share on LinkedIn

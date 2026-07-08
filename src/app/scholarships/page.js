@@ -32,7 +32,7 @@ export default function ScholarshipsPage() {
           <a
             href="https://www2.daad.de/deutschland/stipendium/datenbank/en/21148-scholarship-database/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="font-medium text-brand-600 hover:underline"
           >
             thousands of additional scholarships
