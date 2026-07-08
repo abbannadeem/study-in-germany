@@ -16,6 +16,7 @@ const TOP_COUNTRIES = [
   { code: "vn", name: "Vietnam", flag: "🇻🇳", students: "5,500+", guide: "vietnam" },
   { code: "bd", name: "Bangladesh", flag: "🇧🇩", students: "5,000+", guide: "bangladesh" },
   { code: "sy", name: "Syria", flag: "🇸🇾", students: "5,000+", guide: "syria" },
+  { code: "ng", name: "Nigeria", flag: "🇳🇬", students: "4,500+", guide: "nigeria" },
   { code: "ae", name: "UAE (Dubai)", flag: "🇦🇪", students: "3,500+", guide: "uae" },
   { code: "sa", name: "Saudi Arabia", flag: "🇸🇦", students: "2,500+", guide: "saudi-arabia" },
   { code: "np", name: "Nepal", flag: "🇳🇵", students: "2,500+", guide: "nepal" },

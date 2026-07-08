@@ -744,6 +744,83 @@ export const countries = [
       "Apostille convention does not apply to Syria — full attestation chain (Syrian MoFA → German embassy) is mandatory.",
     ],
   },
+  {
+    slug: "nigeria",
+    name: "Nigeria",
+    flag: "🇳🇬",
+    embassyCity: "Abuja (consulate in Lagos)",
+    apsRequired: true,
+    apsNote:
+      "As of 2023, Nigerian degrees must be verified through the APS (Akademische Prüfstelle) at the German Embassy in Abuja before you can apply to most German universities. Process takes 6–10 weeks and includes an academic interview.",
+    keySteps: [
+      {
+        title: "Book APS appointment at the German Embassy Abuja",
+        body: "Register at aps-nigeria.de and book an appointment. Bring your WAEC/NECO certificates + Bachelor's transcripts + Bachelor's certificate. Pay the ~€150 fee (in Naira equivalent).",
+      },
+      {
+        title: "Attend the APS academic interview",
+        body: "20–30 minute interview in English. Prepare to discuss your undergraduate coursework, final-year project, and your reasons for studying in Germany. Honest and specific answers matter more than perfect English.",
+      },
+      {
+        title: "Receive APS certificate",
+        body: "PDF certificate arrives 4–6 weeks after the interview. Valid indefinitely for the programme level applied for (Bachelor's or Master's).",
+      },
+      {
+        title: "Apply to German universities (via uni-assist or direct)",
+        body: "Most Nigerian applicants go through uni-assist.de. Some universities (TUM, RWTH Aachen) accept direct applications. Upload your APS certificate + WAEC/NECO + Bachelor's + English test.",
+      },
+      {
+        title: "Open a blocked account",
+        body: "Expatrio, Fintiba and Coracle all support Nigerian applicants. Fund via SWIFT transfer from GTBank, Zenith, Access Bank or Wise. Naira volatility means overshoot the minimum by NGN 200,000+.",
+      },
+      {
+        title: "Get health insurance + visa appointment",
+        body: "Take pre-arrival insurance (DR-WALTER Educare24 or Mawista). Book visa slot at the German Embassy Abuja or Consulate Lagos — slots fill fast during peak intake season (May–August).",
+      },
+      {
+        title: "Travel and register in Germany",
+        body: "Direct flights from Lagos/Abuja to Frankfurt, Munich or Berlin. Once you arrive, register your address (Anmeldung) within 14 days.",
+      },
+    ],
+    documents: [
+      "APS certificate (mandatory) — from German Embassy Abuja",
+      "WAEC / NECO / SSCE certificate (secondary school)",
+      "Bachelor's degree + academic transcript (English)",
+      "NYSC (National Youth Service Corps) certificate — if applicable",
+      "Valid Nigerian passport (≥1 year remaining)",
+      "University admission letter (Zulassungsbescheid)",
+      "Blocked account confirmation (~€11,904 minimum for 2026)",
+      "Health insurance confirmation (DR-WALTER / Mawista / TK)",
+      "IELTS 6.5+ / TOEFL iBT 88+ (or German B1+ for German-taught programmes)",
+      "Motivation letter and CV (1–2 pages)",
+      "Visa application form + 2 biometric photos",
+      "Visa fee (~€75, paid in NGN at the embassy)",
+      "Proof of financial sponsorship (parent bank statements + sponsor letter, if funded by family)",
+    ],
+    timeline: [
+      { when: "15 months before", what: "Start APS process — book appointment at German Embassy Abuja" },
+      { when: "12 months before", what: "Attend APS interview + wait for certificate (4–6 weeks)" },
+      { when: "10 months before", what: "Take IELTS or TOEFL (British Council or ETS centres in Lagos/Abuja)" },
+      { when: "8 months before", what: "Research German universities and shortlist 4–6 programmes" },
+      { when: "6 months before", what: "Apply via uni-assist or direct to universities" },
+      { when: "3–4 months before", what: "Receive admission letter, open blocked account (via GTBank/Zenith/Wise)" },
+      { when: "3 months before", what: "Buy pre-arrival insurance + book visa appointment at Embassy Abuja / Consulate Lagos" },
+      { when: "1–2 months before", what: "Attend visa interview + wait 4–12 weeks for decision" },
+      { when: "On approval", what: "Book flight to Germany + arrange first-week accommodation" },
+    ],
+    tips: [
+      "APS is mandatory — start it BEFORE anything else. 6-10 weeks minimum, longer if you defer the interview.",
+      "The APS interview is in English — prepare to explain your final-year project, courses, and career goals honestly.",
+      "Nigerian Naira volatility means always transfer €200+ MORE than the blocked-account minimum to avoid falling short.",
+      "GTBank and Zenith Bank both handle SWIFT transfers to German blocked accounts, but Wise is often faster and cheaper.",
+      "NYSC certificate is required by some German universities to prove your degree is complete — bring the original + 3 copies.",
+      "Nigerian medical, engineering and IT graduates have a strong reputation in Germany — leverage that in your motivation letter.",
+      "DAAD offers Nigeria-specific scholarships (DAAD-EPOS) for public policy, agriculture, engineering — apply 15 months out.",
+      "The German Embassy Abuja is the primary visa post; Lagos consulate handles the SW region. Book based on your state.",
+      "Nigerian student communities are large at TU Berlin, RWTH Aachen, Bremen and Heidelberg — connect with them BEFORE arrival for housing help.",
+      "Direct flights: Lufthansa (Frankfurt), KLM/Air France (via AMS/CDG) — book 6-8 weeks in advance for best fares.",
+    ],
+  },
 ];
 
 export function getCountry(slug) {
