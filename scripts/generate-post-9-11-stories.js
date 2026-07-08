@@ -102,24 +102,14 @@ async function post10() {
 
     <g transform="translate(60, 620)">
       <rect x="0" y="0" width="960" height="60" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
-      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Flight + attestation</text>
-      <text x="930" y="38" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#92400E" text-anchor="end">~€900</text>
+      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living (rent + food + transit)</text>
+      <text x="930" y="38" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#92400E" text-anchor="end">€600 – €700</text>
     </g>
 
-    <g transform="translate(60, 690)">
-      <rect x="0" y="0" width="960" height="60" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
-      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living — smaller student city</text>
-      <text x="930" y="38" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#92400E" text-anchor="end">~€900</text>
-    </g>
-
-    <g transform="translate(60, 760)">
-      <rect x="0" y="0" width="960" height="60" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
-      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living — big city range</text>
-      <text x="930" y="38" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#92400E" text-anchor="end">~€1,500</text>
-    </g>
-
-    <text x="60" y="880" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#334155" font-style="italic">Note: blocked account = money you get back monthly.</text>
-    <text x="60" y="912" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#334155" font-style="italic">Not a fee. Proof-of-funds only.</text>
+    <text x="60" y="770" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#334155" font-style="italic">Note: blocked account = money you get back monthly.</text>
+    <text x="60" y="802" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#334155" font-style="italic">Not a fee. Proof-of-funds only.</text>
+    <text x="60" y="850" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#334155" font-style="italic">Public university tuition = €0.</text>
+    <text x="60" y="882" font-family="Georgia, serif" font-size="22" font-weight="400" fill="#334155" font-style="italic">Semester fee €150 – €350 (includes public transport).</text>
 
     <rect x="0" y="1000" width="1080" height="80" fill="#0F172A"/>
     <text x="60" y="1048" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#FFCE00" letter-spacing="5">FULL BREAKDOWN → STUDYINGERMANYGUIDE.COM</text>
