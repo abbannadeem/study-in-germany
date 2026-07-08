@@ -108,13 +108,13 @@ async function post10() {
 
     <g transform="translate(60, 690)">
       <rect x="0" y="0" width="960" height="60" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
-      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living (Ilmenau)</text>
+      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living — smaller student city</text>
       <text x="930" y="38" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#92400E" text-anchor="end">~€900</text>
     </g>
 
     <g transform="translate(60, 760)">
       <rect x="0" y="0" width="960" height="60" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
-      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living (Munich)</text>
+      <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0F172A">Monthly living — big city range</text>
       <text x="930" y="38" font-family="Georgia, serif" font-size="26" font-weight="700" fill="#92400E" text-anchor="end">~€1,500</text>
     </g>
 
@@ -157,16 +157,16 @@ async function post11() {
 
     <g transform="translate(60, 700)">
       <line x1="0" y1="6" x2="40" y2="6" stroke="#FFCE00" stroke-width="2"/>
-      <text x="52" y="11" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFCE00" letter-spacing="7">THE CITY</text>
+      <text x="52" y="11" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFCE00" letter-spacing="7">STUDENT WORK</text>
     </g>
 
-    <text x="60" y="830" font-family="Georgia, serif" font-size="88" font-weight="400" fill="#FFFFFF">Where will</text>
-    <text x="60" y="920" font-family="Georgia, serif" font-size="88" font-weight="700" fill="#FFFFFF" font-style="italic">you live?</text>
+    <text x="60" y="830" font-family="Georgia, serif" font-size="82" font-weight="400" fill="#FFFFFF">Can you work</text>
+    <text x="60" y="920" font-family="Georgia, serif" font-size="82" font-weight="700" fill="#FFFFFF" font-style="italic">while studying?</text>
 
-    <text x="60" y="985" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#FFFFFF" opacity="0.85">37 student cities compared — rent, jobs,</text>
-    <text x="60" y="1010" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#FFFFFF" opacity="0.85">student life. Pick the right one.</text>
+    <text x="60" y="985" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#FFFFFF" opacity="0.9">Yes — 20 hrs/week, no extra permit,</text>
+    <text x="60" y="1010" font-family="Arial, sans-serif" font-size="20" font-weight="400" fill="#FFFFFF" opacity="0.9">€556 mini-job earns tax-free.</text>
 
-    <text x="60" y="1055" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFCE00" letter-spacing="4">STUDYINGERMANYGUIDE.COM/CITIES</text>
+    <text x="60" y="1055" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFCE00" letter-spacing="4">STUDYINGERMANYGUIDE.COM/JOBS</text>
   </svg>`;
 
   await sharp(path.join(CITIES, "leipzig.jpg"))
